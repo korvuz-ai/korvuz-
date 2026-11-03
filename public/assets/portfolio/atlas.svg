@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-label="Illustrated Korvuz Atlas trip planning interface">
+<rect width="800" height="460" fill="#e7e6ef"/><rect x="65" y="45" width="670" height="385" rx="18" fill="#fff"/>
+<rect x="65" y="45" width="180" height="385" rx="18" fill="#25263a"/><rect x="225" y="45" width="20" height="385" fill="#25263a"/>
+<text x="90" y="91" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#eee8ff">Korvuz Atlas</text>
+<text x="92" y="144" font-family="Arial,sans-serif" font-size="14" fill="#c9bedc">My trips</text><text x="92" y="186" font-family="Arial,sans-serif" font-size="14" fill="#a39ab6">Calendar</text><text x="92" y="228" font-family="Arial,sans-serif" font-size="14" fill="#a39ab6">Travel journal</text><text x="92" y="270" font-family="Arial,sans-serif" font-size="14" fill="#a39ab6">World map</text>
+<text x="280" y="94" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#373247">Travel, planned together.</text>
+<rect x="280" y="123" width="420" height="195" rx="12" fill="#eeecf6"/>
+<path d="M314 239C347 167 388 269 431 206S510 172 553 208 616 173 656 158" fill="none" stroke="#b2a1d5" stroke-width="3" stroke-dasharray="7 7"/>
+<circle cx="315" cy="239" r="10" fill="#8e75be"/><circle cx="431" cy="206" r="10" fill="#8e75be"/><circle cx="553" cy="208" r="10" fill="#8e75be"/><circle cx="656" cy="158" r="10" fill="#8e75be"/>
+<rect x="280" y="343" width="201" height="46" rx="8" fill="#f4f1f9"/><text x="298" y="372" font-family="Arial,sans-serif" font-size="13" fill="#79618e">Shared itineraries</text>
+<rect x="497" y="343" width="203" height="46" rx="8" fill="#edf5f1"/><text x="515" y="372" font-family="Arial,sans-serif" font-size="13" fill="#5c7c6b">Private by default</text>
+</svg>

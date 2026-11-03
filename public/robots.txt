@@ -1,8 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /*.bak-
-Disallow: /*.md
-Disallow: /SEO-TODO.md
-Disallow: /.tools/
-
 Sitemap: https://korvuz.site/sitemap.xml

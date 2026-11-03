@@ -15,3 +15,4 @@ source/.korvuz-build-*/
 source/*.previous-build/
 .migration-*/
 .DS_Store
+.taste-skill/

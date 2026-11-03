@@ -1,2 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://korvuz.site/</loc></url></urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://korvuz.site/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/notes/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/work/eks-release/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/work/infrastructure-automation/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/work/rhel-hardening/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/korvuz-atlas/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/invoiceai/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/linecrm/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/fiatline/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/english-reader/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/projects/devops-kb/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/notes/release-readiness/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/notes/repeatable-environments/</loc>
+  </url>
+  <url>
+    <loc>https://korvuz.site/notes/hardening-as-a-process/</loc>
+  </url>
+</urlset>

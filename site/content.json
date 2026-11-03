@@ -1,0 +1,283 @@
+{
+  "name": "Nuntawat Fangritlong",
+  "title": "Senior DevOps Specialist",
+  "email": "nuntawat.works@gmail.com",
+  "jobs": [
+    {
+      "date": "Mar 2026 – Present",
+      "title": "Senior DevOps Specialist",
+      "company": "Orbix Custodian",
+      "description": "Coordinate releases across application, infrastructure and security teams. Deploy to Amazon EKS, maintain Jenkins pipelines, support Kafka and Splunk, and automate RHEL 9 hardening with Ansible and OpenSCAP."
+    },
+    {
+      "date": "Mar – Dec 2025",
+      "title": "DevOps Engineer",
+      "company": "Krungsri, Bank of Ayudhya",
+      "description": "Built modular Terraform infrastructure and Ansible Automation Platform playbooks for repeatable provisioning in a regulated banking environment. Standardized container deployments across environments."
+    },
+    {
+      "date": "Jul 2024 – Feb 2025",
+      "title": "Cloud Engineer",
+      "company": "Mobileconnect",
+      "description": "Designed AWS VPC and Transit Gateway architectures, planned cloud migrations, and deployed workloads to ECS. Worked with IAM, SSO, Terraform and Ansible AAP."
+    },
+    {
+      "date": "Dec 2023 – Jul 2024",
+      "title": "Cloud Engineer",
+      "company": "Fujitsu Thailand",
+      "description": "Operated AWS, Azure and on-premises environments. Delivered network and migration work, configured HAProxy and Squid, and managed infrastructure changes and incident reporting."
+    },
+    {
+      "date": "Oct 2022 – Oct 2023",
+      "title": "Systems & Network Engineer",
+      "company": "Tri Petch IT Solutions",
+      "description": "Automated recurring operations and reporting. Managed Cisco infrastructure, Windows and Linux servers, VMware, vulnerability assessment and two-factor authentication."
+    },
+    {
+      "date": "Dec 2020 – Sep 2022",
+      "title": "Systems & Network Engineer",
+      "company": "Pro Inside",
+      "description": "Configured Cisco and Huawei networks, managed Sophos and Fortigate firewalls, and maintained open-source firewall and VMware environments for client sites."
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-eks",
+      "slug": "eks-release",
+      "type": "Engineering experience",
+      "title": "Releases on Amazon EKS",
+      "summary": "Connect application delivery, infrastructure operations and release coordination through Jenkins and Kubernetes.",
+      "art": "k8s",
+      "icon": "cloud",
+      "label": "Cloud delivery",
+      "tags": "Amazon EKS, Jenkins, Kafka",
+      "paragraphs": [
+        "At Orbix Custodian, my work spans the release process from planning change windows with application owners to deployment and operational follow-up.",
+        "The role combines maintaining Jenkins pipelines with deploying services to an existing Amazon EKS platform. Kafka and Splunk support investigation when delivery or production behavior needs attention."
+      ],
+      "bullets": [
+        "Coordinate changes across application, infrastructure and security teams.",
+        "Maintain build and release pipelines and verify deployed services.",
+        "Follow up on incidents using the relevant service and logging context."
+      ],
+      "closing": "This summary describes responsibilities from my professional resume. Employer systems and internal architecture remain confidential."
+    },
+    {
+      "id": "case-iac",
+      "slug": "infrastructure-automation",
+      "type": "Engineering experience",
+      "title": "Repeatable infrastructure",
+      "summary": "Use modular Terraform and Ansible AAP to make provisioning and configuration consistent across environments.",
+      "art": "iac",
+      "icon": "layers",
+      "label": "Infrastructure automation",
+      "tags": "Terraform, Ansible AAP",
+      "paragraphs": [
+        "In a banking environment, I developed modular Terraform infrastructure and Ansible Automation Platform playbooks for provisioning and configuration.",
+        "The focus was consistency: reduce manual setup, keep environment differences explicit, and make infrastructure changes easier to review and explain."
+      ],
+      "bullets": [
+        "Organize infrastructure as reusable Terraform modules.",
+        "Automate server provisioning and configuration with Ansible AAP.",
+        "Partner with development teams on containerized deployments."
+      ],
+      "closing": "The practical value is a system another engineer can understand, reproduce and maintain."
+    },
+    {
+      "id": "case-sec",
+      "slug": "rhel-hardening",
+      "type": "Engineering experience",
+      "title": "Security in the workflow",
+      "summary": "Bring RHEL hardening, CIS checks and audit evidence into a repeatable Ansible and OpenSCAP process.",
+      "art": "sec",
+      "icon": "shield",
+      "label": "Systems security",
+      "tags": "RHEL 9, Ansible, OpenSCAP",
+      "paragraphs": [
+        "My current work includes hardening RHEL 9 servers with Ansible and checking their configuration against CIS benchmarks with OpenSCAP.",
+        "Configuration and evidence belong in the same workflow. A repeatable process makes it easier to identify drift, apply approved changes and prepare audit reports."
+      ],
+      "bullets": [
+        "Apply approved hardening configuration across servers.",
+        "Run compliance scans and retain evidence for review.",
+        "Assess application impact before changing authentication, auditing or security controls."
+      ],
+      "closing": "Security changes require the same care as a release: testing, a clear owner, a rollback plan and an understanding of the application."
+    }
+  ],
+  "products": [
+    {
+      "id": "product-atlas",
+      "slug": "korvuz-atlas",
+      "title": "Korvuz Atlas",
+      "category": "Travel & collaboration",
+      "summary": "A private travel planner for LINE, with shared itineraries, trip collaboration and controlled sharing.",
+      "tags": "Next.js, PostgreSQL, LINE LIFF",
+      "image": "atlas.svg",
+      "paragraphs": [
+        "Korvuz Atlas, presented in the app as Korvuz Trip, brings trip planning and a personal travel archive into LINE.",
+        "The owner can invite Editors or Viewers to a specific trip. Separate expiring, read-only links let selected trips be shared without granting app membership."
+      ],
+      "bullets": [
+        "Plan itineraries and collaborate on ideas and checklists.",
+        "Keep journals, photos and personal travel history under the owner's control.",
+        "Operate a Next.js application backed by PostgreSQL."
+      ],
+      "url": "https://atlas.korvuz.site/"
+    },
+    {
+      "id": "product-invoice",
+      "slug": "invoiceai",
+      "title": "InvoiceAI",
+      "category": "SaaS & automation",
+      "summary": "An invoicing application for Thai users, with AI-assisted data entry and Stripe billing integration.",
+      "tags": "SaaS, AI, Docker",
+      "image": "invoiceai.svg",
+      "paragraphs": [
+        "InvoiceAI is an independent invoicing product built around the document workflows of Thai users.",
+        "It combines AI-assisted data entry with billing integration. Building it involved application development, deployment and ongoing infrastructure operations."
+      ],
+      "bullets": [
+        "Translate a business workflow into an application.",
+        "Connect product functionality with billing and deployment.",
+        "Take responsibility for the system beyond the initial build."
+      ]
+    },
+    {
+      "id": "product-linecrm",
+      "slug": "linecrm",
+      "title": "LineCRM",
+      "category": "CRM & messaging",
+      "summary": "Customer management inside LINE Official Account, built for Thai retailers with Next.js and PostgreSQL.",
+      "tags": "Next.js, PostgreSQL, LINE OA",
+      "image": "linecrm.svg",
+      "paragraphs": [
+        "LineCRM connects customer management with the LINE Official Account channel already used by Thai retailers.",
+        "The project combines a Next.js application, PostgreSQL and messaging integration, with responsibility for deploying and operating the service."
+      ],
+      "bullets": [
+        "Design application and database workflows together.",
+        "Integrate with an external messaging platform.",
+        "Maintain the infrastructure that supports the application."
+      ]
+    },
+    {
+      "id": "product-fiatline",
+      "slug": "fiatline",
+      "title": "FiatLine",
+      "category": "Personal finance",
+      "summary": "A personal finance assistant inside LINE, designed around everyday income and expense tracking.",
+      "tags": "LINE Mini App, Finance",
+      "image": "fiatline.svg",
+      "paragraphs": [
+        "FiatLine is a personal finance assistant delivered as a LINE mini-app.",
+        "The project explores how an everyday workflow can fit into a familiar messaging environment, with an application backend and its deployment managed together."
+      ],
+      "bullets": [
+        "Bring income and expense tracking into LINE.",
+        "Connect an external platform with an application backend.",
+        "Consider the operational needs of the application from the start."
+      ]
+    },
+    {
+      "id": "product-reader",
+      "slug": "english-reader",
+      "title": "English Reader",
+      "category": "Learning applications",
+      "summary": "An English reading application with short stories, vocabulary support and exercises for independent practice.",
+      "tags": "Web applications, Education",
+      "image": "english-reader.svg",
+      "paragraphs": [
+        "English Reader is a web application for practicing English through short stories and supporting exercises.",
+        "It is part of my independent product work: building an application, preparing it for deployment and maintaining the environment around it."
+      ],
+      "bullets": [
+        "Support reading practice through a focused web experience.",
+        "Combine learning content with vocabulary and exercises.",
+        "Own the delivery workflow as well as the application."
+      ]
+    },
+    {
+      "id": "product-kb",
+      "slug": "devops-kb",
+      "title": "DevOps KB",
+      "category": "Knowledge sharing",
+      "summary": "A personal knowledge base for DevOps, with a structured CI/CD and SRE learning roadmap.",
+      "tags": "DevOps, CI/CD, SRE",
+      "image": "devops-kb.svg",
+      "paragraphs": [
+        "DevOps KB organizes the technical material I use while learning and working across infrastructure and delivery.",
+        "It includes a structured CI/CD and SRE learning roadmap, turning recurring questions and practical notes into reusable reference material."
+      ],
+      "bullets": [
+        "Organize operational knowledge so it can be found again.",
+        "Connect practical exercises with a structured learning path.",
+        "Document what is useful to the next engineer."
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "article-release",
+      "slug": "release-readiness",
+      "title": "Before the release",
+      "summary": "A practical checklist for pipeline readiness, verification, ownership and rollback.",
+      "tags": "Release management, CI/CD",
+      "icon": "git",
+      "type": "Engineering note",
+      "paragraphs": [
+        "A successful pipeline run is one part of a release. The surrounding work matters just as much: agreeing the change, understanding its dependencies and deciding how to respond when verification fails.",
+        "Before a change window, review the release scope, configuration, access and dependencies. Name the person responsible for the deployment and the people who can assess application behavior."
+      ],
+      "bullets": [
+        "Before deployment: confirm the artifact, configuration, permissions and rollback procedure.",
+        "During deployment: watch the pipeline and the service state, with a clear owner for decisions.",
+        "After deployment: verify health checks, application behavior, logs and relevant metrics.",
+        "Rollback: define the trigger and rehearse the steps before they are needed."
+      ],
+      "closing": "Adapt the checklist to the risk of the system. A small static site and a stateful production application need different levels of verification."
+    },
+    {
+      "id": "article-iac",
+      "slug": "repeatable-environments",
+      "title": "Make environments repeatable",
+      "summary": "How Terraform and Ansible help teams review changes and reduce configuration drift.",
+      "tags": "Terraform, Ansible, Automation",
+      "icon": "layers",
+      "type": "Engineering note",
+      "paragraphs": [
+        "Manual configuration leaves an important question unanswered: what exactly changed? Infrastructure as code moves that information into version-controlled files that a team can review.",
+        "Reusable Terraform modules help organize infrastructure. Environment-specific values remain explicit, while Ansible can handle configuration and operational tasks where it fits the system."
+      ],
+      "bullets": [
+        "Keep reusable structure separate from environment-specific values.",
+        "Use pull requests to review infrastructure changes before applying them.",
+        "Keep credentials out of source control and use an appropriate secrets mechanism.",
+        "Review plans, state access and the expected impact of changes.",
+        "Document the process for the person who will operate the environment next."
+      ],
+      "closing": "The goal is an infrastructure setup the team can reproduce and explain. Tool complexity is useful only when it serves that goal."
+    },
+    {
+      "id": "article-sec",
+      "slug": "hardening-as-a-process",
+      "title": "Hardening is a process",
+      "summary": "Build repeatable checks and audit evidence into the way Linux systems are maintained.",
+      "tags": "RHEL, CIS, OpenSCAP",
+      "icon": "shield",
+      "type": "Engineering note",
+      "paragraphs": [
+        "A one-time hardening exercise becomes less useful as a system changes. A repeatable process helps teams understand the current baseline and detect configuration drift.",
+        "Start with an agreed baseline and documented exceptions. Ansible can apply approved configuration, while OpenSCAP can assess compliance and produce evidence for review."
+      ],
+      "bullets": [
+        "Agree the baseline and exceptions with security and application owners.",
+        "Test changes on representative systems before applying them broadly.",
+        "Assess the impact of changes to SELinux, authentication, audit rules and services.",
+        "Retain scan results and link remediation to reviewed changes.",
+        "Repeat checks as the system evolves, rather than treating the first scan as completion."
+      ],
+      "closing": "A useful security process supports availability as well as compliance. Every change needs an owner, verification and a way back."
+    }
+  ]
+}

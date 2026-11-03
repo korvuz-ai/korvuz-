@@ -1,42 +1,52 @@
-# KORVUZ — Nuntawat Fangritlong
+# Nuntawat Fangritlong — DevOps Portfolio
 
-Personal website and technical writing by **Nuntawat Fangritlong**, Senior DevOps Specialist. My work spans cloud infrastructure, Kubernetes, infrastructure as code, CI/CD, and Linux systems.
+A personal portfolio for **Nuntawat Fangritlong**, Senior DevOps Specialist in Bangkok. It brings together experience in cloud infrastructure, Kubernetes, infrastructure automation, CI/CD, and systems security.
 
 [Website](https://korvuz.site/) · [Resume](https://korvuz.site/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf) · [LinkedIn](https://linkedin.com/in/nuntawat-zeo) · [Email](mailto:nuntawat.works@gmail.com)
 
-## About this repository
+## Explore the work
 
-This repository brings the website's published files and development source together while preserving the existing Git history.
+- Career experience across enterprise infrastructure and financial services.
+- Engineering summaries covering Amazon EKS delivery, infrastructure as code, and RHEL hardening.
+- Independent products, including Korvuz Atlas, InvoiceAI, LineCRM, and FiatLine.
+- Practical notes on release readiness, repeatable environments, and security operations.
+- The original English resume and direct contact information.
+
+The portfolio is entirely in English. Its design follows the supplied portfolio reference, with a midnight and muted lavender palette, clear typography, and responsive layouts.
+
+## Repository structure
 
 | Path | Purpose |
 | --- | --- |
-| `public/` | Exact snapshot of the production website captured on 3 November 2026; the directory configured for Vercel deployment. |
-| `source/` | Existing Python/Jinja development source, templates, content, assets, and validation tools. |
-| `vercel.json` | Static hosting settings, legacy redirects, and security headers. |
-| `docs/` | Migration instructions and SHA-256 checksums for the production snapshot. |
+| `site/content.json` | Current English career, project, case study, and note content. |
+| `site/index.template.html` | Homepage template. |
+| `site/icons.svg` | Shared SVG symbols from the supplied reference. |
+| `tools/build-site.py` | Dependency-free static site generator. |
+| `public/` | Generated HTML, styles, scripts, illustrations, fonts, and PDFs served by Vercel. |
+| `source/` | Historical Python/Jinja development source retained from the previous website. |
+| `vercel.json` | Static hosting settings, compatibility redirects, and security headers. |
 
-The production snapshot includes the personal homepage, downloadable resumes, and technical articles in Thai. It requires no application server or database.
+## Build and preview
 
-## Preview the website
+Requires Python 3.11 or newer. No package installation is needed to generate or serve the site.
 
 ```bash
+python3 tools/build-site.py
 python3 -m http.server 8765 --directory public
 ```
 
-Open <http://localhost:8765/>. This previews the static files; Vercel-specific redirects and headers are applied by Vercel.
+Open <http://localhost:8765/>. The local server previews the files; Vercel applies hosting redirects and response headers.
 
-## Deploy with Vercel
+Edit the current JSON content and template, rebuild, and commit the updated `public/` files. Styles live in `public/assets/css/portfolio.css`, with the supplied layout foundation in `reference.css`. Interactions live in `public/assets/js/portfolio.js`.
 
-Import `korvuz-ai/korvuz-` into Vercel and keep the project root at the repository root. The checked-in configuration uses the **Other** framework preset, skips installation and building, and publishes `public/`.
+## Deployment
 
-Test the generated `vercel.app` deployment before connecting `korvuz.site`. Follow [the migration guide](docs/VERCEL-MIGRATION.md) for domain setup, verification, and retiring the previous hosting.
+Vercel serves `public/` directly with the **Other** framework preset and installation/build commands disabled. A push to the production branch triggers the connected Vercel deployment. The generated artifact is committed so deployments do not depend on a build runtime.
 
-## Development source
+Case studies, products, and notes have standalone pages. JavaScript adds accessible detail dialogs and an interactive delivery explanation; the content and destination links remain usable without it. Motion respects the user's reduced-motion preference.
 
-The development source produces a different version of the website from the captured production snapshot. Rebuilding `source/` does **not** update `public/` automatically. Review a rebuilt version before promoting its files into the deployment directory.
+## Assets and history
 
-See [source/README.md](source/README.md) for the existing toolchain and build instructions. Its earlier hosting and deployment notes are historical context; the root `vercel.json` controls the planned Vercel deployment.
+The original resume PDFs keep their established URLs. Product interface illustrations derive from the supplied reference; they represent the products rather than employer systems. Plus Jakarta Sans is self-hosted under its included SIL Open Font License.
 
-## Contact
-
-For DevOps, cloud infrastructure, and technical collaboration: **[nuntawat.works@gmail.com](mailto:nuntawat.works@gmail.com)**.
+The `source/` directory preserves an older development version and its historical deployment records. It is not the generator for the current portfolio. See [the migration guide](docs/VERCEL-MIGRATION.md) for hosting transition details.

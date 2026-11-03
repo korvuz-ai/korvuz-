@@ -6,18 +6,133 @@
   "outputDirectory": "public",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/consult", "destination": "/services/", "statusCode": 301 },
-    { "source": "/consult/", "destination": "/services/", "statusCode": 301 },
-    { "source": "/consult/index.html", "destination": "/services/", "statusCode": 301 }
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.korvuz.site"
+        }
+      ],
+      "destination": "https://korvuz.site/:path*",
+      "statusCode": 308
+    },
+    {
+      "source": "/consult",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/consult/",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/services",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "/#about",
+      "statusCode": 301
+    },
+    {
+      "source": "/about/",
+      "destination": "/#about",
+      "statusCode": 301
+    },
+    {
+      "source": "/experience",
+      "destination": "/#experience",
+      "statusCode": 301
+    },
+    {
+      "source": "/experience/",
+      "destination": "/#experience",
+      "statusCode": 301
+    },
+    {
+      "source": "/skills",
+      "destination": "/#about",
+      "statusCode": 301
+    },
+    {
+      "source": "/skills/",
+      "destination": "/#about",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact/",
+      "destination": "/#contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/resume",
+      "destination": "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/resume/",
+      "destination": "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/work",
+      "destination": "/#work",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/",
+      "destination": "/#work",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/notes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/",
+      "destination": "/notes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/consult/index.html",
+      "destination": "/#contact",
+      "statusCode": 301
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
       ]
     }
   ]
