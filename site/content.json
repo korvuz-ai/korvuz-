@@ -7,43 +7,76 @@
       "date": "Mar 2026 – Present",
       "title": "Senior DevOps Specialist",
       "company": "Orbix Custodian",
-      "description": "Coordinate releases across application, infrastructure and security teams. Deploy to Amazon EKS, maintain Jenkins pipelines, support Kafka and Splunk, and automate RHEL 9 hardening with Ansible and OpenSCAP."
+      "description": "Coordinate releases across application, infrastructure and security teams. Deploy to Amazon EKS, maintain Jenkins pipelines, support Kafka and Splunk, and automate RHEL 9 hardening with Ansible and OpenSCAP.",
+      "bullets": [
+        "Coordinate releases across application, infrastructure and security teams, from change window to post-release follow-up.",
+        "Deploy and troubleshoot services on an existing Amazon EKS platform; maintain the Jenkins pipelines that ship into it.",
+        "Led the migration of workloads from IBM Cloud back to on-premises, including cutover.",
+        "Automated RHEL 9 hardening and CIS scanning with Ansible and OpenSCAP. The audit report comes out of the same run, and fleet compliance rose from the low 80s to near-full."
+      ]
     },
     {
       "date": "Jan – Feb 2026",
       "title": "Freelance DevOps & Cloud Engineer",
       "company": "Self-employed, Fastwork",
-      "description": "Delivered Linux server setup, containerized deployments with Docker and Nginx, and CI/CD pipelines for clients."
+      "description": "Delivered Linux server setup, containerized deployments with Docker and Nginx, and CI/CD pipelines for clients.",
+      "bullets": [
+        "Delivered Linux server setup, containerized deployments with Docker and Nginx, and CI/CD pipelines for clients."
+      ]
     },
     {
       "date": "Mar – Dec 2025",
       "title": "DevOps Engineer",
       "company": "Krungsri, Bank of Ayudhya",
-      "description": "Built modular Terraform infrastructure and Ansible Automation Platform playbooks for repeatable provisioning in a regulated banking environment. Standardized container deployments across environments."
+      "description": "Built modular Terraform infrastructure and Ansible Automation Platform playbooks for repeatable provisioning in a regulated banking environment. Standardized container deployments across environments.",
+      "bullets": [
+        "Designed modular Terraform infrastructure so development and production stayed consistent between releases.",
+        "Built Ansible Automation Platform playbooks for provisioning, replacing manual build steps in a regulated bank.",
+        "Standardized containerized deployments with Docker across multiple environments."
+      ]
     },
     {
       "date": "Jul 2024 – Feb 2025",
       "title": "Cloud Engineer",
       "company": "Mobileconnect",
-      "description": "Designed AWS VPC and Transit Gateway architectures, planned cloud migrations, and deployed workloads to ECS. Worked with IAM, SSO, Terraform and Ansible AAP."
+      "description": "Designed AWS VPC and Transit Gateway architectures, planned cloud migrations, and deployed workloads to ECS. Worked with IAM, SSO, Terraform and Ansible AAP.",
+      "bullets": [
+        "Designed secure AWS networks with VPC and Transit Gateway, with access enforced through IAM and SSO.",
+        "Led AWS presales: architecture recommendations, high-level designs and cost-optimization proposals.",
+        "Ran cloud migrations, deployed workloads on Amazon ECS, and automated day-2 operations with Terraform and Ansible AAP."
+      ]
     },
     {
       "date": "Dec 2023 – Jul 2024",
       "title": "Cloud Engineer",
       "company": "Fujitsu Thailand",
-      "description": "Operated AWS, Azure and on-premises environments. Delivered network and migration work, configured HAProxy and Squid, and managed infrastructure changes and incident reporting."
+      "description": "Operated AWS, Azure and on-premises environments. Delivered network and migration work, configured HAProxy and Squid, and managed infrastructure changes and incident reporting.",
+      "bullets": [
+        "Operated hybrid AWS, Azure and on-premises environments for enterprise clients.",
+        "Maintained HAProxy and Squid Proxy to control traffic flow and tighten egress security.",
+        "Delivered network-zone design and cloud-migration work, owning CAB change requests and incident reports."
+      ]
     },
     {
       "date": "Oct 2022 – Oct 2023",
       "title": "Network System Engineer",
       "company": "Tri Petch IT Solutions",
-      "description": "Automated recurring operations and reporting. Managed Cisco infrastructure, Windows and Linux servers, VMware, vulnerability assessment and two-factor authentication."
+      "description": "Automated recurring operations and reporting. Managed Cisco infrastructure, Windows and Linux servers, VMware, vulnerability assessment and two-factor authentication.",
+      "bullets": [
+        "Automated 20+ recurring manual tasks with scripting, including monthly system reporting.",
+        "Managed Cisco DNA Center, ISE and WLC networks; administered VMware ESXi/vCenter and Windows/Linux servers.",
+        "Ran vulnerability assessments and rolled out two-factor authentication."
+      ]
     },
     {
       "date": "May 2021 – Sep 2022",
       "title": "Network System Engineer",
       "company": "Pro Inside",
-      "description": "Configured Cisco and Huawei networks, managed Sophos and Fortigate firewalls, and maintained open-source firewall and VMware environments for client sites."
+      "description": "Configured Cisco and Huawei networks, managed Sophos and Fortigate firewalls, and maintained open-source firewall and VMware environments for client sites.",
+      "bullets": [
+        "Configured Cisco and Huawei switching and managed Sophos and Fortigate firewalls for client sites.",
+        "Deployed OPNsense, pfSense and IPFire firewalls and managed VMware ESXi and vCenter."
+      ]
     }
   ],
   "cases": [
@@ -285,5 +318,31 @@
       ],
       "closing": "A useful security process supports availability as well as compliance. Every change needs an owner, verification and a way back."
     }
+  ],
+  "skills": [
+    [
+      "Cloud",
+      "AWS (EKS, EC2, ECS, VPC, Transit Gateway, IAM, SSO, S3), IBM Cloud, Microsoft Azure"
+    ],
+    [
+      "Containers & CI/CD",
+      "Kubernetes / Amazon EKS, Docker, Helm, Jenkins, GitLab CI"
+    ],
+    [
+      "IaC & Automation",
+      "Terraform, Ansible & Ansible Automation Platform, Bash, Python"
+    ],
+    [
+      "Observability",
+      "Splunk, Grafana, Prometheus, Loki, Apache Kafka"
+    ],
+    [
+      "Security & Compliance",
+      "CIS Benchmarks, OpenSCAP, SELinux, auditd, PAM, vulnerability assessment, 2FA"
+    ],
+    [
+      "Networking & Systems",
+      "Nginx, HAProxy, Squid, Cisco, Fortigate, RHEL, Ubuntu, Windows Server, VMware"
+    ]
   ]
 }

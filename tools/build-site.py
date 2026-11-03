@@ -41,7 +41,8 @@ def build():
     details = {}
     career_rows = []
     for job in content["jobs"]:
-        career_rows.append(f'''<article class="exp-card reveal"><p class="exp-year">{escape(job["date"])}</p><div><h3>{escape(job["title"])}</h3><p class="company">{escape(job["company"])}</p><p>{escape(job["description"])}</p></div></article>''')
+        career_rows.append(f'''<article class="exp-card reveal"><p class="exp-year">{escape(job["date"])}</p><div><h3>{escape(job["title"])}</h3><p class="company">{escape(job["company"])}</p><ul class="exp-list">{"".join("<li>"+escape(b)+"</li>" for b in job["bullets"])}</ul></div></article>''')
+    skill_rows = "\n".join(f'<div class="skill-row"><h3>{escape(k)}</h3><p>{escape(v)}</p></div>' for k, v in content["skills"])
     cases, products, notes = [], [], []
     for group, prefix in [("cases", "work"), ("products", "projects"), ("notes", "notes")]:
         for item in content[group]:
@@ -64,7 +65,7 @@ def build():
     schema = {"@context": "https://schema.org", "@type": "Person", "name": content["name"], "jobTitle": content["title"], "url": "https://korvuz.site/", "sameAs": ["https://github.com/korvuz-ai", "https://linkedin.com/in/nuntawat-zeo"]}
     safe_json = lambda value: json.dumps(value, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     template = Template((ROOT / "site/index.template.html").read_text())
-    result = template.substitute(PDF=PDF, ICONS=(ROOT / "site/icons.svg").read_text(), PERSON_SCHEMA=safe_json(schema), DETAIL_DATA=safe_json(details), CAREER_ROWS="\n".join(career_rows), CASE_CARDS="\n".join(cases), PRODUCT_CARDS="\n".join(products), NOTE_CARDS="\n".join(notes))
+    result = template.substitute(PDF=PDF, ICONS=(ROOT / "site/icons.svg").read_text(), PERSON_SCHEMA=safe_json(schema), DETAIL_DATA=safe_json(details), CAREER_ROWS="\n".join(career_rows), SKILL_ROWS=skill_rows, CASE_CARDS="\n".join(cases), PRODUCT_CARDS="\n".join(products), NOTE_CARDS="\n".join(notes))
     (PUBLIC / "index.html").write_text(result)
     body = '<h1>Engineering notes</h1><p class="detail-intro">Practical thinking about releases, infrastructure automation and Linux operations.</p><div class="notes-index">'
     for item in content["notes"]:

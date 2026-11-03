@@ -68,3 +68,29 @@ body{background:var(--bg);color:var(--ink)}
 .case-art-title{color:#fff;font-weight:600}
 .contact-box{background:rgba(28,16,56,.55);border:1px solid rgba(255,255,255,.25)}
 .resume-section .reveal p,.resume-help{color:#e6dcff}
+
+/* ===== Recruiter-first layout (Nov 2026) ===== */
+.status-chip{display:inline-flex;align-items:center;gap:10px;margin:0 0 22px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:14px;font-weight:600}
+.status-dot{width:9px;height:9px;border-radius:50%;background:#5df2a8;box-shadow:0 0 0 4px rgba(93,242,168,.25)}
+.hero h1,.hero-content h1{font-size:clamp(38px,5vw,62px);line-height:1.08}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}
+.hero-meta{display:flex;gap:22px;flex-wrap:wrap;align-items:center}.hero-meta a{color:#e6dcff;text-decoration:underline;text-underline-offset:4px}
+.glance-list{margin:0;display:grid;gap:12px}.glance-list div{background:rgba(255,255,255,.14);border-radius:14px;padding:14px 18px}
+.glance-list dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d9ccff;font-weight:700}
+.glance-list dd{margin:4px 0 0;color:#fff;font-size:16px;font-weight:600;line-height:1.45}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill-row{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 26px;box-shadow:0 12px 40px rgba(109,61,240,.06)}
+.skill-row h3{margin:0 0 6px;font-size:16px;color:var(--primary)}.skill-row p{margin:0;font-size:15px;line-height:1.7;color:var(--ink)}
+.exp-list{margin:10px 0 0;padding-left:18px}.exp-list li{font-size:15px;line-height:1.7;color:var(--ink);margin:0 0 6px}
+.exp-card .exp-year{margin-bottom:4px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:14px}
+@media(max-width:760px){.skills-grid{grid-template-columns:1fr}.hero-ctas .btn{width:100%;justify-content:center}}
+.experience-rows{display:grid;grid-template-columns:1fr!important;gap:16px}
+.exp-card{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.exp-card .exp-year{margin:0;padding-top:4px}
+.exp-card h3{margin-top:0}
+@media(max-width:760px){.exp-card{grid-template-columns:1fr;gap:6px}}
+.footer,.footer p,.footer a,.footer .brand,.footer .copyright,.footer-links a{color:#efe8ff!important}
+.footer .brand-icon{color:#4a22b8!important}
+.footer a:hover{color:#fff!important;text-decoration:underline}
