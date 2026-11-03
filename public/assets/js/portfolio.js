@@ -103,3 +103,28 @@ if ('IntersectionObserver' in window && !reducedMotion.matches) {
   document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 }
 document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Terminal typing effect. The full text is in the HTML; this only animates it. */
+(() => {
+  const term = document.getElementById('term');
+  if (!term || reducedMotion.matches) return;
+  const lines = Array.from(term.querySelectorAll('.tl'));
+  const caret = term.querySelector('.caret');
+  const store = lines.map((line) => ({ line, html: line.innerHTML, text: line.textContent, cmd: line.classList.contains('cmd') }));
+  term.style.minHeight = term.offsetHeight + 'px';
+  store.forEach(({ line }) => { line.innerHTML = ''; });
+  let i = 0;
+  const next = () => {
+    if (i >= store.length) return;
+    const { line, html, text, cmd } = store[i++];
+    if (!cmd) { line.innerHTML = html; setTimeout(next, 130); return; }
+    if (line.querySelector('.caret') || html.includes('caret')) { line.innerHTML = html; return; }
+    let n = 0;
+    const type = () => {
+      line.textContent = text.slice(0, ++n);
+      if (n < text.length) setTimeout(type, 28 + Math.random() * 30); else setTimeout(next, 260);
+    };
+    type();
+  };
+  setTimeout(next, 600);
+})();
