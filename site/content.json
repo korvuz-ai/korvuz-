@@ -10,6 +10,12 @@
       "description": "Coordinate releases across application, infrastructure and security teams. Deploy to Amazon EKS, maintain Jenkins pipelines, support Kafka and Splunk, and automate RHEL 9 hardening with Ansible and OpenSCAP."
     },
     {
+      "date": "Jan – Feb 2026",
+      "title": "Freelance DevOps & Cloud Engineer",
+      "company": "Self-employed, Fastwork",
+      "description": "Delivered Linux server setup, containerized deployments with Docker and Nginx, and CI/CD pipelines for clients."
+    },
+    {
       "date": "Mar – Dec 2025",
       "title": "DevOps Engineer",
       "company": "Krungsri, Bank of Ayudhya",
@@ -29,13 +35,13 @@
     },
     {
       "date": "Oct 2022 – Oct 2023",
-      "title": "Systems & Network Engineer",
+      "title": "Network System Engineer",
       "company": "Tri Petch IT Solutions",
       "description": "Automated recurring operations and reporting. Managed Cisco infrastructure, Windows and Linux servers, VMware, vulnerability assessment and two-factor authentication."
     },
     {
-      "date": "Dec 2020 – Sep 2022",
-      "title": "Systems & Network Engineer",
+      "date": "May 2021 – Sep 2022",
+      "title": "Network System Engineer",
       "company": "Pro Inside",
       "description": "Configured Cisco and Huawei networks, managed Sophos and Fortigate firewalls, and maintained open-source firewall and VMware environments for client sites."
     }

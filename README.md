@@ -8,9 +8,9 @@ A personal portfolio for **Nuntawat Fangritlong**, Senior DevOps Specialist in B
 
 - Career experience across enterprise infrastructure and financial services.
 - Engineering summaries covering Amazon EKS delivery, infrastructure as code, and RHEL hardening.
-- Independent products, including Korvuz Atlas, InvoiceAI, LineCRM, and FiatLine.
+- Engineering experience and delivery notes; standalone project pages remain available but are no longer featured on the homepage.
 - Practical notes on release readiness, repeatable environments, and security operations.
-- The original English resume and direct contact information.
+- The one-page English resume and direct contact information.
 
 The portfolio is entirely in English. Its design follows the supplied portfolio reference, with a midnight and muted lavender palette, clear typography, and responsive layouts.
 
