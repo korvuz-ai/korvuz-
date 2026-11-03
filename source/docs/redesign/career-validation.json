@@ -1,0 +1,25 @@
+{
+  "scope": "local only; not deployed",
+  "viewports": [
+    320,
+    375,
+    768,
+    1024,
+    1440
+  ],
+  "canonical_routes": 23,
+  "canonical_route_viewport_checks": 115,
+  "canonical_route_wcag_scans": 115,
+  "custom_404_path_viewport_checks": 15,
+  "desktop_browser_tests": 41,
+  "javascript_tests": 9,
+  "python_tests": 35,
+  "manifest_sha256": "6edb9a08adfdca89cccc8716d6817895dbc3898eb0ec45d4dbbe9c5b178dce57",
+  "canonical_resume_sha256": "482957eeb44ec5fe0d84020099952aefa140d32736141d84af77905eaa808296",
+  "files": 84,
+  "artifact_bytes": 1865481,
+  "public_local_head_status": 200,
+  "remaining_test_failures": 0,
+  "css_gzip_bytes": 13756,
+  "js_gzip_bytes": 10738
+}

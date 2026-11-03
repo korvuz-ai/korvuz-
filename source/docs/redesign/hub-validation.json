@@ -1,0 +1,766 @@
+{
+  "summary": {
+    "scope": "local only; no deployment",
+    "viewports": [
+      1440,
+      768,
+      375
+    ],
+    "browser": "Playwright Chromium",
+    "browser_scenarios": {
+      "passed": 119,
+      "failed": 0,
+      "skipped": 4
+    },
+    "wcag_route_viewport_scans_passed": 60,
+    "js_tests": 7,
+    "python_tests": 33,
+    "final_focused_browser_tests": 27,
+    "manifest_sha256": "a34df689d108665fb95d16db86b290211e077c6df0fdc212a65c95d837ffc8c9",
+    "artifact_files": 82,
+    "artifact_bytes": 2164747,
+    "css_gzip_bytes": 9618,
+    "js_gzip_bytes": 9670,
+    "final_navigation_tests": 9
+  },
+  "scenarios": [
+    {
+      "profile": "desktop",
+      "file": "tests/browser/content.spec.mjs",
+      "title": "contact draft links, original articles and printable resume",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "moved sections retain legacy entrypoints and queries",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/aws-cost-sme-thailand/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "terminal input is inert, commands and downloads work",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-devops-consultant-hourly/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "central cover/gallery replacement, save, reload, reorder, remove and discard",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-freelance-devops-vs-agency/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "editing is frozen while files are being read or a save is in flight",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "desktop parallax stays bounded and respects live motion preferences",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "timeline progress follows scroll without changing layout",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/migrate-to-aws/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "mobile has no parallax and focus reveals content immediately",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/static-vs-wordpress/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "motion preserves anchor navigation, keyboard links and browser history",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/website-price-thailand-2026/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "native page transitions finish within the short navigation budget",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "every page loads with no errors or horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /resume/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "home hierarchy, shared cover, real links and graceful failed image",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/pricing.spec.mjs",
+      "title": "calculator retains exact totals and correctly resets groups",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /services/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /pricing/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /about/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "production pages have complete metadata and no failed assets or console errors",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contact offers every project type and includes the selected type in its draft",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /contact/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contain project covers keep their full image frame during hover",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "responsive navigation, keyboard escape, reduced motion",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "meaningful pages and links remain usable without javascript",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "delayed navigation javascript must not move the hero after first paint",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /lab/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/typography.spec.mjs",
+      "title": "meaningful body copy remains readable at narrow widths",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/invoiceai/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/linecrm/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/aws-cost-sme-thailand/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/fiatline/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-devops-consultant-hourly/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/english-reader/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-freelance-devops-vs-agency/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/devops-kb/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/content.spec.mjs",
+      "title": "contact draft links, original articles and printable resume",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/migrate-to-aws/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "moved sections retain legacy entrypoints and queries",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "terminal input is inert, commands and downloads work",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/static-vs-wordpress/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/website-price-thailand-2026/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "central cover/gallery replacement, save, reload, reorder, remove and discard",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "editing is frozen while files are being read or a save is in flight",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "desktop parallax stays bounded and respects live motion preferences",
+      "status": "skipped"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "timeline progress follows scroll without changing layout",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "mobile has no parallax and focus reveals content immediately",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "motion preserves anchor navigation, keyboard links and browser history",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /resume/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "native page transitions finish within the short navigation budget",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "every page loads with no errors or horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /services/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "home hierarchy, shared cover, real links and graceful failed image",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /pricing/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/pricing.spec.mjs",
+      "title": "calculator retains exact totals and correctly resets groups",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /about/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /contact/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /lab/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/invoiceai/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/linecrm/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "production pages have complete metadata and no failed assets or console errors",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contact offers every project type and includes the selected type in its draft",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contain project covers keep their full image frame during hover",
+      "status": "skipped"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/fiatline/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "responsive navigation, keyboard escape, reduced motion",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "meaningful pages and links remain usable without javascript",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/english-reader/",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "delayed navigation javascript must not move the hero after first paint",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/typography.spec.mjs",
+      "title": "meaningful body copy remains readable at narrow widths",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/devops-kb/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/content.spec.mjs",
+      "title": "contact draft links, original articles and printable resume",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/aws-cost-sme-thailand/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "moved sections retain legacy entrypoints and queries",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/legacy.spec.mjs",
+      "title": "terminal input is inert, commands and downloads work",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-devops-consultant-hourly/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "central cover/gallery replacement, save, reload, reorder, remove and discard",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/hire-freelance-devops-vs-agency/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/media-editor.spec.mjs",
+      "title": "editing is frozen while files are being read or a save is in flight",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "desktop parallax stays bounded and respects live motion preferences",
+      "status": "skipped"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "timeline progress follows scroll without changing layout",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "mobile has no parallax and focus reveals content immediately",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/migrate-to-aws/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "motion preserves anchor navigation, keyboard links and browser history",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/motion.spec.mjs",
+      "title": "native page transitions finish within the short navigation budget",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/static-vs-wordpress/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /blog/website-price-thailand-2026/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "every page loads with no errors or horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/portfolio.spec.mjs",
+      "title": "home hierarchy, shared cover, real links and graceful failed image",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/pricing.spec.mjs",
+      "title": "calculator retains exact totals and correctly resets groups",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /resume/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /services/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /pricing/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "production pages have complete metadata and no failed assets or console errors",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contact offers every project type and includes the selected type in its draft",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/production-qa.spec.mjs",
+      "title": "contain project covers keep their full image frame during hover",
+      "status": "skipped"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "responsive navigation, keyboard escape, reduced motion",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /about/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "meaningful pages and links remain usable without javascript",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/shell.spec.mjs",
+      "title": "delayed navigation javascript must not move the hero after first paint",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /contact/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/typography.spec.mjs",
+      "title": "meaningful body copy remains readable at narrow widths",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /lab/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/invoiceai/",
+      "status": "passed"
+    },
+    {
+      "profile": "desktop",
+      "file": "tests/browser/hub.spec.mjs",
+      "title": "all real Home project images decode when reached and product actions stay independent",
+      "status": "passed"
+    },
+    {
+      "profile": "tablet",
+      "file": "tests/browser/hub.spec.mjs",
+      "title": "all real Home project images decode when reached and product actions stay independent",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/hub.spec.mjs",
+      "title": "all real Home project images decode when reached and product actions stay independent",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/linecrm/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/fiatline/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/english-reader/",
+      "status": "passed"
+    },
+    {
+      "profile": "mobile375",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "title": "WCAG A/AA landmarks and interaction: /work/devops-kb/",
+      "status": "passed"
+    }
+  ]
+}

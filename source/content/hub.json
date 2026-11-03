@@ -1,0 +1,16 @@
+{
+  "capabilities": [
+    {"title": "Build", "icon": "cube", "subtitle": "Ideas into useful products.", "description": "Web applications, AI tools, SaaS products, and internal systems.", "url": "/work/"},
+    {"title": "Automate", "icon": "bolt", "subtitle": "Less repetition. More possibility.", "description": "AI integrations, LINE workflows, and the work between your tools.", "url": "/services/"},
+    {"title": "Operate", "icon": "cloud", "subtitle": "The systems behind the screen.", "description": "Cloud infrastructure, CI/CD, observability, and reliable deployments.", "url": "/about/#stack"}
+  ],
+  "experience": [
+    {"year": "2020–2023", "title": "Systems & Network", "description": "Cisco, Linux, VMware, and the infrastructure foundations."},
+    {"year": "2023–2025", "title": "Cloud Engineering", "description": "AWS architecture, cloud migrations, and hybrid environments."},
+    {"year": "2025", "title": "DevOps Engineering", "description": "Terraform, Ansible AAP, and deployments in a banking environment."},
+    {"year": "2026–Present", "title": "Senior DevOps Specialist", "description": "EKS, Jenkins, release coordination, and system hardening."}
+  ],
+  "skills": ["AWS", "Kubernetes", "Terraform", "Ansible", "CI/CD", "Docker", "Linux", "Observability", "Security", "Python", "Networking", "Automation"],
+  "work_types": ["Web products", "AI / Automation", "Cloud / DevOps", "Technical consulting"],
+  "lab": {"title": "Korvuz Lab", "status": "Experiment", "description": "An interactive, simulated shell for exploring my projects, skills, and ideas.", "url": "/lab/#terminal"}
+}

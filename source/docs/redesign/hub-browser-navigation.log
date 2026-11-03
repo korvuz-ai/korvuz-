@@ -1,0 +1,26 @@
+
+Running 9 tests using 2 workers
+
+(node:2904751) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2904744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2904751) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2904744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [tablet] › tests/browser/shell.spec.mjs:2:1 › responsive navigation, keyboard escape, reduced motion (4.9s)
+  ✓  2 [desktop] › tests/browser/shell.spec.mjs:2:1 › responsive navigation, keyboard escape, reduced motion (4.6s)
+  ✓  3 [tablet] › tests/browser/shell.spec.mjs:3:1 › meaningful pages and links remain usable without javascript (3.2s)
+  ✓  4 [desktop] › tests/browser/shell.spec.mjs:3:1 › meaningful pages and links remain usable without javascript (3.1s)
+  ✓  6 [desktop] › tests/browser/shell.spec.mjs:4:1 › delayed navigation javascript must not move the hero after first paint (746ms)
+(node:2905352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [tablet] › tests/browser/shell.spec.mjs:4:1 › delayed navigation javascript must not move the hero after first paint (3.4s)
+(node:2905352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 [mobile375] › tests/browser/shell.spec.mjs:2:1 › responsive navigation, keyboard escape, reduced motion (2.2s)
+  ✓  8 [mobile375] › tests/browser/shell.spec.mjs:3:1 › meaningful pages and links remain usable without javascript (1.6s)
+  ✓  9 [mobile375] › tests/browser/shell.spec.mjs:4:1 › delayed navigation javascript must not move the hero after first paint (2.6s)
+
+  9 passed (22.7s)

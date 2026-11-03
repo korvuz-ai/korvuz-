@@ -1,0 +1,32 @@
+{
+  "name": "Korvuz",
+  "email": "korvuznox@gmail.com",
+  "github": "https://github.com/korvuz-ai",
+  "resume": "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+  "nav": [
+    {
+      "label": "Work",
+      "url": "/work/"
+    },
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "Pricing",
+      "url": "/pricing/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "Resume",
+      "url": "/resume/"
+    }
+  ]
+}

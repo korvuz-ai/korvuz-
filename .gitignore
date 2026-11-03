@@ -1,0 +1,17 @@
+node_modules/
+.venv/
+.vercel/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.pyc
+source/dist/
+source/playwright-report/
+source/test-results/
+source/.korvuz-build-*/
+source/*.previous-build/
+.migration-*/
+.DS_Store

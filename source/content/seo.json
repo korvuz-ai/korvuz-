@@ -1,0 +1,2319 @@
+{
+  "/blog/aws-cost-sme-thailand/": {
+    "title": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "ใช้ AWS แล้วบิลเดือนละเท่าไหร่ แจกแจงว่าบิลประกอบด้วยอะไรบ้าง ตัวไหนดันราคาที่คนมองข้าม พร้อม 3 ระดับงบสำหรับเว็บ SME และวิธีลดบิลที่ทำได้จริง"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/aws-cost-sme-thailand/"
+      },
+      {
+        "property": "og:title",
+        "content": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล"
+      },
+      {
+        "property": "og:description",
+        "content": "บิล AWS ประกอบด้วยอะไรบ้าง ตัวไหนดันราคาที่คนมองข้าม พร้อม 3 ระดับงบสำหรับเว็บ SME และวิธีลดบิลที่ทำได้จริง"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-07-26"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME"
+      },
+      {
+        "name": "twitter:description",
+        "content": "แจกแจงบิล AWS ทีละก้อน ตัวไหนดันราคา และ 3 ระดับงบสำหรับเว็บ SME"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/aws-cost-sme-thailand/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/aws-cost-sme-thailand/#article",
+            "headline": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล",
+            "description": "แจกแจงว่าบิล AWS ประกอบด้วยอะไรบ้าง ตัวไหนดันราคาที่คนมองข้าม พร้อม 3 ระดับงบสำหรับเว็บ SME ไทย และวิธีลดบิลที่ทำได้จริง",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-07-26",
+            "dateModified": "2026-07-26",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/aws-cost-sme-thailand/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "เว็บบริษัททั่วไป ใช้ AWS เดือนละเท่าไหร่",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "เว็บบริษัทที่ทราฟฟิกไม่สูงมาก รันบนเครื่องเล็กเครื่องเดียวพร้อมดิสก์และแบนด์วิดท์ ตกราวเดือนละ 500–1,500 บาท ถ้าเพิ่ม load balancer ฐานข้อมูลแบบจัดการให้ และ NAT Gateway จะขยับไปหลักหลายพันถึงหมื่นต้น ๆ ต่อเดือน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "อะไรทำให้บิล AWS บานปลายบ่อยที่สุด",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "สามตัวหลักคือ NAT Gateway ที่คิดทั้งรายชั่วโมงและตามปริมาณข้อมูล, ค่า data transfer ขาออกที่คิดตามกิกะไบต์ที่ส่งให้ผู้ใช้ และ EBS snapshot กับดิสก์ของเครื่องที่ปิดไปแล้วแต่ไม่ได้ลบ ซึ่งยังเก็บเงินอยู่"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "AWS Free Tier ใช้ฟรีได้จริงไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ใช้ได้จริงในช่วงแรกและเหมาะกับการทดลอง แต่มีเพดานทั้งชั่วโมงเครื่อง ปริมาณดิสก์ และแบนด์วิดท์ พอเกินเพดานหรือหมดช่วงโปรโมชัน ค่าใช้จ่ายจะเริ่มเดินทันทีโดยไม่มีการแจ้งเตือน จึงควรตั้ง Budget alert ไว้ตั้งแต่วันแรก"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/hire-devops-consultant-hourly/": {
+    "title": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม — เทียบต้นทุนจริง | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "เทียบต้นทุนจริงระหว่างจ้าง DevOps ประจำ จ้างที่ปรึกษารายชั่วโมง และใช้ managed service พร้อมสัญญาณว่าธุรกิจคุณถึงเวลาต้องมีคนดูแล infrastructure จริงจังแล้วหรือยัง"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/hire-devops-consultant-hourly/"
+      },
+      {
+        "property": "og:title",
+        "content": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม"
+      },
+      {
+        "property": "og:description",
+        "content": "เทียบต้นทุนจริงระหว่างจ้างประจำ จ้างที่ปรึกษารายชั่วโมง และ managed service — พร้อมสัญญาณว่าถึงเวลาต้องมีคนดูแล infrastructure แล้ว"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-08-23"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม"
+      },
+      {
+        "name": "twitter:description",
+        "content": "เทียบต้นทุนจริง 3 ทางเลือก และสัญญาณว่าถึงเวลาต้องมีคนดูแล infrastructure"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/hire-devops-consultant-hourly/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/hire-devops-consultant-hourly/#article",
+            "headline": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม — เทียบต้นทุนจริง",
+            "description": "เทียบต้นทุนระหว่างจ้าง DevOps ประจำ จ้างที่ปรึกษารายชั่วโมง และใช้ managed service พร้อมสัญญาณว่าธุรกิจถึงเวลาต้องมีคนดูแล infrastructure",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-08-23",
+            "dateModified": "2026-08-23",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/hire-devops-consultant-hourly/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ธุรกิจเล็ก ๆ จำเป็นต้องมี DevOps ไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ไม่จำเป็นต้องมีเป็นตำแหน่งประจำ แต่จำเป็นต้องมีคนรับผิดชอบ ถ้าตอนนี้ไม่มีใครตอบได้ว่าถ้าเซิร์ฟเวอร์พังจะกู้กลับยังไง ใช้เวลานานแค่ไหน และใครเป็นคนกด แปลว่ามีช่องว่างอยู่ ธุรกิจส่วนใหญ่ที่มีระบบไม่กี่ตัวใช้วิธีซื้อเวลาที่ปรึกษาเป็นครั้งคราวจะคุ้มกว่ามาก"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "จ้างที่ปรึกษารายชั่วโมง เดือนหนึ่งควรใช้กี่ชั่วโมง",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ถ้าระบบนิ่งแล้วและแค่อยากมีคนคอยดูให้ ประมาณ 8 ถึง 10 ชั่วโมงต่อเดือนมักพอสำหรับตรวจสุขภาพระบบ ดูบิลคลาวด์ และตอบคำถามทีม แต่ถ้ากำลังย้ายระบบหรือวางของใหม่ ช่วงนั้นจะใช้มากกว่านั้นและควรตกลงเป็นก้อนโปรเจกต์แทน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "จ้างที่ปรึกษาแล้วระบบจะผูกกับคนคนเดียวไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ไม่ควรผูก และเป็นสิ่งที่ต้องถามตั้งแต่แรก ที่ปรึกษาที่ดีจะส่งมอบเอกสารและโค้ด infrastructure ให้คุณเก็บไว้เอง ใช้เครื่องมือมาตรฐานอย่าง Terraform หรือ Ansible ที่คนอื่นอ่านต่อได้ และไม่ตั้งค่าอะไรที่มีแต่ตัวเองเข้าถึงได้"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "เมื่อไหร่ถึงควรจ้าง DevOps ประจำจริง ๆ",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "เมื่อมีทีมพัฒนาตั้งแต่ประมาณ 5 คนขึ้นไป มีการ deploy ถี่ระดับหลายครั้งต่อสัปดาห์ มีระบบที่ล่มแล้วกระทบรายได้ทันที หรือมีข้อกำหนดด้านการกำกับดูแลที่ต้องมีคนรับผิดชอบเต็มเวลา ก่อนถึงจุดนั้นการจ้างประจำมักได้คนที่ว่างเกินไปจนอยู่ไม่นาน"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/hire-freelance-devops-vs-agency/": {
+    "title": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง — เทียบราคา ความเสี่ยง และเคสที่ไม่ควรจ้างฟรีแลนซ์ | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "จ้างฟรีแลนซ์ DevOps กับจ้างบริษัท ต่างกันตรงไหนจริง ๆ เทียบราคา ความเร็ว ความเสี่ยงเมื่อคนหาย พร้อม 5 ข้อที่ต้องเขียนในสัญญา และเคสที่ไม่ควรจ้างฟรีแลนซ์เด็ดขาด"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/"
+      },
+      {
+        "property": "og:title",
+        "content": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง"
+      },
+      {
+        "property": "og:description",
+        "content": "เทียบราคา ความเร็ว ความเสี่ยงเมื่อคนหาย พร้อม 5 ข้อที่ต้องเขียนในสัญญา และเคสที่ไม่ควรจ้างฟรีแลนซ์เด็ดขาด"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-07-26"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง"
+      },
+      {
+        "name": "twitter:description",
+        "content": "เทียบราคา ความเสี่ยง 5 ข้อที่ต้องเขียนในสัญญา และเคสที่ไม่ควรจ้างฟรีแลนซ์"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/#article",
+            "headline": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง — เทียบราคา ความเสี่ยง และเคสที่ไม่ควรจ้างฟรีแลนซ์",
+            "description": "เทียบการจ้างฟรีแลนซ์ DevOps กับบริษัทรับทำระบบ ทั้งราคา ความเร็ว ความเสี่ยงเมื่อคนหาย พร้อม 5 ข้อที่ต้องเขียนในสัญญา",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-07-26",
+            "dateModified": "2026-07-26",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "จ้างฟรีแลนซ์ DevOps ถูกกว่าจ้างบริษัทเท่าไหร่",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "งานลักษณะเดียวกัน ฟรีแลนซ์มักคิดราวครึ่งหนึ่งถึงหนึ่งในสามของบริษัท เพราะไม่มีค่าโครงสร้างองค์กร ค่าเซลส์ และค่าโปรเจกต์แมเนเจอร์ แต่แลกมากับการที่ไม่มีคนสำรองเมื่อคนคนนั้นไม่ว่าง"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "เคสไหนที่ไม่ควรจ้างฟรีแลนซ์",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "งานที่ต้องมีคนรับสายตลอด 24 ชั่วโมง งานที่ต้องผ่านการตรวจสอบหรือ audit ตามข้อกำหนดขององค์กร และงานที่ต้องการทีมหลายสายพร้อมกันในเวลาเดียว สามกรณีนี้โครงสร้างของบริษัทตอบโจทย์กว่าชัดเจน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "จ้างฟรีแลนซ์แล้วคนหายไป ต้องทำยังไง",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ป้องกันดีกว่าแก้ ให้ทุกบัญชี โดเมน และเซิร์ฟเวอร์อยู่ในชื่อบริษัทคุณเองตั้งแต่วันแรก โค้ดอยู่ใน repository ของคุณ และมีเอกสารส่งมอบที่คนนอกอ่านแล้วทำต่อได้ ถ้าครบสามข้อนี้ การเปลี่ยนคนดูแลจะเป็นเรื่องกวนใจ ไม่ใช่หายนะ"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/": {
+    "title": "บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "บทความจากประสบการณ์ทำงานจริง — ค่าทำเว็บบริษัทราคาเท่าไหร่ ค่า AWS เดือนละเท่าไหร่ เทียบ Static กับ WordPress และควรจ้างฟรีแลนซ์หรือบริษัท เขียนตรงไปตรงมา ไม่ขายของเกินจริง"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/"
+      },
+      {
+        "property": "og:title",
+        "content": "บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "บทความจากประสบการณ์ทำงานจริง — เทียบเว็บ Static กับ WordPress และคู่มือย้ายระบบขึ้น AWS สำหรับธุรกิจไทย"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "บทความจากประสบการณ์ทำงานจริง — เทียบเว็บ Static กับ WordPress และคู่มือย้ายระบบขึ้น AWS"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "@id": "https://korvuz.site/blog/#blog",
+        "name": "บทความ Korvuz",
+        "description": "บทความเรื่องการทำเว็บ ราคา และการวางระบบ Cloud/DevOps สำหรับธุรกิจไทย",
+        "url": "https://korvuz.site/blog/",
+        "inLanguage": "th",
+        "author": {
+          "@type": "Person",
+          "name": "Korvuz",
+          "url": "https://korvuz.site/"
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม — เทียบต้นทุนจริง",
+            "url": "https://korvuz.site/blog/hire-devops-consultant-hourly/",
+            "datePublished": "2026-08-23",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าเงินที่จ่ายไปอยู่ตรงไหน",
+            "url": "https://korvuz.site/blog/website-price-thailand-2026/",
+            "datePublished": "2026-07-26",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล",
+            "url": "https://korvuz.site/blog/aws-cost-sme-thailand/",
+            "datePublished": "2026-07-26",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง — และเคสที่ไม่ควรจ้างฟรีแลนซ์เด็ดขาด",
+            "url": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/",
+            "datePublished": "2026-07-26",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว",
+            "url": "https://korvuz.site/blog/static-vs-wordpress/",
+            "datePublished": "2026-07-12",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง",
+            "url": "https://korvuz.site/blog/migrate-to-aws/",
+            "datePublished": "2026-07-12",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/migrate-to-aws/": {
+    "title": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "คู่มือย้ายระบบขึ้น AWS สำหรับธุรกิจไทย — 5 คำถามที่ต้องตอบก่อนย้าย ค่าใช้จ่ายแอบแฝงที่ทำให้บิลบานปลาย เช็กลิสต์วันย้ายจริง และควรจ้าง freelance หรือทำเอง"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/migrate-to-aws/"
+      },
+      {
+        "property": "og:title",
+        "content": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง"
+      },
+      {
+        "property": "og:description",
+        "content": "คู่มือย้ายระบบขึ้น AWS สำหรับธุรกิจไทย — 5 คำถามที่ต้องตอบก่อนย้าย ค่าใช้จ่ายแอบแฝงที่ทำให้บิลบานปลาย และเช็กลิสต์วันย้ายจริง"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-07-12"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย + ค่าใช้จ่ายจริง"
+      },
+      {
+        "name": "twitter:description",
+        "content": "5 คำถามที่ต้องตอบก่อนย้ายขึ้น AWS ค่าใช้จ่ายแอบแฝงที่ทำให้บิลบานปลาย และเช็กลิสต์วันย้ายจริง"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/migrate-to-aws/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/migrate-to-aws/#article",
+            "headline": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง",
+            "description": "คู่มือย้ายระบบขึ้น AWS สำหรับธุรกิจไทย — 5 คำถามที่ต้องตอบก่อนย้าย ค่าใช้จ่ายแอบแฝงที่ทำให้บิลบานปลาย เช็กลิสต์วันย้ายจริง และควรจ้าง freelance หรือทำเอง",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-07-12",
+            "dateModified": "2026-07-12",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/migrate-to-aws/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/static-vs-wordpress/": {
+    "title": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "เทียบเว็บ Static กับ WordPress แบบตรงไปตรงมา — ราคาทำจริง ค่าดูแลรายปี ความเร็ว ความปลอดภัย และคำถามเดียวที่ตัดสินได้ว่าคุณควรเลือกแบบไหน"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/static-vs-wordpress/"
+      },
+      {
+        "property": "og:title",
+        "content": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว"
+      },
+      {
+        "property": "og:description",
+        "content": "เทียบเว็บ Static กับ WordPress แบบตรงไปตรงมา — ราคาทำจริง ค่าดูแลรายปี ความเร็ว ความปลอดภัย และคำถามเดียวที่ตัดสินได้ว่าคุณควรเลือกแบบไหน"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-07-12"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคาและงานดูแลระยะยาว"
+      },
+      {
+        "name": "twitter:description",
+        "content": "เทียบเว็บ Static กับ WordPress แบบตรงไปตรงมา — ราคาทำจริง ค่าดูแลรายปี ความเร็ว และคำถามเดียวที่ตัดสินได้"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/static-vs-wordpress/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/static-vs-wordpress/#article",
+            "headline": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว",
+            "description": "เทียบเว็บ Static กับ WordPress แบบตรงไปตรงมา — ราคาทำจริง ค่าดูแลรายปี ความเร็ว ความปลอดภัย และคำถามเดียวที่ตัดสินได้ว่าคุณควรเลือกแบบไหน",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-07-12",
+            "dateModified": "2026-07-12",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/static-vs-wordpress/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "เว็บ Static vs WordPress เลือกยังไง"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/blog/website-price-thailand-2026/": {
+    "title": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าจ่ายอะไรบ้าง | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "ทำเว็บบริษัทราคาเท่าไหร่ในปี 2026 — แจกแจงราคาจริงต่อประเภทเว็บ ค่าอะไรที่คิดแยก ค่าอะไรที่ต้องจ่ายทุกปี และวิธีอ่านใบเสนอราคาให้รู้ว่าถูกจริงหรือแค่ตัดของออก"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/blog/website-price-thailand-2026/"
+      },
+      {
+        "property": "og:title",
+        "content": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าจ่ายอะไรบ้าง"
+      },
+      {
+        "property": "og:description",
+        "content": "แจกแจงราคาจริงต่อประเภทเว็บ ค่าอะไรคิดแยก ค่าอะไรต้องจ่ายทุกปี และวิธีอ่านใบเสนอราคาให้รู้ว่าถูกจริงหรือแค่ตัดของออก"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "article:published_time",
+        "content": "2026-07-26"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน"
+      },
+      {
+        "name": "twitter:description",
+        "content": "ราคาจริงต่อประเภทเว็บ ค่าอะไรคิดแยก ค่าอะไรจ่ายทุกปี และวิธีอ่านใบเสนอราคาให้เป็น"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/blog/website-price-thailand-2026/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://korvuz.site/blog/website-price-thailand-2026/#article",
+            "headline": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าจ่ายอะไรบ้าง",
+            "description": "แจกแจงราคาทำเว็บในไทยปี 2026 ต่อประเภทเว็บ ค่าอะไรคิดแยก ค่าอะไรต้องจ่ายทุกปี และวิธีอ่านใบเสนอราคาให้รู้ว่าถูกจริงหรือแค่ตัดของออก",
+            "image": "https://korvuz.site/og-image.png",
+            "datePublished": "2026-07-26",
+            "dateModified": "2026-07-26",
+            "inLanguage": "th",
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://korvuz.site/blog/website-price-thailand-2026/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ทำเว็บบริษัท ราคาเริ่มต้นเท่าไหร่",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "เว็บ static (เว็บบริษัท/แลนดิงเพจ 1–5 หน้า) เริ่มต้นราว ฿8,000 · เว็บ WordPress ที่แก้เนื้อหาเองได้เริ่มต้นราว ฿20,000 · ส่วนงานวางระบบ Cloud/DevOps เริ่มต้นราว ฿15,000 ราคาจะขยับตามจำนวนหน้า ระบบที่ต้องเชื่อม และรอบแก้งาน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ทำเว็บแล้วมีค่าใช้จ่ายรายปีอะไรบ้าง",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "โดเมนปีละประมาณ 350–600 บาท · โฮสติ้งหรือเซิร์ฟเวอร์ตั้งแต่ไม่กี่ร้อยถึงหลักพันบาทต่อเดือนตามทราฟฟิก · SSL ใช้ Let's Encrypt ได้ฟรี · ถ้าเป็น WordPress ควรเผื่อค่าปลั๊กอินลิขสิทธิ์และค่าดูแลอัปเดตความปลอดภัยด้วย"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ทำไมใบเสนอราคาแต่ละเจ้าต่างกันหลายเท่า",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ส่วนใหญ่ไม่ได้ต่างกันที่ฝีมือ แต่ต่างกันที่ขอบเขตงาน เช่น จำนวนรอบแก้ ใครเขียนเนื้อหา ใครทำ SEO พื้นฐาน มีสอนใช้งานไหม และดูแลหลังส่งมอบกี่เดือน ให้เทียบทีละบรรทัดแทนที่จะเทียบเฉพาะตัวเลขสุดท้าย"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "บทความ",
+                "item": "https://korvuz.site/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ 2026"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/consult/": {
+    "title": "Consulting has moved — Korvuz",
+    "canonical": "https://korvuz.site/services/",
+    "meta": [
+      {
+        "name": "robots",
+        "content": "noindex, follow"
+      }
+    ],
+    "structured_data": []
+  },
+  "/": {
+    "title": "Korvuz — รับทำเว็บ Static/WordPress & วางระบบ Cloud DevOps (AWS)",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "Korvuz — DevOps & Cloud Engineer รับทำเว็บ Static/WordPress และวางระบบ Cloud (AWS), CI/CD, Automation สำหรับธุรกิจไทย ดูราคาแพ็กเกจและคำนวณราคาออนไลน์ได้ทันที"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "name": "theme-color",
+        "content": "#F7F5F0"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/"
+      },
+      {
+        "property": "og:title",
+        "content": "Korvuz — รับทำเว็บ & วางระบบ Cloud DevOps (AWS)"
+      },
+      {
+        "property": "og:description",
+        "content": "รับทำเว็บ Static/WordPress และวางระบบ Cloud, CI/CD, Automation สำหรับธุรกิจไทย — ดูราคาและคำนวณราคาออนไลน์ได้ทันที"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "property": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "property": "og:image:alt",
+        "content": "Korvuz — รับทำเว็บ & วางระบบ Cloud DevOps (AWS) เริ่มต้น ฿8,000"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Korvuz — รับทำเว็บ & วางระบบ Cloud DevOps (AWS)"
+      },
+      {
+        "name": "twitter:description",
+        "content": "รับทำเว็บ Static/WordPress และวางระบบ Cloud, CI/CD, Automation สำหรับธุรกิจไทย — ดูราคาและคำนวณราคาออนไลน์ได้ทันที"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:image:alt",
+        "content": "Korvuz — รับทำเว็บ & วางระบบ Cloud DevOps (AWS) เริ่มต้น ฿8,000"
+      }
+    ],
+    "canonical": "https://korvuz.site/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://korvuz.site/#korvuz",
+            "name": "Korvuz",
+            "url": "https://korvuz.site/",
+            "jobTitle": "DevOps & Cloud Engineer",
+            "email": "mailto:korvuznox@gmail.com",
+            "sameAs": [
+              "https://github.com/korvuz-ai"
+            ],
+            "knowsAbout": [
+              "AWS",
+              "Amazon EKS",
+              "Kubernetes",
+              "Terraform",
+              "Ansible",
+              "Docker",
+              "Jenkins",
+              "DevOps",
+              "Cloud Migration",
+              "Apache Kafka",
+              "Splunk",
+              "CIS Benchmarks",
+              "Web Development",
+              "WordPress",
+              "CI/CD"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "TH"
+            }
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://korvuz.site/#service",
+            "name": "Korvuz — รับทำเว็บ & วางระบบ Cloud",
+            "url": "https://korvuz.site/services/",
+            "image": "https://korvuz.site/og-image.png",
+            "provider": {
+              "@id": "https://korvuz.site/#korvuz"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Thailand"
+            },
+            "availableLanguage": [
+              "th",
+              "en"
+            ],
+            "priceRange": "฿8,000 - ฿35,000+",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "บริการรับทำเว็บ & Cloud",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "priceCurrency": "THB",
+                  "price": "8000",
+                  "name": "เว็บ Static",
+                  "description": "Landing page / Portfolio / เว็บบริษัท responsive โหลดไว"
+                },
+                {
+                  "@type": "Offer",
+                  "priceCurrency": "THB",
+                  "price": "20000",
+                  "name": "เว็บ WordPress",
+                  "description": "ระบบหลังบ้านแก้เองได้ · ร้านค้า · บล็อก · ระบบสมาชิก"
+                },
+                {
+                  "@type": "Offer",
+                  "priceCurrency": "THB",
+                  "price": "15000",
+                  "name": "Cloud / DevOps",
+                  "description": "วางระบบ · Migrate ขึ้น AWS · CI/CD · Monitoring"
+                },
+                {
+                  "@type": "Offer",
+                  "url": "https://korvuz.site/services/#hourly",
+                  "name": "ที่ปรึกษา DevOps รายชั่วโมง",
+                  "description": "ปรึกษาเรื่อง cloud และ infrastructure เป็นรายชั่วโมง ขั้นต่ำ 2 ชั่วโมง พร้อมสรุปเป็นข้อความหลังจบ",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 1500,
+                    "maxPrice": 2500,
+                    "unitCode": "HUR",
+                    "unitText": "ชั่วโมง"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "url": "https://korvuz.site/services/#audit",
+                  "name": "ตรวจระบบครึ่งวัน (Audit)",
+                  "description": "ตรวจสถาปัตยกรรม สิทธิ์เข้าถึง ค่าใช้จ่ายคลาวด์ การสำรองข้อมูล และกระบวนการ deploy พร้อมรายงานจัดลำดับความเสี่ยง",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 6000,
+                    "maxPrice": 9000
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "url": "https://korvuz.site/services/#retainer",
+                  "name": "ดูแลต่อเนื่องรายเดือน (Retainer)",
+                  "description": "โควตาชั่วโมงต่อเดือน ช่องทางถามตอบ ดูแล monitoring และรีวิวค่าใช้จ่ายคลาวด์รายเดือน",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 15000,
+                    "maxPrice": 30000,
+                    "unitCode": "MON",
+                    "unitText": "เดือน"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://korvuz.site/#website",
+            "url": "https://korvuz.site/",
+            "name": "Korvuz",
+            "inLanguage": "th",
+            "publisher": {
+              "@id": "https://korvuz.site/#korvuz"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "/resume/": {
+    "title": "Resume — Korvuz · DevOps & Cloud Engineer (AWS, Terraform, Ansible)",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "ประวัติการทำงานของ Korvuz — DevOps & Cloud Engineer 5+ ปี ปัจจุบันเป็น Senior DevOps Specialist ดูแล Kubernetes/Amazon EKS, Jenkins, Terraform, Ansible, Kafka และ Splunk พร้อมโปรดักต์ที่สร้างเองและรันอยู่จริง 5 ตัว"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "profile"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/resume/"
+      },
+      {
+        "property": "og:title",
+        "content": "Resume — Korvuz · DevOps & Cloud Engineer"
+      },
+      {
+        "property": "og:description",
+        "content": "DevOps & Cloud Engineer 5+ ปี · Kubernetes/Amazon EKS, Jenkins, Terraform, Ansible, Kafka, Splunk · พร้อมโปรดักต์ที่สร้างเองและรันอยู่จริง"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Resume — Korvuz · DevOps & Cloud Engineer"
+      },
+      {
+        "name": "twitter:description",
+        "content": "DevOps & Cloud Engineer 5+ ปี · Kubernetes/EKS, Jenkins, Terraform, Ansible, Kafka, Splunk · โปรดักต์ที่สร้างเองรันอยู่จริง 5 ตัว"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/resume/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://korvuz.site/resume/#page",
+            "url": "https://korvuz.site/resume/",
+            "name": "Resume — Korvuz · DevOps & Cloud Engineer",
+            "inLanguage": "th",
+            "mainEntity": {
+              "@id": "https://korvuz.site/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://korvuz.site/#person",
+            "name": "Korvuz",
+            "alternateName": "korvuz",
+            "url": "https://korvuz.site/",
+            "mainEntityOfPage": "https://korvuz.site/resume/",
+            "image": "https://korvuz.site/og-image.png",
+            "jobTitle": "DevOps & Cloud Engineer",
+            "description": "DevOps และ Cloud Engineer ประสบการณ์ 5 ปีขึ้นไป ปัจจุบันเป็น Senior DevOps Specialist ดูแล deployment บน Amazon EKS, Jenkins pipeline, การย้าย workload จากคลาวด์กลับ on-premises และงาน Infrastructure as Code ด้วย Terraform และ Ansible มีพื้นฐานจากงาน network และ systems engineering",
+            "email": "mailto:korvuznox@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "TH"
+            },
+            "knowsLanguage": [
+              "th",
+              "en"
+            ],
+            "sameAs": [
+              "https://github.com/korvuz-ai",
+              "https://korvuz.site/"
+            ],
+            "knowsAbout": [
+              "DevOps",
+              "Amazon Web Services",
+              "AWS Cloud Migration",
+              "Infrastructure as Code",
+              "Terraform",
+              "Ansible",
+              "Kubernetes",
+              "Amazon EKS",
+              "Helm",
+              "Docker",
+              "Amazon ECS",
+              "CI/CD",
+              "Jenkins",
+              "GitLab CI",
+              "Apache Kafka",
+              "Splunk",
+              "Grafana",
+              "Prometheus",
+              "Loki",
+              "CIS Benchmarks",
+              "OpenSCAP",
+              "Red Hat Enterprise Linux",
+              "IBM Cloud",
+              "Linux",
+              "VMware",
+              "Network Security"
+            ],
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Mahasarakham University",
+              "url": "https://www.msu.ac.th/"
+            },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "educationalLevel": "Bachelor's degree",
+              "name": "Bachelor of Computer Science"
+            },
+            "seeks": {
+              "@type": "Demand",
+              "name": "DevOps / Cloud / Platform Engineer roles in Thailand"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Resume"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/work/": {
+    "title": "ผลงานที่ใช้งานจริง — SaaS 5 ตัวที่สร้างและดูแลเองทั้งระบบ | Korvuz",
+    "meta": [
+      {
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "description",
+        "content": "ผลงานจริงของ Korvuz — InvoiceAI, LineCRM, FiatLine, English Reader และ DevOps KB ทุกตัวเปิดใช้งานอยู่จริง เขียนเอง deploy เอง ดูแล infra เอง บน AWS + Docker + Nginx"
+      },
+      {
+        "name": "author",
+        "content": "Korvuz"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Korvuz"
+      },
+      {
+        "property": "og:locale",
+        "content": "th_TH"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/"
+      },
+      {
+        "property": "og:title",
+        "content": "ผลงานที่ใช้งานจริง — SaaS 5 ตัวที่สร้างและดูแลเองทั้งระบบ"
+      },
+      {
+        "property": "og:description",
+        "content": "InvoiceAI, LineCRM, FiatLine, English Reader และ DevOps KB — ทุกตัวเปิดใช้งานอยู่จริง เขียนเอง deploy เอง ดูแล infra เอง"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "property": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "property": "og:image:height",
+        "content": "630"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "ผลงานที่ใช้งานจริง — SaaS 5 ตัวที่สร้างและดูแลเองทั้งระบบ"
+      },
+      {
+        "name": "twitter:description",
+        "content": "InvoiceAI, LineCRM, FiatLine, English Reader และ DevOps KB — เขียนเอง deploy เอง ดูแล infra เอง"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "canonical": "https://korvuz.site/work/",
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://korvuz.site/work/#page",
+            "url": "https://korvuz.site/work/",
+            "name": "ผลงานที่ใช้งานจริง — Korvuz",
+            "description": "รวมผลงาน SaaS ที่ Korvuz สร้างและดูแลเองทั้งระบบ ตั้งแต่โค้ดจนถึง infrastructure",
+            "inLanguage": "th",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/"
+            }
+          },
+          {
+            "@type": "ItemList",
+            "itemListOrder": "https://schema.org/ItemListUnordered",
+            "numberOfItems": 5,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "InvoiceAI",
+                "url": "https://invoice.korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "LineCRM",
+                "url": "https://crm.korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "FiatLine",
+                "url": "https://line.korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "English Reader",
+                "url": "https://en.korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "DevOps KB",
+                "url": "https://doc.korvuz.site/"
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ผลงาน"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/services/": {
+    "title": "Services — รับทำเว็บ, AI Automation และ Cloud | Korvuz",
+    "canonical": "https://korvuz.site/services/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "บริการพัฒนาเว็บไซต์ LINE และ AI Automation วางระบบ AWS DevOps และที่ปรึกษา พร้อมขอบเขตงานชัดเจน"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Services — รับทำเว็บ, AI Automation และ Cloud | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "บริการพัฒนาเว็บไซต์ LINE และ AI Automation วางระบบ AWS DevOps และที่ปรึกษา พร้อมขอบเขตงานชัดเจน"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/services/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Services — รับทำเว็บ, AI Automation และ Cloud | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "บริการพัฒนาเว็บไซต์ LINE และ AI Automation วางระบบ AWS DevOps และที่ปรึกษา พร้อมขอบเขตงานชัดเจน"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Service",
+            "@id": "https://korvuz.site/services/#service",
+            "name": "ที่ปรึกษา DevOps และ Cloud (AWS)",
+            "serviceType": "DevOps and Cloud consulting",
+            "description": "บริการที่ปรึกษาด้าน DevOps และ Cloud สำหรับธุรกิจไทย คิดค่าบริการตามเวลา — ปรึกษารายชั่วโมง ตรวจระบบครึ่งวันพร้อมรายงาน และดูแลต่อเนื่องรายเดือน",
+            "url": "https://korvuz.site/services/",
+            "inLanguage": "th",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Thailand"
+            },
+            "availableChannel": {
+              "@type": "ServiceChannel",
+              "serviceUrl": "https://korvuz.site/services/",
+              "availableLanguage": [
+                "th",
+                "en"
+              ]
+            },
+            "provider": {
+              "@type": "Person",
+              "@id": "https://korvuz.site/#person",
+              "name": "Korvuz",
+              "url": "https://korvuz.site/",
+              "jobTitle": "DevOps & Cloud Engineer"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "แพ็กเกจที่ปรึกษา",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "name": "ปรึกษารายชั่วโมง",
+                  "description": "คุยออนไลน์แบบแชร์จอ ดูระบบจริงได้ พร้อมสรุปเป็นข้อความหลังจบ ขั้นต่ำ 2 ชั่วโมง",
+                  "url": "https://korvuz.site/services/#hourly",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 1500,
+                    "maxPrice": 2500,
+                    "unitCode": "HUR",
+                    "unitText": "ชั่วโมง"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "ตรวจระบบครึ่งวัน (Audit)",
+                  "description": "ตรวจสถาปัตยกรรม สิทธิ์เข้าถึง ค่าใช้จ่ายคลาวด์ การสำรองข้อมูล และกระบวนการ deploy ส่งรายงานจัดลำดับความเสี่ยงพร้อมนัดรีวิว 1 ชั่วโมง",
+                  "url": "https://korvuz.site/services/#audit",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 6000,
+                    "maxPrice": 9000
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "ดูแลต่อเนื่องรายเดือน (Retainer)",
+                  "description": "โควตาชั่วโมงต่อเดือน ช่องทางถามตอบตอบกลับในวันทำการ ดูแล monitoring และรีวิวค่าใช้จ่ายคลาวด์รายเดือน",
+                  "url": "https://korvuz.site/services/#retainer",
+                  "priceCurrency": "THB",
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "priceCurrency": "THB",
+                    "minPrice": 15000,
+                    "maxPrice": 30000,
+                    "billingDuration": 1,
+                    "billingIncrement": 1,
+                    "unitCode": "MON",
+                    "unitText": "เดือน"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ปรึกษาครั้งแรกเสียเงินไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "การคุยรอบแรกประมาณ 20 นาทีเพื่อฟังปัญหาและประเมินว่าช่วยได้จริงไหม ไม่คิดเงิน ถ้าประเมินแล้วว่างานไม่ตรงกับที่ถนัดจะบอกตรง ๆ และแนะนำทางอื่นให้ ค่าบริการเริ่มนับเมื่อเริ่มลงมือดูระบบหรือให้คำแนะนำเชิงเทคนิคจริง"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "เรตที่ปรึกษา DevOps รายชั่วโมงในไทยอยู่ที่เท่าไหร่",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "เรตที่นี่อยู่ที่ 1,500–2,500 บาทต่อชั่วโมง ขั้นต่ำ 2 ชั่วโมง งานที่เป็นการให้คำแนะนำหรือรีวิวแบบไม่แตะระบบจริงคิด 1,500 บาทต่อชั่วโมง ส่วนงานที่ต้องเข้าไปดูหรือแก้ระบบที่ใช้งานจริงคิด 2,500 บาทต่อชั่วโมง เพราะมีความเสี่ยงและต้องเตรียมงานก่อนเข้า"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ต่างจากการจ้างทำโปรเจกต์ยังไง",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "การจ้างทำโปรเจกต์คือจ้างให้ส่งมอบชิ้นงานที่ตกลงขอบเขตไว้แล้ว เช่น ทำเว็บหรือย้ายระบบขึ้นคลาวด์ คิดเป็นราคาต่อโปรเจกต์ ส่วนที่ปรึกษาคือซื้อเวลาและความเห็นทางเทคนิค เหมาะตอนที่ยังไม่รู้ว่าควรทำอะไร หรือมีทีมอยู่แล้วแต่ต้องการคนช่วยตัดสินใจและรีวิว"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ตรวจระบบครึ่งวันแล้วได้อะไรกลับไปบ้าง",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ได้รายงานเป็นเอกสารที่ระบุสิ่งที่ตรวจพบ จัดลำดับตามความเสี่ยงและผลกระทบ พร้อมข้อเสนอแนะว่าควรแก้อะไรก่อนหลังและแต่ละข้อใช้แรงประมาณเท่าไหร่ และมีนัดรีวิวรายงานอีก 1 ชั่วโมงเพื่อถามต่อได้ รายงานเป็นของคุณ จะเอาไปให้ทีมอื่นทำต่อก็ได้"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "รับงานเร่งด่วนหรือ on-call 24 ชั่วโมงไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ไม่รับ on-call 24 ชั่วโมง เพราะทำงานประจำอยู่และไม่อยากรับปากในสิ่งที่ทำไม่ได้จริง นัดคุยได้ช่วงเย็นวันทำการและวันหยุด ตอบกลับข้อความภายใน 1 วันทำการ ถ้าคุณต้องการการดูแลระดับ 24/7 จริง ๆ ควรใช้ทีม managed service ที่มีคนผลัดเวร"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "จ่ายเงินยังไง มีใบเสร็จไหม",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "โอนผ่านธนาคาร งานรายชั่วโมงและตรวจระบบเก็บหลังจบงาน ส่วน retainer เก็บต้นเดือน ออกใบเสร็จ/ใบแจ้งหนี้ให้ได้ตามที่ฝ่ายบัญชีต้องการ"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "หน้าแรก",
+                "item": "https://korvuz.site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ที่ปรึกษา DevOps และ Cloud"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "/pricing/": {
+    "title": "Pricing — ราคาทำเว็บและ Cloud DevOps | Korvuz",
+    "canonical": "https://korvuz.site/pricing/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "ราคาเว็บไซต์ Static WordPress Cloud DevOps และที่ปรึกษา พร้อมเครื่องมือคำนวณราคาประเมิน"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Pricing — ราคาทำเว็บและ Cloud DevOps | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "ราคาเว็บไซต์ Static WordPress Cloud DevOps และที่ปรึกษา พร้อมเครื่องมือคำนวณราคาประเมิน"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/pricing/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Pricing — ราคาทำเว็บและ Cloud DevOps | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "ราคาเว็บไซต์ Static WordPress Cloud DevOps และที่ปรึกษา พร้อมเครื่องมือคำนวณราคาประเมิน"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/about/": {
+    "title": "About — Engineer & Independent Builder | Korvuz",
+    "canonical": "https://korvuz.site/about/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "รู้จัก Korvuz ประสบการณ์ Cloud DevOps ระบบเครือข่าย และแนวคิดเบื้องหลังโปรดักต์ที่สร้างเอง"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "About — Engineer & Independent Builder | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "รู้จัก Korvuz ประสบการณ์ Cloud DevOps ระบบเครือข่าย และแนวคิดเบื้องหลังโปรดักต์ที่สร้างเอง"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/about/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "About — Engineer & Independent Builder | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "รู้จัก Korvuz ประสบการณ์ Cloud DevOps ระบบเครือข่าย และแนวคิดเบื้องหลังโปรดักต์ที่สร้างเอง"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/contact/": {
+    "title": "Contact — เริ่มคุยเรื่องโปรเจกต์ | Korvuz",
+    "canonical": "https://korvuz.site/contact/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "ติดต่อ Korvuz เพื่อคุยเรื่องเว็บไซต์ AI LINE Automation และระบบ Cloud DevOps ผ่านอีเมล"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Contact — เริ่มคุยเรื่องโปรเจกต์ | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "ติดต่อ Korvuz เพื่อคุยเรื่องเว็บไซต์ AI LINE Automation และระบบ Cloud DevOps ผ่านอีเมล"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/contact/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Contact — เริ่มคุยเรื่องโปรเจกต์ | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "ติดต่อ Korvuz เพื่อคุยเรื่องเว็บไซต์ AI LINE Automation และระบบ Cloud DevOps ผ่านอีเมล"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/lab/": {
+    "title": "Lab — Interactive Terminal | Korvuz",
+    "canonical": "https://korvuz.site/lab/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "ทดลองใช้ terminal จำลองเพื่อรู้จัก Korvuz โปรเจกต์ ประสบการณ์ และช่องทางติดต่อ"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Lab — Interactive Terminal | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "ทดลองใช้ terminal จำลองเพื่อรู้จัก Korvuz โปรเจกต์ ประสบการณ์ และช่องทางติดต่อ"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/lab/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Lab — Interactive Terminal | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "ทดลองใช้ terminal จำลองเพื่อรู้จัก Korvuz โปรเจกต์ ประสบการณ์ และช่องทางติดต่อ"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/work/invoiceai/": {
+    "title": "InvoiceAI — Case Study | Korvuz",
+    "canonical": "https://korvuz.site/work/invoiceai/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "SaaS สำหรับฟรีแลนซ์และ SME ไทย พิมพ์รายละเอียดงานเป็นภาษาพูด แล้วระบบจัดเป็นใบแจ้งหนี้\n                ใบเสนอราคา หรือใบเสร็จให้ พร้อมคำนวณ VAT 7% และหัก ณ ที่จ่าย 3% ให้อัตโนมัติ ดาวน์โหลดเป็น PDF ส่งลูกค้าได้ทันที"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "InvoiceAI — Case Study | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "SaaS สำหรับฟรีแลนซ์และ SME ไทย พิมพ์รายละเอียดงานเป็นภาษาพูด แล้วระบบจัดเป็นใบแจ้งหนี้\n                ใบเสนอราคา หรือใบเสร็จให้ พร้อมคำนวณ VAT 7% และหัก ณ ที่จ่าย 3% ให้อัตโนมัติ ดาวน์โหลดเป็น PDF ส่งลูกค้าได้ทันที"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/invoiceai/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "InvoiceAI — Case Study | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "SaaS สำหรับฟรีแลนซ์และ SME ไทย พิมพ์รายละเอียดงานเป็นภาษาพูด แล้วระบบจัดเป็นใบแจ้งหนี้\n                ใบเสนอราคา หรือใบเสร็จให้ พร้อมคำนวณ VAT 7% และหัก ณ ที่จ่าย 3% ให้อัตโนมัติ ดาวน์โหลดเป็น PDF ส่งลูกค้าได้ทันที"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/work/linecrm/": {
+    "title": "LineCRM — Case Study | Korvuz",
+    "canonical": "https://korvuz.site/work/linecrm/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "จัดการลูกค้าจาก LINE Official Account, ทำ sales pipeline และใช้ AI ช่วยสรุปบทสนทนา รวมอยู่ที่เดียว"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "LineCRM — Case Study | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "จัดการลูกค้าจาก LINE Official Account, ทำ sales pipeline และใช้ AI ช่วยสรุปบทสนทนา รวมอยู่ที่เดียว"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/linecrm/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "LineCRM — Case Study | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "จัดการลูกค้าจาก LINE Official Account, ทำ sales pipeline และใช้ AI ช่วยสรุปบทสนทนา รวมอยู่ที่เดียว"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/work/fiatline/": {
+    "title": "FiatLine — Case Study | Korvuz",
+    "canonical": "https://korvuz.site/work/fiatline/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "ถ่ายรูปสลิปส่งเข้า LINE แล้วระบบอ่านยอดเงินบันทึกรายจ่ายให้อัตโนมัติ ตั้งงบประมาณและเป้าออมเงินได้ในแชทเดิมที่ใช้อยู่ทุกวัน"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "FiatLine — Case Study | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "ถ่ายรูปสลิปส่งเข้า LINE แล้วระบบอ่านยอดเงินบันทึกรายจ่ายให้อัตโนมัติ ตั้งงบประมาณและเป้าออมเงินได้ในแชทเดิมที่ใช้อยู่ทุกวัน"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/fiatline/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "FiatLine — Case Study | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "ถ่ายรูปสลิปส่งเข้า LINE แล้วระบบอ่านยอดเงินบันทึกรายจ่ายให้อัตโนมัติ ตั้งงบประมาณและเป้าออมเงินได้ในแชทเดิมที่ใช้อยู่ทุกวัน"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/work/english-reader/": {
+    "title": "English Reader — Case Study | Korvuz",
+    "canonical": "https://korvuz.site/work/english-reader/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "อ่านเรื่องสั้นระดับคำศัพท์ 3,000 คำ มีเสียงอ่าน กดที่คำไหนก็ขึ้นคำแปลไทย และมีเกมจับคู่คำศัพท์ทบทวนท้ายบท"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "English Reader — Case Study | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "อ่านเรื่องสั้นระดับคำศัพท์ 3,000 คำ มีเสียงอ่าน กดที่คำไหนก็ขึ้นคำแปลไทย และมีเกมจับคู่คำศัพท์ทบทวนท้ายบท"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/english-reader/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "English Reader — Case Study | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "อ่านเรื่องสั้นระดับคำศัพท์ 3,000 คำ มีเสียงอ่าน กดที่คำไหนก็ขึ้นคำแปลไทย และมีเกมจับคู่คำศัพท์ทบทวนท้ายบท"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  },
+  "/work/devops-kb/": {
+    "title": "DevOps KB — Case Study | Korvuz",
+    "canonical": "https://korvuz.site/work/devops-kb/",
+    "meta": [
+      {
+        "name": "description",
+        "content": "knowledge base รวม visualization, cheatsheet และ interactive lab สำหรับ DevOps engineer\n                เขียนด้วย vanilla JS ล้วน ไม่มี dependency ให้ต้องอัปเดตตาม รันได้ทุกที่ที่มี browser"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow, max-image-preview:large"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "DevOps KB — Case Study | Korvuz"
+      },
+      {
+        "property": "og:description",
+        "content": "knowledge base รวม visualization, cheatsheet และ interactive lab สำหรับ DevOps engineer\n                เขียนด้วย vanilla JS ล้วน ไม่มี dependency ให้ต้องอัปเดตตาม รันได้ทุกที่ที่มี browser"
+      },
+      {
+        "property": "og:url",
+        "content": "https://korvuz.site/work/devops-kb/"
+      },
+      {
+        "property": "og:image",
+        "content": "https://korvuz.site/og-image.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "DevOps KB — Case Study | Korvuz"
+      },
+      {
+        "name": "twitter:description",
+        "content": "knowledge base รวม visualization, cheatsheet และ interactive lab สำหรับ DevOps engineer\n                เขียนด้วย vanilla JS ล้วน ไม่มี dependency ให้ต้องอัปเดตตาม รันได้ทุกที่ที่มี browser"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://korvuz.site/og-image.png"
+      }
+    ],
+    "structured_data": []
+  }
+}

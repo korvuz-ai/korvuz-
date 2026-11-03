@@ -1,0 +1,100 @@
+[
+  {
+    "id": "invoiceai",
+    "title": "InvoiceAI",
+    "live_url": "https://invoice.korvuz.site/",
+    "category": "AI / Web application",
+    "summary": "SaaS สำหรับฟรีแลนซ์และ SME ไทย พิมพ์รายละเอียดงานเป็นภาษาพูด แล้วระบบจัดเป็นใบแจ้งหนี้\n                ใบเสนอราคา หรือใบเสร็จให้ พร้อมคำนวณ VAT 7% และหัก ณ ที่จ่าย 3% ให้อัตโนมัติ ดาวน์โหลดเป็น PDF ส่งลูกค้าได้ทันที",
+    "problem": "โจทย์ที่ยากจริงของงานนี้ไม่ใช่การเรียก AI แต่คือ PDF ภาษาไทย —\n                ฟอนต์ไทยบน PDF renderer ส่วนใหญ่สระลอยและวรรณยุกต์เพี้ยน แก้ด้วยการฝังฟอนต์ Sarabun ลงไปในตัวแอปเอง\n                ไม่พึ่ง CDN ภายนอก และเรื่องภาษี ที่ต้องคิดจากฐานเดียวกันแต่ตัวหนึ่งบวกเพิ่ม อีกตัวหักออก",
+    "solution": "SaaS สำหรับฟรีแลนซ์และ SME ไทย พิมพ์รายละเอียดงานเป็นภาษาพูด แล้วระบบจัดเป็นใบแจ้งหนี้\n                ใบเสนอราคา หรือใบเสร็จให้ พร้อมคำนวณ VAT 7% และหัก ณ ที่จ่าย 3% ให้อัตโนมัติ ดาวน์โหลดเป็น PDF ส่งลูกค้าได้ทันที",
+    "engineering": "โจทย์ที่ยากจริงของงานนี้ไม่ใช่การเรียก AI แต่คือ PDF ภาษาไทย —\n                ฟอนต์ไทยบน PDF renderer ส่วนใหญ่สระลอยและวรรณยุกต์เพี้ยน แก้ด้วยการฝังฟอนต์ Sarabun ลงไปในตัวแอปเอง\n                ไม่พึ่ง CDN ภายนอก และเรื่องภาษี ที่ต้องคิดจากฐานเดียวกันแต่ตัวหนึ่งบวกเพิ่ม อีกตัวหักออก",
+    "stack": [
+      "Next.js 14",
+      "TypeScript",
+      "Gemini API",
+      "Docker",
+      "AWS"
+    ],
+    "stack_detail": "Next.js 14 · TypeScript · Gemini API · Prisma/SQLite · Stripe · Docker + Nginx บน EC2",
+    "featured": true,
+    "source_heading": "1. InvoiceAI — ออกใบแจ้งหนี้ภาษาไทยด้วย AI",
+    "legacy_home_details": "ออกใบแจ้งหนี้ภาษาไทยด้วย AI ในเวลาเพียง 10 วินาที เหมาะสำหรับ Freelance และธุรกิจขนาดเล็กที่ต้องการปิดดีลอย่างมืออาชีพ รวดเร็ว"
+  },
+  {
+    "id": "linecrm",
+    "title": "LineCRM",
+    "live_url": "https://crm.korvuz.site/",
+    "category": "LINE / CRM / Automation",
+    "summary": "จัดการลูกค้าจาก LINE Official Account, ทำ sales pipeline และใช้ AI ช่วยสรุปบทสนทนา รวมอยู่ที่เดียว",
+    "problem": "SME ไทยส่วนใหญ่ปิดการขายกันบน LINE แต่ CRM ที่ขายกันทั่วไปออกแบบมาจากฝั่งอีเมล\n                ทำให้ข้อมูลลูกค้ากระจัดกระจายอยู่ในแชทที่ค้นย้อนหลังไม่ได้ ตัวนี้เลยเริ่มจากฝั่ง LINE ก่อน\n                แล้วค่อยต่อ pipeline เข้าไป ไม่ใช่บังคับให้ลูกค้าย้ายมาใช้เครื่องมือใหม่ทั้งหมด",
+    "solution": "จัดการลูกค้าจาก LINE Official Account, ทำ sales pipeline และใช้ AI ช่วยสรุปบทสนทนา รวมอยู่ที่เดียว",
+    "engineering": "SME ไทยส่วนใหญ่ปิดการขายกันบน LINE แต่ CRM ที่ขายกันทั่วไปออกแบบมาจากฝั่งอีเมล\n                ทำให้ข้อมูลลูกค้ากระจัดกระจายอยู่ในแชทที่ค้นย้อนหลังไม่ได้ ตัวนี้เลยเริ่มจากฝั่ง LINE ก่อน\n                แล้วค่อยต่อ pipeline เข้าไป ไม่ใช่บังคับให้ลูกค้าย้ายมาใช้เครื่องมือใหม่ทั้งหมด",
+    "stack": [
+      "LINE API",
+      "PostgreSQL",
+      "Redis",
+      "Docker Compose"
+    ],
+    "stack_detail": "LINE Messaging API · PostgreSQL · worker queue (Redis) · Docker Compose",
+    "featured": true,
+    "source_heading": "2. LineCRM — CRM ที่อยู่บน LINE OA",
+    "legacy_home_details": "CRM ระบบปิดการขายและติดตามดีลลูกค้า เชื่อมต่อกับ LINE Official Account ออกแบบเพื่อ SME ไทย มีทั้งบอร์ด Kanban และระบบวิเคราะห์ด้วย AI"
+  },
+  {
+    "id": "fiatline",
+    "title": "FiatLine",
+    "live_url": "https://line.korvuz.site/",
+    "category": "LINE / OCR / Finance",
+    "summary": "ถ่ายรูปสลิปส่งเข้า LINE แล้วระบบอ่านยอดเงินบันทึกรายจ่ายให้อัตโนมัติ ตั้งงบประมาณและเป้าออมเงินได้ในแชทเดิมที่ใช้อยู่ทุกวัน",
+    "problem": "จุดที่ทำให้แอปบันทึกรายจ่ายส่วนใหญ่ล้มเหลวคือ คนขี้เกียจเปิดแอป ตัวนี้เลยไม่มีแอปให้เปิด — ใช้ที่เดียวกับที่สลิปถูกส่งมาอยู่แล้ว ลดขั้นตอนจาก \"เปิดแอป → พิมพ์ยอด → เลือกหมวด\" เหลือแค่ส่งรูป",
+    "solution": "ถ่ายรูปสลิปส่งเข้า LINE แล้วระบบอ่านยอดเงินบันทึกรายจ่ายให้อัตโนมัติ ตั้งงบประมาณและเป้าออมเงินได้ในแชทเดิมที่ใช้อยู่ทุกวัน",
+    "engineering": "จุดที่ทำให้แอปบันทึกรายจ่ายส่วนใหญ่ล้มเหลวคือ คนขี้เกียจเปิดแอป ตัวนี้เลยไม่มีแอปให้เปิด — ใช้ที่เดียวกับที่สลิปถูกส่งมาอยู่แล้ว ลดขั้นตอนจาก \"เปิดแอป → พิมพ์ยอด → เลือกหมวด\" เหลือแค่ส่งรูป",
+    "stack": [
+      "LINE API",
+      "OCR",
+      "PostgreSQL"
+    ],
+    "stack_detail": "LINE Messaging API · OCR · PostgreSQL · background worker",
+    "featured": true,
+    "source_heading": "3. FiatLine — ผู้ช่วยจัดการเงินบน LINE",
+    "legacy_home_details": "บัญชีรายรับ-รายจ่ายบน LINE พร้อม Slip OCR, AI auto-categorize, monthly dashboard และ savings goals จัดการเงินง่าย ๆ ผ่านแชท LINE ไม่ต้องโหลดแอป"
+  },
+  {
+    "id": "english-reader",
+    "title": "English Reader",
+    "live_url": "https://en.korvuz.site/",
+    "category": "Education / Web",
+    "summary": "อ่านเรื่องสั้นระดับคำศัพท์ 3,000 คำ มีเสียงอ่าน กดที่คำไหนก็ขึ้นคำแปลไทย และมีเกมจับคู่คำศัพท์ทบทวนท้ายบท",
+    "problem": "ทำขึ้นเพราะสื่อฝึกภาษาอังกฤษส่วนใหญ่บังคับให้ท่องศัพท์เป็นลิสต์ ทั้งที่คนจำคำได้ดีที่สุดตอนเจอมันในบริบท\n                ตัวนี้เลยให้อ่านเรื่องก่อน แล้วค่อยเก็บคำที่ไม่รู้ระหว่างทาง",
+    "solution": "อ่านเรื่องสั้นระดับคำศัพท์ 3,000 คำ มีเสียงอ่าน กดที่คำไหนก็ขึ้นคำแปลไทย และมีเกมจับคู่คำศัพท์ทบทวนท้ายบท",
+    "engineering": "ทำขึ้นเพราะสื่อฝึกภาษาอังกฤษส่วนใหญ่บังคับให้ท่องศัพท์เป็นลิสต์ ทั้งที่คนจำคำได้ดีที่สุดตอนเจอมันในบริบท\n                ตัวนี้เลยให้อ่านเรื่องก่อน แล้วค่อยเก็บคำที่ไม่รู้ระหว่างทาง",
+    "stack": [
+      "Education",
+      "Web",
+      "Thai definitions"
+    ],
+    "stack_detail": "",
+    "featured": false,
+    "source_heading": "4. English Reader — ฝึกอ่านอังกฤษจากเรื่องสั้น",
+    "legacy_home_details": ""
+  },
+  {
+    "id": "devops-kb",
+    "title": "DevOps KB",
+    "live_url": "https://doc.korvuz.site/",
+    "category": "DevOps / Knowledge",
+    "summary": "knowledge base รวม visualization, cheatsheet และ interactive lab สำหรับ DevOps engineer\n                เขียนด้วย vanilla JS ล้วน ไม่มี dependency ให้ต้องอัปเดตตาม รันได้ทุกที่ที่มี browser",
+    "problem": "เป็นที่ที่เก็บสิ่งที่เจอจากงานจริง — ทั้ง Terraform pattern ที่ใช้ซ้ำได้ และเคสที่เคยพังแล้วได้บทเรียน",
+    "solution": "knowledge base รวม visualization, cheatsheet และ interactive lab สำหรับ DevOps engineer\n                เขียนด้วย vanilla JS ล้วน ไม่มี dependency ให้ต้องอัปเดตตาม รันได้ทุกที่ที่มี browser",
+    "engineering": "เป็นที่ที่เก็บสิ่งที่เจอจากงานจริง — ทั้ง Terraform pattern ที่ใช้ซ้ำได้ และเคสที่เคยพังแล้วได้บทเรียน",
+    "stack": [
+      "Vanilla JS",
+      "Zero dependencies",
+      "DevOps"
+    ],
+    "stack_detail": "",
+    "featured": false,
+    "source_heading": "5. DevOps KB — คลังความรู้สาย DevOps",
+    "legacy_home_details": "Knowledge base สำหรับ DevOps engineer — visualizations, cheatsheets, interactive labs และ tutorials ไม่มี dependencies รันได้ทุกที่อย่างรวดเร็ว"
+  }
+]

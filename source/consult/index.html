@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ที่ปรึกษา DevOps &amp; Cloud รายชั่วโมง — เรตและขอบเขตงาน | Korvuz</title>
+    <meta name="description" content="เรตที่ปรึกษา DevOps &amp; Cloud (AWS) แบบโปร่งใส — รายชั่วโมง ฿1,500–2,500 · ตรวจระบบครึ่งวันพร้อมรายงาน ฿6,000–9,000 · retainer รายเดือน ฿15,000–30,000 บอกขอบเขตงานและสิ่งที่ได้รับชัดเจนก่อนเริ่ม">
+    <meta name="author" content="Korvuz">
+    <link rel="canonical" href="https://korvuz.site/consult/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Korvuz">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:url" content="https://korvuz.site/consult/">
+    <meta property="og:title" content="ที่ปรึกษา DevOps &amp; Cloud รายชั่วโมง — เรตและขอบเขตงาน">
+    <meta property="og:description" content="ปรึกษาเป็นชั่วโมง ตรวจระบบครึ่งวัน หรือดูแลรายเดือน — เรตชัด ขอบเขตชัด รู้ราคาก่อนเริ่มงาน">
+    <meta property="og:image" content="https://korvuz.site/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ที่ปรึกษา DevOps &amp; Cloud รายชั่วโมง — เรตและขอบเขตงาน">
+    <meta name="twitter:description" content="ปรึกษาเป็นชั่วโมง ตรวจระบบครึ่งวัน หรือดูแลรายเดือน — เรตชัด ขอบเขตชัด">
+    <meta name="twitter:image" content="https://korvuz.site/og-image.png">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://korvuz.site/consult/#service",
+          "name": "ที่ปรึกษา DevOps และ Cloud (AWS)",
+          "serviceType": "DevOps and Cloud consulting",
+          "description": "บริการที่ปรึกษาด้าน DevOps และ Cloud สำหรับธุรกิจไทย คิดค่าบริการตามเวลา — ปรึกษารายชั่วโมง ตรวจระบบครึ่งวันพร้อมรายงาน และดูแลต่อเนื่องรายเดือน",
+          "url": "https://korvuz.site/consult/",
+          "inLanguage": "th",
+          "areaServed": { "@type": "Country", "name": "Thailand" },
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://korvuz.site/consult/",
+            "availableLanguage": ["th", "en"]
+          },
+          "provider": {
+            "@type": "Person",
+            "@id": "https://korvuz.site/#person",
+            "name": "Korvuz",
+            "url": "https://korvuz.site/",
+            "jobTitle": "DevOps & Cloud Engineer"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "แพ็กเกจที่ปรึกษา",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "ปรึกษารายชั่วโมง",
+                "description": "คุยออนไลน์แบบแชร์จอ ดูระบบจริงได้ พร้อมสรุปเป็นข้อความหลังจบ ขั้นต่ำ 2 ชั่วโมง",
+                "url": "https://korvuz.site/consult/#hourly",
+                "priceCurrency": "THB",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "THB",
+                  "minPrice": 1500,
+                  "maxPrice": 2500,
+                  "unitCode": "HUR",
+                  "unitText": "ชั่วโมง"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "ตรวจระบบครึ่งวัน (Audit)",
+                "description": "ตรวจสถาปัตยกรรม สิทธิ์เข้าถึง ค่าใช้จ่ายคลาวด์ การสำรองข้อมูล และกระบวนการ deploy ส่งรายงานจัดลำดับความเสี่ยงพร้อมนัดรีวิว 1 ชั่วโมง",
+                "url": "https://korvuz.site/consult/#audit",
+                "priceCurrency": "THB",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "THB",
+                  "minPrice": 6000,
+                  "maxPrice": 9000
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "ดูแลต่อเนื่องรายเดือน (Retainer)",
+                "description": "โควตาชั่วโมงต่อเดือน ช่องทางถามตอบตอบกลับในวันทำการ ดูแล monitoring และรีวิวค่าใช้จ่ายคลาวด์รายเดือน",
+                "url": "https://korvuz.site/consult/#retainer",
+                "priceCurrency": "THB",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "THB",
+                  "minPrice": 15000,
+                  "maxPrice": 30000,
+                  "billingDuration": 1,
+                  "billingIncrement": 1,
+                  "unitCode": "MON",
+                  "unitText": "เดือน"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ปรึกษาครั้งแรกเสียเงินไหม",
+              "acceptedAnswer": { "@type": "Answer", "text": "การคุยรอบแรกประมาณ 20 นาทีเพื่อฟังปัญหาและประเมินว่าช่วยได้จริงไหม ไม่คิดเงิน ถ้าประเมินแล้วว่างานไม่ตรงกับที่ถนัดจะบอกตรง ๆ และแนะนำทางอื่นให้ ค่าบริการเริ่มนับเมื่อเริ่มลงมือดูระบบหรือให้คำแนะนำเชิงเทคนิคจริง" }
+            },
+            {
+              "@type": "Question",
+              "name": "เรตที่ปรึกษา DevOps รายชั่วโมงในไทยอยู่ที่เท่าไหร่",
+              "acceptedAnswer": { "@type": "Answer", "text": "เรตที่นี่อยู่ที่ 1,500–2,500 บาทต่อชั่วโมง ขั้นต่ำ 2 ชั่วโมง งานที่เป็นการให้คำแนะนำหรือรีวิวแบบไม่แตะระบบจริงคิด 1,500 บาทต่อชั่วโมง ส่วนงานที่ต้องเข้าไปดูหรือแก้ระบบที่ใช้งานจริงคิด 2,500 บาทต่อชั่วโมง เพราะมีความเสี่ยงและต้องเตรียมงานก่อนเข้า" }
+            },
+            {
+              "@type": "Question",
+              "name": "ต่างจากการจ้างทำโปรเจกต์ยังไง",
+              "acceptedAnswer": { "@type": "Answer", "text": "การจ้างทำโปรเจกต์คือจ้างให้ส่งมอบชิ้นงานที่ตกลงขอบเขตไว้แล้ว เช่น ทำเว็บหรือย้ายระบบขึ้นคลาวด์ คิดเป็นราคาต่อโปรเจกต์ ส่วนที่ปรึกษาคือซื้อเวลาและความเห็นทางเทคนิค เหมาะตอนที่ยังไม่รู้ว่าควรทำอะไร หรือมีทีมอยู่แล้วแต่ต้องการคนช่วยตัดสินใจและรีวิว" }
+            },
+            {
+              "@type": "Question",
+              "name": "ตรวจระบบครึ่งวันแล้วได้อะไรกลับไปบ้าง",
+              "acceptedAnswer": { "@type": "Answer", "text": "ได้รายงานเป็นเอกสารที่ระบุสิ่งที่ตรวจพบ จัดลำดับตามความเสี่ยงและผลกระทบ พร้อมข้อเสนอแนะว่าควรแก้อะไรก่อนหลังและแต่ละข้อใช้แรงประมาณเท่าไหร่ และมีนัดรีวิวรายงานอีก 1 ชั่วโมงเพื่อถามต่อได้ รายงานเป็นของคุณ จะเอาไปให้ทีมอื่นทำต่อก็ได้" }
+            },
+            {
+              "@type": "Question",
+              "name": "รับงานเร่งด่วนหรือ on-call 24 ชั่วโมงไหม",
+              "acceptedAnswer": { "@type": "Answer", "text": "ไม่รับ on-call 24 ชั่วโมง เพราะทำงานประจำอยู่และไม่อยากรับปากในสิ่งที่ทำไม่ได้จริง นัดคุยได้ช่วงเย็นวันทำการและวันหยุด ตอบกลับข้อความภายใน 1 วันทำการ ถ้าคุณต้องการการดูแลระดับ 24/7 จริง ๆ ควรใช้ทีม managed service ที่มีคนผลัดเวร" }
+            },
+            {
+              "@type": "Question",
+              "name": "จ่ายเงินยังไง มีใบเสร็จไหม",
+              "acceptedAnswer": { "@type": "Answer", "text": "โอนผ่านธนาคาร งานรายชั่วโมงและตรวจระบบเก็บหลังจบงาน ส่วน retainer เก็บต้นเดือน ออกใบเสร็จ/ใบแจ้งหนี้ให้ได้ตามที่ฝ่ายบัญชีต้องการ" }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "หน้าแรก", "item": "https://korvuz.site/" },
+            { "@type": "ListItem", "position": 2, "name": "ที่ปรึกษา DevOps และ Cloud" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream:   '#F7F5F0',
+                        paper:   '#FFFFFF',
+                        ink:     '#33322D',
+                        subtle:  '#6B6A5F',
+                        faint:   '#9A978A',
+                        line:    '#E8E4DA',
+                        sage:    '#6F8560',
+                        sageBg:  '#E9EEE1',
+                        clay:    '#BC7B4E',
+                        clayBg:  '#F5E7DA',
+                        gold:    '#A8863B',
+                        goldBg:  '#F1E9D2',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans Thai', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F7F5F0; }
+        .prose-k p  { margin-bottom: 1.15rem; line-height: 1.95; }
+        .prose-k h2 { scroll-margin-top: 5rem; }
+        .prose-k li { margin-bottom: .5rem; line-height: 1.85; }
+    </style>
+</head>
+<body class="text-ink font-sans antialiased min-h-screen">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-line/70 bg-cream/70 backdrop-blur-xl">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 group">
+                <span class="w-2.5 h-2.5 rounded-full bg-sage group-hover:bg-clay transition-colors"></span>
+                <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-subtle">
+                    <a href="/consult/" class="text-ink">Consulting</a>
+                    <a href="/work/" class="hover:text-ink transition-colors">Work</a>
+                    <a href="/blog/" class="hover:text-ink transition-colors">Blog</a>
+                </nav>
+
+                <a href="mailto:korvuznox@gmail.com?subject=นัดคุยปรึกษา DevOps/Cloud" class="text-xs font-medium bg-ink text-cream px-4 py-2 rounded-full hover:bg-clay transition-colors">Book a 20-min call</a>
+
+                <button id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer"
+                        class="w-10 h-10 rounded-full bg-paper border border-line text-ink hover:border-sage/50 hover:text-clay transition-colors flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide-in menu -->
+    <div id="navOverlay" class="fixed inset-0 z-[60] bg-ink/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <aside id="navDrawer" role="dialog" aria-modal="true" aria-label="Main menu" tabindex="-1"
+           class="fixed top-0 right-0 z-[70] h-full w-[85%] max-w-xs bg-cream border-l border-line shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col">
+
+        <div class="flex items-center justify-between px-6 h-16 border-b border-line shrink-0">
+            <span class="text-sm font-semibold text-faint tracking-widest uppercase">Menu</span>
+            <button id="navClose" type="button" aria-label="Close menu"
+                    class="w-9 h-9 rounded-full bg-paper border border-line text-subtle hover:text-clay hover:border-clay/40 transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto px-4 py-5 flex flex-col gap-0.5 text-[15px] font-medium">
+            <a href="/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-house w-4 text-center text-xs text-faint"></i> Home
+            </a>
+            <a href="/consult/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-paper text-ink transition-colors">
+                <i class="fa-solid fa-comments w-4 text-center text-xs text-faint"></i> Consulting
+            </a>
+            <a href="/work/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-folder-open w-4 text-center text-xs text-faint"></i> Work
+            </a>
+            <a href="/blog/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-pen-nib w-4 text-center text-xs text-faint"></i> Blog
+            </a>
+            <a href="/#services" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-tag w-4 text-center text-xs text-faint"></i> Pricing
+            </a>
+            <a href="/#calc" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-calculator w-4 text-center text-xs text-faint"></i> Price calculator
+            </a>
+            <a href="/#contact" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-envelope w-4 text-center text-xs text-faint"></i> Contact
+            </a>
+
+            <div class="border-t border-line my-3"></div>
+
+            <a href="/resume/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-id-card w-4 text-center text-xs text-faint"></i> Resume
+            </a>
+            <a href="/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf" target="_blank" rel="noopener"
+               class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-clay hover:bg-clayBg/60 transition-colors">
+                <i class="fa-solid fa-file-arrow-down w-4 text-center text-xs"></i> Download Resume
+            </a>
+        </nav>
+
+        <div class="px-6 py-5 border-t border-line shrink-0">
+            <div class="inline-flex items-center gap-2 text-xs text-subtle bg-paper border border-line px-3.5 py-1.5 rounded-full">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-sage"></span>
+                </span>
+                <span class="font-medium">open to work · TH</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="max-w-5xl mx-auto px-6 py-14">
+
+        <!-- Breadcrumb -->
+        <nav class="text-xs text-faint mb-8 flex items-center gap-2">
+            <a href="/" class="hover:text-clay transition-colors">หน้าแรก</a>
+            <span>/</span>
+            <span class="text-subtle">ที่ปรึกษา DevOps &amp; Cloud</span>
+        </nav>
+
+        <!-- Hero -->
+        <section class="max-w-3xl">
+            <span class="text-xs font-semibold tracking-widest text-clay uppercase">Consulting</span>
+            <h1 class="text-3xl md:text-[2.7rem] font-extrabold tracking-tight leading-snug mt-3 mb-6">
+                ที่ปรึกษา DevOps &amp; Cloud <span class="text-clay">คิดเป็นเวลา ไม่ใช่เหมาโปรเจกต์</span>
+            </h1>
+            <p class="text-lg text-subtle leading-relaxed mb-6">
+                บางงานยังไม่ถึงขั้นต้องจ้างทำทั้งระบบ — แค่อยากรู้ว่าที่ทำอยู่มันถูกทางไหม
+                บิล AWS ที่จ่ายอยู่แพงเกินจริงหรือเปล่า หรือระบบที่ทีมวางไว้จะพังตรงไหนก่อน
+                หน้านี้คือเรตสำหรับกรณีแบบนั้น — <strong class="text-ink">ซื้อเวลาและความเห็นทางเทคนิค</strong> ไม่ใช่ซื้อชิ้นงาน
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a href="mailto:korvuznox@gmail.com?subject=นัดคุยปรึกษา DevOps/Cloud"
+                   class="inline-flex items-center gap-2 bg-ink hover:bg-clay text-cream font-medium px-5 py-3 rounded-xl transition-colors text-sm">
+                    <i class="fa-solid fa-calendar-check text-xs"></i> นัดคุยรอบแรก 20 นาที (ไม่คิดเงิน)
+                </a>
+                <a href="#rates"
+                   class="inline-flex items-center gap-2 border border-line hover:border-clay/40 hover:bg-clayBg/40 text-ink font-medium px-5 py-3 rounded-xl transition-colors text-sm">
+                    <i class="fa-solid fa-tag text-xs text-clay"></i> ดูเรตทั้งหมด
+                </a>
+            </div>
+        </section>
+
+        <!-- Rates -->
+        <section id="rates" class="mt-16 scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-3">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight">เรตค่าที่ปรึกษา</h2>
+                <p class="text-subtle text-sm max-w-md">ราคาทั้งหมดเป็นบาท ยังไม่รวมภาษี · ช่วงราคาขึ้นกับความซับซ้อนของระบบ ตกลงตัวเลขจริงก่อนเริ่มเสมอ</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Hourly -->
+                <div id="hourly" class="scroll-mt-24 relative p-7 bg-paper border border-line rounded-2xl flex flex-col">
+                    <div class="w-11 h-11 rounded-2xl bg-sageBg text-sage flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-clock text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">ปรึกษารายชั่วโมง</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">มีคำถามเฉพาะเรื่อง อยากได้ความเห็นเร็ว ๆ</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">ต่อชั่วโมง</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿1,500–2,500</div>
+                        <span class="text-xs text-faint">ขั้นต่ำ 2 ชั่วโมง</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1.5"></i><span>คุยออนไลน์ แชร์จอดูระบบจริงได้</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1.5"></i><span>สรุปสิ่งที่คุยเป็นข้อความหลังจบทุกครั้ง</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1.5"></i><span><strong class="text-ink">฿1,500</strong> — ให้คำแนะนำ / รีวิวแบบไม่แตะระบบ</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1.5"></i><span><strong class="text-ink">฿2,500</strong> — เข้าไปดู/แก้ระบบที่ใช้งานจริง</span></li>
+                    </ul>
+                    <a href="mailto:korvuznox@gmail.com?subject=ปรึกษารายชั่วโมง"
+                       class="mt-6 inline-flex items-center justify-center gap-2 border border-line hover:border-sage/40 hover:bg-sageBg/50 text-ink font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>สอบถามงานแบบนี้</span><i class="fa-solid fa-arrow-right text-xs text-sage"></i>
+                    </a>
+                </div>
+
+                <!-- Audit (highlighted) -->
+                <div id="audit" class="scroll-mt-24 relative p-7 bg-paper border-2 border-clay/40 rounded-2xl flex flex-col shadow-[0_24px_48px_-28px_rgba(188,123,78,0.4)]">
+                    <span class="absolute -top-3 left-7 text-[11px] font-bold tracking-wide text-cream bg-clay px-3 py-1 rounded-full">เริ่มตรงนี้ดีที่สุด</span>
+                    <div class="w-11 h-11 rounded-2xl bg-clayBg text-clay flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-magnifying-glass-chart text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">ตรวจระบบครึ่งวัน</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">อยากรู้ว่าระบบที่มีอยู่ มีอะไรต้องแก้บ้าง</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">ครั้งละ</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿6,000–9,000</div>
+                        <span class="text-xs text-faint">~3 ชม. + เวลาเขียนรายงาน</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1.5"></i><span>ตรวจ 5 ด้าน: สถาปัตยกรรม · สิทธิ์เข้าถึง · ค่าใช้จ่าย · backup · การ deploy</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1.5"></i><span>รายงานเป็นเอกสาร จัดลำดับตามความเสี่ยง</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1.5"></i><span>บอกว่าควรแก้อะไรก่อน และแต่ละข้อใช้แรงเท่าไหร่</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1.5"></i><span>นัดรีวิวรายงานอีก 1 ชม. รวมอยู่ในราคาแล้ว</span></li>
+                    </ul>
+                    <a href="mailto:korvuznox@gmail.com?subject=ขอตรวจระบบครึ่งวัน (Audit)"
+                       class="mt-6 inline-flex items-center justify-center gap-2 bg-clay hover:bg-ink text-cream font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>สอบถามงานแบบนี้</span><i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Retainer -->
+                <div id="retainer" class="scroll-mt-24 relative p-7 bg-paper border border-line rounded-2xl flex flex-col">
+                    <div class="w-11 h-11 rounded-2xl bg-goldBg text-gold flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-life-ring text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">ดูแลต่อเนื่องรายเดือน</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">ไม่มี DevOps ประจำ แต่อยากมีคนคอยดูให้</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">ต่อเดือน</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿15,000–30,000</div>
+                        <span class="text-xs text-faint">โควตา 10 ชม. / 20 ชม. ต่อเดือน</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1.5"></i><span>ช่องทางถามตอบ ตอบกลับภายใน 1 วันทำการ</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1.5"></i><span>ดูแล monitoring + ปรับการแจ้งเตือน</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1.5"></i><span>รีวิวบิลคลาวด์ทุกเดือน หาจุดที่จ่ายเกิน</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-circle-info text-faint text-xs mt-1.5"></i><span class="text-faint">ไม่ใช่ on-call 24 ชม. — งานนอกเวลาคิดแยก</span></li>
+                    </ul>
+                    <a href="mailto:korvuznox@gmail.com?subject=สอบถาม Retainer รายเดือน"
+                       class="mt-6 inline-flex items-center justify-center gap-2 border border-line hover:border-gold/40 hover:bg-goldBg/50 text-ink font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>สอบถามงานแบบนี้</span><i class="fa-solid fa-arrow-right text-xs text-gold"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-xs text-faint mt-6 leading-relaxed max-w-3xl">
+                อยากได้ <strong class="text-subtle">ชิ้นงานส่งมอบ</strong> มากกว่าซื้อเวลา เช่น ทำเว็บใหม่ หรือย้ายระบบขึ้น AWS ทั้งก้อน —
+                ดู <a href="/#services" class="text-clay font-semibold hover:underline">แพ็กเกจราคาเหมาโปรเจกต์</a> ที่หน้าแรกแทน
+            </p>
+        </section>
+
+        <!-- Fit / not fit -->
+        <section class="mt-16">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-3">เหมาะกับใคร — และไม่เหมาะกับใคร</h2>
+            <p class="text-subtle text-sm mb-8 max-w-2xl">บอกไว้ตรงนี้เลยเพื่อไม่ให้เสียเวลาทั้งสองฝ่าย</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-7 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <i class="fa-solid fa-circle-check text-sage"></i>
+                        <h3 class="font-bold text-ink">เหมาะ ถ้าคุณ…</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-subtle leading-relaxed">
+                        <li class="flex gap-2.5"><span class="text-sage">·</span><span>มีระบบอยู่แล้ว แต่ไม่แน่ใจว่าวางถูกทางไหม</span></li>
+                        <li class="flex gap-2.5"><span class="text-sage">·</span><span>บิลคลาวด์ขึ้นเรื่อย ๆ แต่ไม่รู้ว่าตัวไหนกิน</span></li>
+                        <li class="flex gap-2.5"><span class="text-sage">·</span><span>มีทีม dev แต่ไม่มีคนดูฝั่ง infrastructure</span></li>
+                        <li class="flex gap-2.5"><span class="text-sage">·</span><span>กำลังจะย้ายขึ้นคลาวด์ อยากให้มีคนช่วยดูแผนก่อนลงมือ</span></li>
+                        <li class="flex gap-2.5"><span class="text-sage">·</span><span>ได้ใบเสนอราคาจากเจ้าอื่นมา อยากให้คนกลางช่วยอ่าน</span></li>
+                    </ul>
+                </div>
+                <div class="p-7 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <i class="fa-solid fa-circle-xmark text-clay"></i>
+                        <h3 class="font-bold text-ink">ยังไม่เหมาะ ถ้าคุณ…</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-subtle leading-relaxed">
+                        <li class="flex gap-2.5"><span class="text-clay">·</span><span>ต้องการคนรับสายตี 3 ทุกคืน — ผมทำงานประจำอยู่ ไม่รับ on-call 24/7</span></li>
+                        <li class="flex gap-2.5"><span class="text-clay">·</span><span>อยากได้คนมานั่งประจำออฟฟิศเต็มเวลา</span></li>
+                        <li class="flex gap-2.5"><span class="text-clay">·</span><span>ต้องการทีมหลายคนเข้าทำพร้อมกันในดีดไลน์สั้น</span></li>
+                        <li class="flex gap-2.5"><span class="text-clay">·</span><span>อยากได้แค่คนกดตามที่สั่ง โดยไม่อยากฟังข้อโต้แย้งทางเทคนิค</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common cases -->
+        <section class="mt-16">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-3">เรื่องที่ถูกถามบ่อย</h2>
+            <p class="text-subtle text-sm mb-8 max-w-2xl">ตัวอย่างโจทย์ที่งานที่ปรึกษาช่วยได้ พร้อมรูปแบบที่มักเหมาะที่สุด</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">ค่าใช้จ่าย</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“บิล AWS เดือนละหลายหมื่น ลดได้ไหม”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">ไล่ดูว่าบิลไปกองที่ service ไหน แล้วแยกว่าอันไหนลดได้ทันที อันไหนต้องแก้สถาปัตยกรรมก่อน</p>
+                    <span class="text-xs text-faint">เหมาะกับ: ตรวจระบบครึ่งวัน</span>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">ก่อนลงมือ</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“จะย้ายจาก server เดิมขึ้นคลาวด์ ควรเริ่มยังไง”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">วางลำดับการย้าย ประเมินความเสี่ยงและ downtime ตั้งงบคร่าว ๆ ก่อนตัดสินใจจ้างใครทำ</p>
+                    <span class="text-xs text-faint">เหมาะกับ: รายชั่วโมง 2–4 ชม.</span>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">ความเสี่ยง</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“ถ้าเครื่องพังตอนนี้ กู้กลับได้จริงไหม”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">ตรวจว่ามี backup อยู่จริงไหม เคยลองกู้หรือยัง และใช้เวลากู้จริงนานแค่ไหน</p>
+                    <span class="text-xs text-faint">เหมาะกับ: ตรวจระบบครึ่งวัน</span>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">กระบวนการ</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“ทีม deploy ด้วยมือ อยากทำ CI/CD ต้องลงทุนแค่ไหน”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">ดูของที่มีอยู่ก่อน แล้วเสนอเวอร์ชันที่เล็กที่สุดที่ใช้ได้จริง ไม่ต้องรื้อทั้งระบบ</p>
+                    <span class="text-xs text-faint">เหมาะกับ: รายชั่วโมง หรือ retainer</span>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">คนกลาง</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“ได้ใบเสนอราคาจาก vendor มา ราคาสมเหตุสมผลไหม”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">อ่านขอบเขตงานให้ ชี้จุดที่เขียนกว้างเกินไป และคำถามที่ควรถามกลับก่อนเซ็น</p>
+                    <span class="text-xs text-faint">เหมาะกับ: รายชั่วโมง 2 ชม.</span>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-semibold text-clay mb-2">ต่อเนื่อง</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">“ระบบขึ้นแล้ว แต่ไม่มีใครดูต่อ”</h3>
+                    <p class="text-sm text-subtle leading-relaxed mb-3">ตั้ง monitoring และการแจ้งเตือนให้ แล้วดูให้เป็นรอบ ๆ พร้อมรีวิวสิ่งที่เกิดขึ้นแต่ละเดือน</p>
+                    <span class="text-xs text-faint">เหมาะกับ: retainer รายเดือน</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="mt-16">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-8">ขั้นตอนการทำงาน</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-bold text-faint tracking-widest mb-3">01</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">คุยรอบแรก 20 นาที</h3>
+                    <p class="text-sm text-subtle leading-relaxed">ฟังปัญหา ประเมินว่าช่วยได้จริงไหม ไม่คิดเงิน ถ้าไม่ตรงกับที่ถนัดจะบอกตรง ๆ</p>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-bold text-faint tracking-widest mb-3">02</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">ตกลงขอบเขต + ราคา</h3>
+                    <p class="text-sm text-subtle leading-relaxed">สรุปเป็นข้อความว่าจะดูอะไร ใช้กี่ชั่วโมง ราคาเท่าไหร่ ก่อนเริ่มทุกครั้ง</p>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-bold text-faint tracking-widest mb-3">03</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">ลงมือ</h3>
+                    <p class="text-sm text-subtle leading-relaxed">คุยออนไลน์ หรือขอสิทธิ์เข้าดูระบบแบบอ่านอย่างเดียวก่อนเสมอ</p>
+                </div>
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="text-xs font-bold text-faint tracking-widest mb-3">04</div>
+                    <h3 class="font-bold text-ink text-[15px] mb-2">ส่งสรุป</h3>
+                    <p class="text-sm text-subtle leading-relaxed">สรุปเป็นเอกสารทุกครั้ง เอาไปให้ทีมอื่นทำต่อได้ ไม่ผูกขาดกับผม</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust -->
+        <section class="mt-16 p-7 md:p-9 bg-paper border border-line rounded-2xl">
+            <h2 class="text-xl md:text-2xl font-extrabold text-ink tracking-tight mb-4">ทำไมถึงเชื่อคำแนะนำนี้ได้</h2>
+            <p class="text-subtle leading-relaxed text-sm mb-5 max-w-3xl">
+                งานประจำคือ Senior DevOps Specialist — ดูแล infrastructure ที่มีคนใช้จริง ทั้ง Kubernetes/Amazon EKS และ Jenkins pipeline
+                ก่อนหน้านี้ทำ AWS migration และ Infrastructure as Code ด้วย Terraform และ Ansible ให้ธนาคารและลูกค้าองค์กร
+                นอกเวลางานสร้างและดูแลโปรดักต์ของตัวเองที่รันอยู่บนเซิร์ฟเวอร์จริง ทุกตัวเปิดให้เข้าไปกดดูได้
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a href="/work/" class="inline-flex items-center gap-2 border border-line hover:border-sage/40 hover:bg-sageBg/40 text-ink font-medium px-5 py-2.5 rounded-xl transition-colors text-sm">
+                    <i class="fa-solid fa-folder-open text-xs text-sage"></i> ดูโปรดักต์ที่รันอยู่จริง
+                </a>
+                <a href="/resume/" class="inline-flex items-center gap-2 border border-line hover:border-clay/40 hover:bg-clayBg/40 text-ink font-medium px-5 py-2.5 rounded-xl transition-colors text-sm">
+                    <i class="fa-solid fa-id-card text-xs text-clay"></i> ดูประวัติการทำงาน
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mt-16 prose-k">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-8">คำถามที่พบบ่อย</h2>
+            <div class="space-y-4">
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>ปรึกษาครั้งแรกเสียเงินไหม</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        คุยรอบแรกประมาณ 20 นาทีเพื่อฟังปัญหาและประเมินว่าช่วยได้จริงไหม <strong class="text-ink">ไม่คิดเงิน</strong>
+                        ถ้าประเมินแล้วว่างานไม่ตรงกับที่ถนัดจะบอกตรง ๆ และแนะนำทางอื่นให้
+                        ค่าบริการเริ่มนับเมื่อเริ่มลงมือดูระบบหรือให้คำแนะนำเชิงเทคนิคจริง
+                    </p>
+                </details>
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>เรตที่ปรึกษา DevOps รายชั่วโมงในไทยอยู่ที่เท่าไหร่</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        เรตที่นี่อยู่ที่ <strong class="text-ink">฿1,500–2,500 ต่อชั่วโมง</strong> ขั้นต่ำ 2 ชั่วโมง
+                        งานที่เป็นการให้คำแนะนำหรือรีวิวแบบไม่แตะระบบจริงคิด ฿1,500
+                        ส่วนงานที่ต้องเข้าไปดูหรือแก้ระบบที่ใช้งานจริงคิด ฿2,500 เพราะมีความเสี่ยงและต้องเตรียมงานก่อนเข้า
+                    </p>
+                </details>
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>ต่างจากการจ้างทำโปรเจกต์ยังไง</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        จ้างทำโปรเจกต์คือจ้างให้ส่งมอบชิ้นงานที่ตกลงขอบเขตไว้แล้ว เช่นทำเว็บหรือย้ายระบบขึ้นคลาวด์ คิดเป็นราคาต่อโปรเจกต์ —
+                        ดูได้ที่ <a href="/#services" class="text-clay font-semibold hover:underline">หน้าแพ็กเกจ</a>
+                        ส่วนที่ปรึกษาคือซื้อเวลาและความเห็นทางเทคนิค เหมาะตอนที่ยังไม่รู้ว่าควรทำอะไร
+                        หรือมีทีมอยู่แล้วแต่ต้องการคนช่วยตัดสินใจและรีวิว
+                    </p>
+                </details>
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>ตรวจระบบครึ่งวันแล้วได้อะไรกลับไปบ้าง</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        ได้รายงานเป็นเอกสารที่ระบุสิ่งที่ตรวจพบ จัดลำดับตามความเสี่ยงและผลกระทบ
+                        พร้อมข้อเสนอแนะว่าควรแก้อะไรก่อนหลังและแต่ละข้อใช้แรงประมาณเท่าไหร่
+                        และมีนัดรีวิวรายงานอีก 1 ชั่วโมงเพื่อถามต่อได้
+                        <strong class="text-ink">รายงานเป็นของคุณ</strong> จะเอาไปให้ทีมอื่นทำต่อก็ได้
+                    </p>
+                </details>
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>รับงานเร่งด่วนหรือ on-call 24 ชั่วโมงไหม</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        <strong class="text-ink">ไม่รับ on-call 24 ชั่วโมง</strong> เพราะทำงานประจำอยู่ และไม่อยากรับปากในสิ่งที่ทำไม่ได้จริง
+                        นัดคุยได้ช่วงเย็นวันทำการและวันหยุด ตอบกลับข้อความภายใน 1 วันทำการ
+                        ถ้าคุณต้องการการดูแลระดับ 24/7 จริง ๆ ควรใช้ทีม managed service ที่มีคนผลัดเวร
+                    </p>
+                </details>
+                <details class="group bg-paper border border-line rounded-2xl p-6">
+                    <summary class="font-bold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                        <span>จ่ายเงินยังไง มีใบเสร็จไหม</span>
+                        <i class="fa-solid fa-plus text-xs text-faint group-open:rotate-45 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-subtle leading-relaxed mt-4 mb-0">
+                        โอนผ่านธนาคาร งานรายชั่วโมงและตรวจระบบเก็บหลังจบงาน ส่วน retainer เก็บต้นเดือน
+                        ออกใบเสร็จ/ใบแจ้งหนี้ให้ได้ตามที่ฝ่ายบัญชีต้องการ
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Related reading -->
+        <section class="mt-16">
+            <h2 class="text-xl font-extrabold text-ink tracking-tight mb-5">อ่านก่อนตัดสินใจ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/blog/hire-devops-consultant-hourly/" class="p-5 bg-paper border border-line rounded-2xl hover:border-clay/40 transition-colors">
+                    <div class="text-xs font-semibold text-clay mb-2">บทความ</div>
+                    <h3 class="font-bold text-ink text-[15px] leading-snug">จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม</h3>
+                </a>
+                <a href="/blog/aws-cost-sme-thailand/" class="p-5 bg-paper border border-line rounded-2xl hover:border-clay/40 transition-colors">
+                    <div class="text-xs font-semibold text-clay mb-2">บทความ</div>
+                    <h3 class="font-bold text-ink text-[15px] leading-snug">ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME</h3>
+                </a>
+                <a href="/blog/hire-freelance-devops-vs-agency/" class="p-5 bg-paper border border-line rounded-2xl hover:border-clay/40 transition-colors">
+                    <div class="text-xs font-semibold text-clay mb-2">บทความ</div>
+                    <h3 class="font-bold text-ink text-[15px] leading-snug">จ้างฟรีแลนซ์ vs จ้างบริษัท ต่างกันตรงไหน</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mt-16 text-center p-9 md:p-12 bg-paper border border-line rounded-2xl">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-3">ยังไม่แน่ใจว่าควรเลือกแบบไหน</h2>
+            <p class="text-subtle text-sm leading-relaxed max-w-xl mx-auto mb-7">
+                เล่าปัญหามาสั้น ๆ ก็พอ เดี๋ยวช่วยดูให้ว่าควรเริ่มจากตรงไหน และควรใช้แบบไหนถึงจะไม่จ่ายเกินจำเป็น
+            </p>
+            <a href="mailto:korvuznox@gmail.com?subject=นัดคุยปรึกษา DevOps/Cloud"
+               class="inline-flex items-center gap-2 bg-ink hover:bg-clay text-cream font-medium px-6 py-3.5 rounded-xl transition-colors text-sm">
+                <i class="fa-solid fa-envelope text-xs"></i> korvuznox@gmail.com
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="py-14 border-t border-line text-center mt-10">
+        <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-sage"></span>
+            <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+        </div>
+        <p class="text-subtle text-sm mb-6">DevOps &amp; Cloud Engineer · รับทำเว็บและวางระบบ Cloud สำหรับธุรกิจไทย</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-subtle mb-6">
+            <a href="/" class="hover:text-ink transition-colors">หน้าแรก</a>
+            <a href="/work/" class="hover:text-ink transition-colors">ผลงาน</a>
+            <a href="/blog/" class="hover:text-ink transition-colors">บทความ</a>
+            <a href="/resume/" class="hover:text-ink transition-colors">Resume</a>
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-8">
+            <a href="https://github.com/korvuz-ai" target="_blank" rel="noopener" title="GitHub" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:korvuznox@gmail.com" title="Email" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-solid fa-envelope"></i></a>
+            <a href="/" title="หน้าแรก" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <p class="text-xs text-faint">© 2026 Korvuz. Created with passion for the Thai tech ecosystem.</p>
+    </footer>
+
+    <script>
+        // Slide-in menu
+        (function () {
+            const drawer  = document.getElementById('navDrawer');
+            const overlay = document.getElementById('navOverlay');
+            const toggle  = document.getElementById('navToggle');
+            if (!drawer || !overlay || !toggle) return;
+
+            const isOpen = () => !drawer.classList.contains('translate-x-full');
+
+            function open() {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                drawer.focus();
+            }
+            function close() {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                toggle.focus();
+            }
+
+            toggle.addEventListener('click', () => isOpen() ? close() : open());
+            document.getElementById('navClose').addEventListener('click', close);
+            overlay.addEventListener('click', close);
+            drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && isOpen()) close();
+            });
+        })();
+    </script>
+</body>
+
+</html>

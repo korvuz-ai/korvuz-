@@ -1,0 +1,10 @@
+{% macro media(project, item=none, priority=false, gallery=false) %}
+{% set image = item if item is not none else project.media.cover %}
+<div class="project-media{% if gallery %} gallery-media{% endif %}" data-media style="--image-fit:{{ image.fit|default('contain') if image else 'contain' }};--image-position:{{ image.position|default('50% 50%') if image else '50% 50%' }}">
+  <div class="media-placeholder" {% if image %}hidden{% endif %}><span class="placeholder-mark" aria-hidden="true">↗</span><strong>{{ project.title }}</strong></div>
+  {% if image %}<picture>
+    <source type="image/webp" srcset="{% for v in image.variants %}{{ v.webp }} {{ v.width }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="(max-width: 899px) 92vw, 760px">
+    <img src="{{ image.src }}" srcset="{% for v in image.variants %}{{ v.url }} {{ v.width }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="(max-width: 899px) 92vw, 760px" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="{{ 'eager' if priority else 'lazy' }}" decoding="async" {% if priority %}fetchpriority="high"{% endif %}>
+  </picture>{% endif %}
+</div>
+{% endmacro %}

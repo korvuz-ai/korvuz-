@@ -1,0 +1,56 @@
+
+Running 27 tests using 2 workers
+
+(node:2896688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2896687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2896688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2896687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/browser/hub.spec.mjs:3:1 › all real Home project images decode when reached and product actions stay independent (7.9s)
+  ✓   2 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: / (28.0s)
+  ✓   3 [desktop] › tests/browser/portfolio.spec.mjs:3:1 › every page loads with no errors or horizontal overflow (36.3s)
+  ✓   4 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /contact/ (18.3s)
+  ✓   5 [desktop] › tests/browser/typography.spec.mjs:2:1 › meaningful body copy remains readable at narrow widths (11.7s)
+  ✓   6 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/linecrm/ (15.9s)
+(node:2898688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2898688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/fiatline/ (9.9s)
+  ✓   9 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/english-reader/ (8.8s)
+  ✓   8 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: / (14.5s)
+  ✓  10 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/devops-kb/ (10.9s)
+  ✓  11 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /contact/ (9.8s)
+(node:2899952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2899952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/linecrm/ (8.4s)
+  ✓  13 [tablet] › tests/browser/hub.spec.mjs:3:1 › all real Home project images decode when reached and product actions stay independent (6.4s)
+  ✓  14 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/fiatline/ (8.6s)
+  ✓  16 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/english-reader/ (11.6s)
+  ✓  15 [tablet] › tests/browser/portfolio.spec.mjs:3:1 › every page loads with no errors or horizontal overflow (23.1s)
+  ✓  17 [tablet] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/devops-kb/ (9.9s)
+  ✓  18 [tablet] › tests/browser/typography.spec.mjs:2:1 › meaningful body copy remains readable at narrow widths (7.0s)
+(node:2901261) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2901261) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2901383) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2901383) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 [mobile375] › tests/browser/hub.spec.mjs:3:1 › all real Home project images decode when reached and product actions stay independent (7.1s)
+  ✓  19 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: / (18.0s)
+  ✓  22 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /contact/ (11.0s)
+  ✓  21 [mobile375] › tests/browser/portfolio.spec.mjs:3:1 › every page loads with no errors or horizontal overflow (23.5s)
+  ✓  23 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/linecrm/ (10.3s)
+  ✓  24 [mobile375] › tests/browser/typography.spec.mjs:2:1 › meaningful body copy remains readable at narrow widths (7.2s)
+  ✓  25 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/fiatline/ (6.5s)
+  ✓  26 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/english-reader/ (6.3s)
+  ✓  27 [mobile375] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/devops-kb/ (7.3s)
+
+  27 passed (3.5m)

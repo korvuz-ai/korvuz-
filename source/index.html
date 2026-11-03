@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Korvuz — รับทำเว็บ Static/WordPress &amp; วางระบบ Cloud DevOps (AWS)</title>
+    <meta name="description" content="Korvuz — DevOps &amp; Cloud Engineer รับทำเว็บ Static/WordPress และวางระบบ Cloud (AWS), CI/CD, Automation สำหรับธุรกิจไทย ดูราคาแพ็กเกจและคำนวณราคาออนไลน์ได้ทันที">
+    <meta name="author" content="Korvuz">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#F7F5F0">
+    <link rel="canonical" href="https://korvuz.site/">
+
+    <!-- Open Graph (LINE / Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Korvuz">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:url" content="https://korvuz.site/">
+    <meta property="og:title" content="Korvuz — รับทำเว็บ &amp; วางระบบ Cloud DevOps (AWS)">
+    <meta property="og:description" content="รับทำเว็บ Static/WordPress และวางระบบ Cloud, CI/CD, Automation สำหรับธุรกิจไทย — ดูราคาและคำนวณราคาออนไลน์ได้ทันที">
+    <meta property="og:image" content="https://korvuz.site/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Korvuz — รับทำเว็บ &amp; วางระบบ Cloud DevOps (AWS) เริ่มต้น ฿8,000">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Korvuz — รับทำเว็บ &amp; วางระบบ Cloud DevOps (AWS)">
+    <meta name="twitter:description" content="รับทำเว็บ Static/WordPress และวางระบบ Cloud, CI/CD, Automation สำหรับธุรกิจไทย — ดูราคาและคำนวณราคาออนไลน์ได้ทันที">
+    <meta name="twitter:image" content="https://korvuz.site/og-image.png">
+    <meta name="twitter:image:alt" content="Korvuz — รับทำเว็บ &amp; วางระบบ Cloud DevOps (AWS) เริ่มต้น ฿8,000">
+
+    <!-- Structured data: Person + Service + pricing offers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://korvuz.site/#korvuz",
+          "name": "Korvuz",
+          "url": "https://korvuz.site/",
+          "jobTitle": "DevOps & Cloud Engineer",
+          "email": "mailto:korvuznox@gmail.com",
+          "sameAs": ["https://github.com/korvuz-ai"],
+          "knowsAbout": ["AWS","Amazon EKS","Kubernetes","Terraform","Ansible","Docker","Jenkins","DevOps","Cloud Migration","Apache Kafka","Splunk","CIS Benchmarks","Web Development","WordPress","CI/CD"],
+          "address": { "@type": "PostalAddress", "addressCountry": "TH" }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://korvuz.site/#service",
+          "name": "Korvuz — รับทำเว็บ & วางระบบ Cloud",
+          "url": "https://korvuz.site/#services",
+          "image": "https://korvuz.site/og-image.png",
+          "provider": { "@id": "https://korvuz.site/#korvuz" },
+          "areaServed": { "@type": "Country", "name": "Thailand" },
+          "availableLanguage": ["th","en"],
+          "priceRange": "฿8,000 - ฿35,000+",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "บริการรับทำเว็บ & Cloud",
+            "itemListElement": [
+              { "@type": "Offer", "priceCurrency": "THB", "price": "8000", "name": "เว็บ Static", "description": "Landing page / Portfolio / เว็บบริษัท responsive โหลดไว" },
+              { "@type": "Offer", "priceCurrency": "THB", "price": "20000", "name": "เว็บ WordPress", "description": "ระบบหลังบ้านแก้เองได้ · ร้านค้า · บล็อก · ระบบสมาชิก" },
+              { "@type": "Offer", "priceCurrency": "THB", "price": "15000", "name": "Cloud / DevOps", "description": "วางระบบ · Migrate ขึ้น AWS · CI/CD · Monitoring" },
+              { "@type": "Offer", "url": "https://korvuz.site/consult/#hourly", "name": "ที่ปรึกษา DevOps รายชั่วโมง", "description": "ปรึกษาเรื่อง cloud และ infrastructure เป็นรายชั่วโมง ขั้นต่ำ 2 ชั่วโมง พร้อมสรุปเป็นข้อความหลังจบ", "priceCurrency": "THB", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "THB", "minPrice": 1500, "maxPrice": 2500, "unitCode": "HUR", "unitText": "ชั่วโมง" } },
+              { "@type": "Offer", "url": "https://korvuz.site/consult/#audit", "name": "ตรวจระบบครึ่งวัน (Audit)", "description": "ตรวจสถาปัตยกรรม สิทธิ์เข้าถึง ค่าใช้จ่ายคลาวด์ การสำรองข้อมูล และกระบวนการ deploy พร้อมรายงานจัดลำดับความเสี่ยง", "priceCurrency": "THB", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "THB", "minPrice": 6000, "maxPrice": 9000 } },
+              { "@type": "Offer", "url": "https://korvuz.site/consult/#retainer", "name": "ดูแลต่อเนื่องรายเดือน (Retainer)", "description": "โควตาชั่วโมงต่อเดือน ช่องทางถามตอบ ดูแล monitoring และรีวิวค่าใช้จ่ายคลาวด์รายเดือน", "priceCurrency": "THB", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "THB", "minPrice": 15000, "maxPrice": 30000, "unitCode": "MON", "unitText": "เดือน" } }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://korvuz.site/#website",
+          "url": "https://korvuz.site/",
+          "name": "Korvuz",
+          "inLanguage": "th",
+          "publisher": { "@id": "https://korvuz.site/#korvuz" }
+        }
+      ]
+    }
+    </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream:   '#F7F5F0',   // warm paper base
+                        paper:   '#FFFFFF',
+                        warm:    '#FDFCFA',
+                        ink:     '#33322D',   // warm near-black (body text)
+                        subtle:  '#6B6A5F',   // secondary text
+                        faint:   '#9A978A',   // tertiary / meta
+                        line:    '#E8E4DA',   // warm hairline borders
+                        sage:    '#6F8560',   // primary accent — sage green
+                        sageBg:  '#E9EEE1',
+                        clay:    '#BC7B4E',   // secondary accent — clay / terracotta
+                        clayBg:  '#F5E7DA',
+                        gold:    '#A8863B',   // dusty gold
+                        goldBg:  '#F1E9D2',
+                        terra:   '#AB6F66',   // muted terracotta-rose
+                        terraBg: '#F1E2DD',
+                        sand:    '#9E9782',   // warm neutral
+                        sandBg:  '#EDE9DE',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans Thai', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { background-color: #F7F5F0; }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #F7F5F0; }
+        ::-webkit-scrollbar-thumb { background: #DAD5C7; border-radius: 9999px; border: 3px solid #F7F5F0; }
+        ::-webkit-scrollbar-thumb:hover { background: #C8C2B0; }
+
+        /* Soft ambient blobs — warm, subtle */
+        .blob { filter: blur(95px); pointer-events: none; }
+
+        /* Editorial highlight under a word */
+        .ink-underline {
+            background-image: linear-gradient(120deg, rgba(188,123,78,0.24), rgba(188,123,78,0.24));
+            background-repeat: no-repeat;
+            background-size: 100% 36%;
+            background-position: 0 84%;
+        }
+
+        /* Project card */
+        .work-card {
+            transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1), border-color .5s;
+        }
+        .work-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 24px 48px -24px rgba(51,50,45,0.22);
+        }
+        .work-card:hover img { transform: scale(1.035); }
+
+        /* Fork card (hero) */
+        .fork-card {
+            transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s cubic-bezier(.16,1,.3,1), border-color .45s;
+        }
+        .fork-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 22px 44px -26px rgba(51,50,45,0.28);
+        }
+
+        /* Browser-chrome frame so dark screenshots read as intentional insets */
+        .shot-frame {
+            background: #F1EEE7;
+            padding: 10px 10px 0;
+            border-radius: 16px 16px 0 0;
+        }
+        .shot-inset {
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 8px 20px -10px rgba(51,50,45,.35);
+        }
+
+        /* Timeline */
+        .tl-line { background: linear-gradient(to bottom, #BC7B4E, #6F8560); }
+
+        .fade-up { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.16,1,.3,1); }
+        .fade-up.in { opacity: 1; transform: none; }
+
+        .scrollbar-none::-webkit-scrollbar { display: none; }
+        .scrollbar-none { scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-ink font-sans antialiased min-h-screen relative overflow-x-hidden selection:bg-clay/20 selection:text-clay">
+
+    <span id="top"></span>
+    <!-- Soft ambient warm blobs -->
+    <div class="fixed top-[-8%] left-[-6%] w-[42vw] h-[42vw] rounded-full bg-sageBg blob opacity-70 -z-10"></div>
+    <div class="fixed top-[32%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-clayBg blob opacity-60 -z-10"></div>
+    <div class="fixed bottom-[-10%] left-[22%] w-[34vw] h-[34vw] rounded-full bg-goldBg blob opacity-50 -z-10"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-line/70 bg-cream/70 backdrop-blur-xl">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-2 group">
+                <span class="w-2.5 h-2.5 rounded-full bg-sage group-hover:bg-clay transition-colors"></span>
+                <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+            </a>
+
+            <div class="flex items-center gap-5">
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-subtle">
+                    <a href="#work" class="hover:text-ink transition-colors">Work</a>
+                    <a href="#services" class="hover:text-ink transition-colors">Pricing</a>
+                    <a href="/consult/" class="hover:text-ink transition-colors">Consulting</a>
+                    <a href="/blog/" class="hover:text-ink transition-colors">Blog</a>
+                </nav>
+
+                <button id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer"
+                        class="w-10 h-10 rounded-full bg-paper border border-line text-ink hover:border-sage/50 hover:text-clay transition-colors flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide-in menu -->
+    <div id="navOverlay" class="fixed inset-0 z-[60] bg-ink/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <aside id="navDrawer" role="dialog" aria-modal="true" aria-label="Main menu" tabindex="-1"
+           class="fixed top-0 right-0 z-[70] h-full w-[85%] max-w-xs bg-cream border-l border-line shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col">
+
+        <div class="flex items-center justify-between px-6 h-16 border-b border-line shrink-0">
+            <span class="text-sm font-semibold text-faint tracking-widest uppercase">Menu</span>
+            <button id="navClose" type="button" aria-label="Close menu"
+                    class="w-9 h-9 rounded-full bg-paper border border-line text-subtle hover:text-clay hover:border-clay/40 transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto px-4 py-5 flex flex-col gap-0.5 text-[15px] font-medium">
+            <a href="#experience" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-briefcase w-4 text-center text-xs text-faint"></i> Experience
+            </a>
+            <a href="#stack" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-layer-group w-4 text-center text-xs text-faint"></i> Stack
+            </a>
+            <a href="#work" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-folder-open w-4 text-center text-xs text-faint"></i> Work
+            </a>
+            <a href="#services" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-tag w-4 text-center text-xs text-faint"></i> Pricing
+            </a>
+            <a href="/consult/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-comments w-4 text-center text-xs text-faint"></i> Consulting
+            </a>
+            <a href="#calc" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-calculator w-4 text-center text-xs text-faint"></i> Price calculator
+            </a>
+            <a href="/blog/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-pen-nib w-4 text-center text-xs text-faint"></i> Blog
+            </a>
+            <a href="#sandbox" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-terminal w-4 text-center text-xs text-faint"></i> Terminal
+            </a>
+            <a href="#contact" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-envelope w-4 text-center text-xs text-faint"></i> Contact
+            </a>
+
+            <div class="border-t border-line my-3"></div>
+
+            <a href="/resume/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-id-card w-4 text-center text-xs text-faint"></i> Resume
+            </a>
+            <a href="/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf" target="_blank" rel="noopener"
+               class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-clay hover:bg-clayBg/60 transition-colors">
+                <i class="fa-solid fa-file-arrow-down w-4 text-center text-xs"></i> Download Resume
+            </a>
+        </nav>
+
+        <div class="px-6 py-5 border-t border-line shrink-0">
+            <div class="inline-flex items-center gap-2 text-xs text-subtle bg-paper border border-line px-3.5 py-1.5 rounded-full">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-sage"></span>
+                </span>
+                <span class="font-medium">open to work · TH</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="relative z-10 max-w-6xl mx-auto px-6">
+
+        <!-- Hero -->
+        <section class="pt-20 pb-16 md:pt-28 md:pb-20">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 bg-paper border border-line px-3.5 py-1.5 rounded-full text-xs font-semibold text-subtle tracking-wide mb-8">
+                    <i class="fa-solid fa-server text-sage"></i>
+                    <span>DEVOPS &amp; CLOUD ENGINEER · INDIE BUILDER · 🇹🇭</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-7 text-ink">
+                    ดูแล cloud ระดับองค์กร<br class="hidden sm:block">
+                    และสร้าง <span class="ink-underline text-clay">โปรดักต์ที่คนใช้จริง</span>
+                </h1>
+
+                <p class="text-subtle text-lg md:text-xl leading-relaxed max-w-2xl mb-2">
+                    Senior DevOps Specialist · ประสบการณ์ 5+ ปี ทั้งสาย network, systems และ cloud —
+                    เชี่ยวชาญ <span class="text-ink font-medium">Kubernetes/EKS, CI/CD, Infrastructure as Code และ automation</span>
+                    กลางวันคุม infrastructure ที่ scale จริง กลางคืนสร้าง SaaS ของตัวเอง
+                </p>
+            </div>
+
+            <!-- Dual-track fork -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Track A: hiring -->
+                <div class="fork-card bg-paper border border-line rounded-2xl p-7 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-sageBg flex items-center justify-center">
+                            <i class="fa-solid fa-briefcase text-sage"></i>
+                        </div>
+                        <span class="text-xs font-semibold tracking-widest text-sage uppercase">For hiring teams</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink mb-1.5">กำลังหา DevOps / Cloud Engineer?</h3>
+                    <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                        งานสาย infrastructure ตั้งแต่ชั้น network ยัน Kubernetes — EKS, Jenkins, Terraform + Ansible,
+                        AWS migration และ presales solution design พร้อมเริ่มงานที่ท้าทาย
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf" target="_blank" rel="noopener" class="group bg-ink hover:bg-sage text-cream font-medium px-5 py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2.5 text-sm">
+                            <i class="fa-solid fa-file-arrow-down text-xs"></i>
+                            <span>ดาวน์โหลด Resume</span>
+                        </a>
+                        <a href="#stack" class="group px-5 py-3 rounded-xl border border-line hover:border-sage/40 hover:bg-sageBg/50 text-ink transition-all duration-300 flex items-center justify-center gap-2 text-sm font-medium">
+                            <span>ดูสกิลทั้งหมด</span>
+                            <i class="fa-solid fa-arrow-down text-xs text-sage transition-transform group-hover:translate-y-0.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Track B: users -->
+                <div class="fork-card bg-paper border border-line rounded-2xl p-7 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-clayBg flex items-center justify-center">
+                            <i class="fa-solid fa-cube text-clay"></i>
+                        </div>
+                        <span class="text-xs font-semibold tracking-widest text-clay uppercase">For users</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink mb-1.5">อยากลองเครื่องมือที่ผมสร้าง?</h3>
+                    <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                        โปรดักต์ที่รันจริงบน production — InvoiceAI.th, LineCRM, FiatLine,
+                        English Reader และ DevOps KB เครื่องมือสำหรับ developer, ฟรีแลนซ์ และ SME ไทย
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#work" class="group bg-clay hover:bg-ink text-cream font-medium px-5 py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2.5 text-sm">
+                            <span>ดูผลงานทั้งหมด</span>
+                            <i class="fa-solid fa-arrow-down text-xs transition-transform group-hover:translate-y-0.5"></i>
+                        </a>
+                        <a href="#sandbox" class="group px-5 py-3 rounded-xl border border-line hover:border-clay/40 hover:bg-clayBg/50 text-ink transition-all duration-300 flex items-center justify-center gap-2 text-sm font-medium">
+                            <i class="fa-solid fa-terminal text-xs text-clay"></i>
+                            <span>ลอง Terminal</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inline stats -->
+            <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 border-t border-line pt-10">
+                <div>
+                    <div class="text-3xl font-extrabold text-ink tracking-tight">EKS</div>
+                    <div class="text-xs text-faint uppercase tracking-widest font-semibold mt-1">Kubernetes · Jenkins</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-sage tracking-tight">AWS</div>
+                    <div class="text-xs text-faint uppercase tracking-widest font-semibold mt-1">Cloud &amp; migration</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-clay tracking-tight">20+</div>
+                    <div class="text-xs text-faint uppercase tracking-widest font-semibold mt-1">Tasks automated</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-gold tracking-tight">SaaS</div>
+                    <div class="text-xs text-faint uppercase tracking-widest font-semibold mt-1">โปรดักต์ที่รันอยู่จริง</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="py-16 scroll-mt-20 fade-up">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-clay uppercase">Experience</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ink mt-2 tracking-tight">ประสบการณ์ที่พิสูจน์แล้วในงานจริง</h2>
+                </div>
+                <p class="text-subtle text-sm max-w-md">
+                    งาน infrastructure ระดับองค์กร — เน้น automation, ความเสถียร และการส่งมอบที่วัดผลได้จริง
+                </p>
+            </div>
+
+            <div class="relative pl-8 md:pl-10">
+                <!-- vertical line -->
+                <div class="absolute left-[7px] md:left-[9px] top-2 bottom-2 w-0.5 tl-line rounded-full opacity-70"></div>
+
+                <!-- Current role -->
+                <div class="relative mb-8">
+                    <span class="absolute -left-8 md:-left-10 top-1.5 w-3.5 h-3.5 rounded-full bg-sage ring-4 ring-cream"></span>
+                    <div class="bg-paper border border-line rounded-2xl p-6 md:p-7">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-ink">Senior DevOps Specialist</h3>
+                                <p class="text-subtle text-sm">บริษัทเทคโนโลยีในประเทศไทย</p>
+                            </div>
+                            <span class="inline-flex items-center gap-2 text-xs font-semibold text-sage bg-sageBg px-3 py-1 rounded-full whitespace-nowrap self-start">
+                                <span class="relative flex h-1.5 w-1.5">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70"></span>
+                                    <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-sage"></span>
+                                </span>
+                                2026 – ปัจจุบัน
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-subtle leading-relaxed">
+                            <li class="flex gap-2.5"><i class="fa-solid fa-cubes text-sage text-xs mt-1"></i><span>Deploy สเกลท่าง ๆ บน <span class="text-ink font-medium">Amazon EKS</span> และดูแล <span class="text-ink font-medium">Jenkins pipeline</span> ที่ build และส่งของขึ้นไป</span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-right-left text-clay text-xs mt-1"></i><span>ย้าย workload จาก <span class="text-ink font-medium">IBM Cloud กลับมา on-premises</span> — วางแผนกับทีมเจ้าของแอพ และรัน cutover เอง</span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-chart-line text-gold text-xs mt-1"></i><span>ดูแลชั้น event streaming และ logging — <span class="text-ink font-medium">Kafka</span> และ <span class="text-ink font-medium">Splunk</span></span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-shield-halved text-terra text-xs mt-1"></i><span>Hardening <span class="text-ink font-medium">RHEL 9</span> ด้วย Ansible + OpenSCAP ตาม CIS benchmark พร้อมออกรายงาน audit ในรอบเดียว</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps 2023-2025 -->
+                <div class="relative mb-8">
+                    <span class="absolute -left-8 md:-left-10 top-1.5 w-3.5 h-3.5 rounded-full bg-clay ring-4 ring-cream"></span>
+                    <div class="bg-paper border border-line rounded-2xl p-6 md:p-7">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-ink">DevOps &amp; Cloud Engineer</h3>
+                                <p class="text-subtle text-sm">ธนาคารชั้นนำของไทย · ผู้ให้บริการโซลูชันคลาวด์ · บริษัทไอทีข้ามชาติ</p>
+                            </div>
+                            <span class="text-xs font-semibold text-clay bg-clayBg px-3 py-1 rounded-full whitespace-nowrap self-start">2023 – 2025</span>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-subtle leading-relaxed">
+                            <li class="flex gap-2.5"><i class="fa-solid fa-cloud-arrow-up text-sage text-xs mt-1"></i><span>ออกแบบและ migrate workload ขึ้น <span class="text-ink font-medium">AWS</span> (EC2, VPC, Transit Gateway, ECS, IAM) แบบ end-to-end</span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-code-branch text-clay text-xs mt-1"></i><span>วาง <span class="text-ink font-medium">Infrastructure as Code</span> ด้วย Terraform + Ansible (AAP) คุม environment ทั้งระบบในธนาคาร</span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-chart-line text-gold text-xs mt-1"></i><span>ตั้ง observability stack <span class="text-ink font-medium">Grafana / Prometheus / Loki</span> และดูแลระบบ hybrid cloud (AWS + Azure + on-prem)</span></li>
+                            <li class="flex gap-2.5"><i class="fa-solid fa-drafting-compass text-terra text-xs mt-1"></i><span>Presales solution design: HLD, สถาปัตยกรรม และ cost optimization ให้ลูกค้าองค์กร</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Background -->
+                <div class="relative">
+                    <span class="absolute -left-8 md:-left-10 top-1.5 w-3.5 h-3.5 rounded-full bg-sand ring-4 ring-cream"></span>
+                    <div class="bg-paper/60 border border-line rounded-2xl p-6 md:p-7">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-ink">Network &amp; Systems Engineering</h3>
+                                <p class="text-subtle text-sm">พื้นฐานก่อนสาย Cloud</p>
+                            </div>
+                            <span class="text-xs font-semibold text-sand bg-sandBg px-3 py-1 rounded-full whitespace-nowrap self-start">จุดตั้งต้น</span>
+                        </div>
+                        <p class="text-sm text-subtle leading-relaxed">
+                            งานดูแลระบบ network และ infrastructure จริง — Cisco (DNA · ISE · WLC), firewalls
+                            (Sophos · Fortigate · pfSense), VMware ESXi / vCenter และ Linux
+                            ทำให้เข้าใจ infrastructure ตั้งแต่ชั้น network ยันชั้น cloud
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="py-16 scroll-mt-20 fade-up">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-clay uppercase">Core stack</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ink mt-2 tracking-tight">เครื่องมือที่ใช้จริงในงานระดับ production</h2>
+                </div>
+                <p class="text-subtle text-sm max-w-md">
+                    Cloud, IaC, containers และ observability ที่ใช้ดูแล infrastructure ระดับองค์กร — เน้น automation และความเสถียร
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-sageBg flex items-center justify-center"><i class="fa-brands fa-aws text-sage"></i></div>
+                        <h4 class="font-bold text-ink">Cloud Platforms</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-sageBg text-sage px-2.5 py-1 rounded-full font-medium">AWS</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">EC2</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">VPC · Transit GW</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">IAM · SSO</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Azure</span>
+                    </div>
+                </div>
+                <!-- IaC & Automation -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-clayBg flex items-center justify-center"><i class="fa-solid fa-code-branch text-clay"></i></div>
+                        <h4 class="font-bold text-ink">IaC &amp; Automation</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-clayBg text-clay px-2.5 py-1 rounded-full font-medium">Terraform</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Ansible (AAP)</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Jenkins</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Scripting</span>
+                    </div>
+                </div>
+                <!-- Containers -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-goldBg flex items-center justify-center"><i class="fa-brands fa-docker text-gold"></i></div>
+                        <h4 class="font-bold text-ink">Containers</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-goldBg text-gold px-2.5 py-1 rounded-full font-medium">Docker</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Amazon ECS</span>
+                    </div>
+                </div>
+                <!-- Observability -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-terraBg flex items-center justify-center"><i class="fa-solid fa-chart-line text-terra"></i></div>
+                        <h4 class="font-bold text-ink">Monitoring &amp; Logging</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-terraBg text-terra px-2.5 py-1 rounded-full font-medium">Grafana</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Prometheus</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Loki</span>
+                    </div>
+                </div>
+                <!-- Networking & Security -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-sageBg flex items-center justify-center"><i class="fa-solid fa-shield-halved text-sage"></i></div>
+                        <h4 class="font-bold text-ink">Networking &amp; Security</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-sageBg text-sage px-2.5 py-1 rounded-full font-medium">HAProxy</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Cisco (DNA·ISE·WLC)</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Sophos · Fortigate</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">pfSense</span>
+                    </div>
+                </div>
+                <!-- Systems -->
+                <div class="p-6 bg-paper border border-line rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-clayBg flex items-center justify-center"><i class="fa-brands fa-linux text-clay"></i></div>
+                        <h4 class="font-bold text-ink">Systems &amp; Virtualization</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-clayBg text-clay px-2.5 py-1 rounded-full font-medium">Linux</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">VMware ESXi · vCenter</span>
+                        <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Windows Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlight strip: sellable specialties -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex items-start gap-3 p-5 bg-sageBg/50 border border-sage/15 rounded-2xl">
+                    <i class="fa-solid fa-cloud-arrow-up text-sage mt-0.5"></i>
+                    <div>
+                        <div class="font-bold text-ink text-sm">AWS Cloud Migration</div>
+                        <div class="text-subtle text-xs mt-0.5">ย้าย workload ขึ้น cloud แบบ end-to-end</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-5 bg-clayBg/50 border border-clay/15 rounded-2xl">
+                    <i class="fa-solid fa-drafting-compass text-clay mt-0.5"></i>
+                    <div>
+                        <div class="font-bold text-ink text-sm">Presales Solution Design</div>
+                        <div class="text-subtle text-xs mt-0.5">HLD, สถาปัตยกรรม และ cost optimization</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-5 bg-goldBg/50 border border-gold/15 rounded-2xl">
+                    <i class="fa-solid fa-gears text-gold mt-0.5"></i>
+                    <div>
+                        <div class="font-bold text-ink text-sm">Infrastructure as Code</div>
+                        <div class="text-subtle text-xs mt-0.5">Terraform + Ansible คุม environment ทั้งระบบ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section id="work" class="py-16 scroll-mt-20 fade-up">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-clay uppercase">Selected work</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ink mt-2 tracking-tight">ผลงานที่ใช้งานจริง</h2>
+                </div>
+                <p class="text-subtle text-sm max-w-md">
+                    เครื่องมือที่คิดและสร้างขึ้นเพื่อตอบโจทย์ Developer, ฟรีแลนซ์ และผู้ประกอบการยุคดิจิทัล — หลักฐานว่า "ทำจริง ส่งจริง"
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+
+                <!-- Project 1: DevOps KB -->
+                <div class="work-card bg-paper border border-line rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="goToProject(event,'https://doc.korvuz.site')">
+                    <div class="shot-frame">
+                        <div class="flex items-center gap-1.5 pb-2.5 px-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-terra/50"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-clay/60"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-sage/60"></span>
+                            <span class="text-[11px] font-mono text-faint ml-2">doc.korvuz.site</span>
+                        </div>
+                        <div class="shot-inset" style="height:200px;">
+                            <img src="devops.jpg" alt="DevOps KB" class="w-full h-full object-cover object-top transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-9 h-9 rounded-xl bg-sageBg flex items-center justify-center">
+                                <i class="fa-solid fa-server text-sage"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-ink">DevOps KB</h3>
+                        </div>
+                        <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                            Knowledge base สำหรับ DevOps engineer — visualizations, cheatsheets, interactive labs และ tutorials ไม่มี dependencies รันได้ทุกที่อย่างรวดเร็ว
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="text-[11px] bg-sageBg text-sage px-2.5 py-1 rounded-full font-medium">DevOps</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Docs</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Vanilla JS</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Zero-dep</span>
+                        </div>
+                        <a href="https://doc.korvuz.site" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage hover:gap-3 transition-all text-sm font-semibold">
+                            <span>Open KB</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: FiatLine -->
+                <div class="work-card bg-paper border border-line rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="goToProject(event,'https://line.korvuz.site')">
+                    <div class="shot-frame">
+                        <div class="flex items-center gap-1.5 pb-2.5 px-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-terra/50"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-clay/60"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-sage/60"></span>
+                            <span class="text-[11px] font-mono text-faint ml-2">line.korvuz.site</span>
+                        </div>
+                        <div class="shot-inset" style="height:200px;">
+                            <img src="fiatline.jpg" alt="FiatLine" class="w-full h-full object-cover object-top transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-9 h-9 rounded-xl bg-clayBg flex items-center justify-center">
+                                <i class="fa-solid fa-file-invoice-dollar text-clay"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-ink">FiatLine</h3>
+                        </div>
+                        <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                            บัญชีรายรับ-รายจ่ายบน LINE พร้อม Slip OCR, AI auto-categorize, monthly dashboard และ savings goals จัดการเงินง่าย ๆ ผ่านแชท LINE ไม่ต้องโหลดแอป
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="text-[11px] bg-clayBg text-clay px-2.5 py-1 rounded-full font-medium">LINE OA</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Slip OCR</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">AI Logic</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Finance</span>
+                        </div>
+                        <a href="https://line.korvuz.site" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-clay hover:gap-3 transition-all text-sm font-semibold">
+                            <span>ลองใช้งานผ่าน LINE</span>
+                            <i class="fa-solid fa-comment-dots text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: InvoiceAI.th -->
+                <div class="work-card bg-paper border border-line rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="goToProject(event,'https://invoice.korvuz.site')">
+                    <div class="shot-frame">
+                        <div class="flex items-center gap-1.5 pb-2.5 px-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-terra/50"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-clay/60"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-sage/60"></span>
+                            <span class="text-[11px] font-mono text-faint ml-2">invoice.korvuz.site</span>
+                        </div>
+                        <div class="shot-inset" style="height:200px;">
+                            <img src="invoice.jpg" alt="InvoiceAI.th" class="w-full h-full object-cover object-top transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-9 h-9 rounded-xl bg-goldBg flex items-center justify-center">
+                                <i class="fa-solid fa-wand-magic-sparkles text-gold"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-ink">InvoiceAI.th</h3>
+                        </div>
+                        <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                            ออกใบแจ้งหนี้ภาษาไทยด้วย AI ในเวลาเพียง 10 วินาที เหมาะสำหรับ Freelance และธุรกิจขนาดเล็กที่ต้องการปิดดีลอย่างมืออาชีพ รวดเร็ว
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="text-[11px] bg-goldBg text-gold px-2.5 py-1 rounded-full font-medium">Generative AI</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">SME Invoice</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">ภาษาไทย</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Freelance</span>
+                        </div>
+                        <a href="https://invoice.korvuz.site" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gold hover:gap-3 transition-all text-sm font-semibold">
+                            <span>ออกบิลเลย</span>
+                            <i class="fa-solid fa-file-signature text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: LineCRM -->
+                <div class="work-card bg-paper border border-line rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="goToProject(event,'https://crm.korvuz.site')">
+                    <div class="shot-frame">
+                        <div class="flex items-center gap-1.5 pb-2.5 px-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-terra/50"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-clay/60"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-sage/60"></span>
+                            <span class="text-[11px] font-mono text-faint ml-2">crm.korvuz.site</span>
+                        </div>
+                        <div class="shot-inset" style="height:200px;">
+                            <img src="linecrm.jpg" alt="LineCRM" class="w-full h-full object-cover object-top transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-9 h-9 rounded-xl bg-terraBg flex items-center justify-center">
+                                <i class="fa-solid fa-users-gear text-terra"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-ink">LineCRM</h3>
+                        </div>
+                        <p class="text-subtle text-sm leading-relaxed mb-5 flex-grow">
+                            CRM ระบบปิดการขายและติดตามดีลลูกค้า เชื่อมต่อกับ LINE Official Account ออกแบบเพื่อ SME ไทย มีทั้งบอร์ด Kanban และระบบวิเคราะห์ด้วย AI
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="text-[11px] bg-terraBg text-terra px-2.5 py-1 rounded-full font-medium">SME CRM</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">LINE API</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Kanban</span>
+                            <span class="text-[11px] bg-cream text-subtle border border-line px-2.5 py-1 rounded-full font-medium">Node.js</span>
+                        </div>
+                        <a href="https://crm.korvuz.site" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-terra hover:gap-3 transition-all text-sm font-semibold">
+                            <span>ดูระบบ CRM</span>
+                            <i class="fa-solid fa-shapes text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="/work/" class="inline-flex items-center gap-2 bg-cream border border-line text-ink px-6 py-3 rounded-full text-sm font-semibold hover:border-sage/50 hover:text-clay transition-colors">
+                    <span>อ่านเบื้องหลังผลงานทั้งหมด</span>
+                    <i class="fa-solid fa-arrow-right text-[11px]"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services & Pricing -->
+        <section id="services" class="py-16 scroll-mt-20 fade-up">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-clay uppercase">Services &amp; pricing</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ink mt-2 tracking-tight">รับทำเว็บ &amp; วางระบบ Cloud</h2>
+                </div>
+                <p class="text-subtle text-sm max-w-md">
+                    เลือกแพ็กเกจที่ใช่ หรือกดคำนวณราคาเองด้านล่าง — โปร่งใส รู้ราคาก่อนเริ่มงานจริง
+                </p>
+            </div>
+
+            <!-- Package tiers -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Static -->
+                <div class="relative p-7 bg-paper border border-line rounded-2xl flex flex-col">
+                    <div class="w-11 h-11 rounded-2xl bg-sageBg text-sage flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-bolt text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">เว็บ Static</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">Landing page / Portfolio / เว็บบริษัท โหลดไว SEO ดี</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">เริ่มต้น</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿8,000</div>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1"></i><span>ดีไซน์ responsive มือถือ/จอใหญ่</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1"></i><span>1–5 หน้า โหลดเร็วมาก</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1"></i><span>ฟอร์มติดต่อ + เชื่อมโดเมน</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-sage text-xs mt-1"></i><span>ตั้งค่า SEO พื้นฐาน + SSL ฟรี</span></li>
+                    </ul>
+                    <a href="#calc" class="mt-6 inline-flex items-center justify-center gap-2 border border-line hover:border-sage/40 hover:bg-sageBg/50 text-ink font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>คำนวณราคา</span><i class="fa-solid fa-calculator text-xs text-sage"></i>
+                    </a>
+                </div>
+
+                <!-- WordPress (highlighted) -->
+                <div class="relative p-7 bg-paper border-2 border-clay/40 rounded-2xl flex flex-col shadow-[0_24px_48px_-28px_rgba(188,123,78,0.4)]">
+                    <span class="absolute -top-3 left-7 text-[11px] font-bold tracking-wide text-cream bg-clay px-3 py-1 rounded-full">ยอดนิยม</span>
+                    <div class="w-11 h-11 rounded-2xl bg-clayBg text-clay flex items-center justify-center mb-5">
+                        <i class="fa-brands fa-wordpress text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">เว็บ WordPress</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">แก้เนื้อหาเองได้ · ร้านค้า · บล็อก · ระบบสมาชิก</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">เริ่มต้น</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿20,000</div>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1"></i><span>ระบบหลังบ้านแก้เองได้ทั้งเว็บ</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1"></i><span>ธีมออกแบบเฉพาะ ไม่โหลๆ</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1"></i><span>รองรับร้านค้า (WooCommerce)</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-clay text-xs mt-1"></i><span>สอนใช้งาน + ดูแล 1 เดือนแรกฟรี</span></li>
+                    </ul>
+                    <a href="#calc" class="mt-6 inline-flex items-center justify-center gap-2 bg-clay hover:bg-ink text-cream font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>คำนวณราคา</span><i class="fa-solid fa-calculator text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Cloud / DevOps -->
+                <div class="relative p-7 bg-paper border border-line rounded-2xl flex flex-col">
+                    <div class="w-11 h-11 rounded-2xl bg-goldBg text-gold flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-cloud text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-ink">Cloud / DevOps</h3>
+                    <p class="text-subtle text-xs mt-1 mb-4">วางระบบ · ย้ายขึ้น Cloud · Automation · Monitoring</p>
+                    <div class="mb-5">
+                        <span class="text-xs text-faint">เริ่มต้น</span>
+                        <div class="text-3xl font-extrabold text-ink tracking-tight">฿15,000</div>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-subtle leading-relaxed flex-grow">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1"></i><span>ออกแบบสถาปัตยกรรม (HLD) + คุมงบ</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1"></i><span>ตั้ง server / Docker / CI-CD</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1"></i><span>Migrate ขึ้น AWS แบบ end-to-end</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold text-xs mt-1"></i><span>ระบบ Monitoring + แจ้งเตือน</span></li>
+                    </ul>
+                    <a href="#calc" class="mt-6 inline-flex items-center justify-center gap-2 border border-line hover:border-gold/40 hover:bg-goldBg/50 text-ink font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>คำนวณราคา</span><i class="fa-solid fa-calculator text-xs text-gold"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Price calculator -->
+            <div id="calc" class="mt-10 scroll-mt-24 bg-paper border border-line rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-5">
+                    <!-- Options -->
+                    <div class="lg:col-span-3 p-7 md:p-8 border-b lg:border-b-0 lg:border-r border-line">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-9 h-9 rounded-xl bg-sageBg flex items-center justify-center"><i class="fa-solid fa-calculator text-sage"></i></div>
+                            <div>
+                                <h3 class="font-bold text-ink">คำนวณราคาโดยประมาณ</h3>
+                                <p class="text-xs text-subtle">เลือกแบบที่ต้องการ ราคาจะรวมให้อัตโนมัติ</p>
+                            </div>
+                        </div>
+
+                        <!-- Base type -->
+                        <p class="text-xs font-semibold tracking-widest text-faint uppercase mb-3">1 · ประเภทเว็บ / งาน</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-7">
+                            <label class="calc-tier cursor-pointer">
+                                <input type="radio" name="base" value="8000" data-group="web" class="peer sr-only" checked>
+                                <div class="h-full px-4 py-3 rounded-xl border border-line peer-checked:border-sage peer-checked:bg-sageBg/50 transition-all">
+                                    <div class="text-sm font-bold text-ink">เว็บ Static</div>
+                                    <div class="text-xs text-subtle mt-0.5">฿8,000</div>
+                                </div>
+                            </label>
+                            <label class="calc-tier cursor-pointer">
+                                <input type="radio" name="base" value="20000" data-group="web" class="peer sr-only">
+                                <div class="h-full px-4 py-3 rounded-xl border border-line peer-checked:border-clay peer-checked:bg-clayBg/50 transition-all">
+                                    <div class="text-sm font-bold text-ink">WordPress</div>
+                                    <div class="text-xs text-subtle mt-0.5">฿20,000</div>
+                                </div>
+                            </label>
+                            <label class="calc-tier cursor-pointer">
+                                <input type="radio" name="base" value="15000" data-group="cloud" class="peer sr-only">
+                                <div class="h-full px-4 py-3 rounded-xl border border-line peer-checked:border-gold peer-checked:bg-goldBg/50 transition-all">
+                                    <div class="text-sm font-bold text-ink">Cloud / DevOps</div>
+                                    <div class="text-xs text-subtle mt-0.5">฿15,000</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Add-ons -->
+                        <p class="text-xs font-semibold tracking-widest text-faint uppercase mb-3">2 · ออปชันเสริม / งานแก้เพิ่ม</p>
+
+                        <!-- Web add-ons (Static / WordPress) -->
+                        <div class="space-y-2.5 calc-group" data-group="web">
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-sage/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="1500" class="w-4 h-4 accent-sage">
+                                <span class="text-sm text-ink flex-grow">หน้าเพิ่ม (ต่อ 1 หน้า)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿1,500</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-sage/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="3500" class="w-4 h-4 accent-sage">
+                                <span class="text-sm text-ink flex-grow">2 ภาษา (ไทย + อังกฤษ)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿3,500</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-sage/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="5000" class="w-4 h-4 accent-sage">
+                                <span class="text-sm text-ink flex-grow">เชื่อม LINE / Chatbot / ระบบ AI</span>
+                                <span class="text-sm font-semibold text-subtle">+฿5,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-sage/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="3000" class="w-4 h-4 accent-sage">
+                                <span class="text-sm text-ink flex-grow">ตั้งค่า SEO + Google Analytics</span>
+                                <span class="text-sm font-semibold text-subtle">+฿3,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-sage/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="1500" class="w-4 h-4 accent-sage">
+                                <span class="text-sm text-ink flex-grow">รอบแก้งานเพิ่ม (ต่อ 1 รอบ)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿1,500</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-clay/40 transition-all">
+                                <input type="checkbox" data-kind="month" value="2000" class="w-4 h-4 accent-clay">
+                                <span class="text-sm text-ink flex-grow">ดูแลรายเดือน (อัปเดต + สำรองข้อมูล)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿2,000<span class="text-xs text-faint">/ด.</span></span>
+                            </label>
+                        </div>
+
+                        <!-- Cloud / DevOps add-ons -->
+                        <div class="space-y-2.5 calc-group hidden" data-group="cloud">
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-gold/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="8000" class="w-4 h-4 accent-gold">
+                                <span class="text-sm text-ink flex-grow">Infrastructure as Code (Terraform / Ansible)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿8,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-gold/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="6000" class="w-4 h-4 accent-gold">
+                                <span class="text-sm text-ink flex-grow">ตั้ง CI/CD Pipeline (auto deploy)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿6,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-gold/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="5000" class="w-4 h-4 accent-gold">
+                                <span class="text-sm text-ink flex-grow">ระบบ Monitoring + Dashboard (Grafana)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿5,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-gold/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="7000" class="w-4 h-4 accent-gold">
+                                <span class="text-sm text-ink flex-grow">Auto-scaling / High Availability</span>
+                                <span class="text-sm font-semibold text-subtle">+฿7,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-gold/40 transition-all">
+                                <input type="checkbox" data-kind="once" value="3000" class="w-4 h-4 accent-gold">
+                                <span class="text-sm text-ink flex-grow">Migrate เพิ่ม (ต่อ 1 server / service)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿3,000</span>
+                            </label>
+                            <label class="calc-add flex items-center gap-3 px-4 py-3 rounded-xl border border-line cursor-pointer hover:border-clay/40 transition-all">
+                                <input type="checkbox" data-kind="month" value="5000" class="w-4 h-4 accent-clay">
+                                <span class="text-sm text-ink flex-grow">ดูแล/มอนิเตอร์ระบบรายเดือน (retainer)</span>
+                                <span class="text-sm font-semibold text-subtle">+฿5,000<span class="text-xs text-faint">/ด.</span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Total -->
+                    <div class="lg:col-span-2 p-7 md:p-8 bg-cream/60 flex flex-col">
+                        <p class="text-xs font-semibold tracking-widest text-faint uppercase mb-4">สรุปราคาโดยประมาณ</p>
+                        <div class="flex items-baseline gap-1 mb-1">
+                            <span class="text-4xl font-extrabold text-ink tracking-tight" id="calcTotal">฿8,000</span>
+                        </div>
+                        <p class="text-xs text-subtle mb-1">ราคาเริ่มต้น (จ่ายครั้งเดียว)</p>
+                        <p class="text-sm font-semibold text-clay mb-6 hidden" id="calcMonthly">+ ฿2,000 / เดือน (ดูแลต่อเนื่อง)</p>
+
+                        <div class="border-t border-line pt-5 mt-auto space-y-4">
+                            <p class="text-xs text-faint leading-relaxed">
+                                * เป็นราคาประเมินเบื้องต้น ราคาจริงขึ้นกับความซับซ้อนของงาน — ทักมาคุยได้ ประเมินให้ฟรี
+                            </p>
+                            <a href="mailto:korvuznox@gmail.com?subject=สอบถามทำเว็บ/วางระบบ Cloud" class="w-full inline-flex items-center justify-center gap-2.5 bg-ink hover:bg-sage text-cream font-medium px-5 py-3.5 rounded-xl transition-all text-sm">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                                <span>ส่งรายละเอียดขอใบเสนอราคา</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consulting cross-sell -->
+            <div class="mt-10 p-7 md:p-9 bg-paper border border-line rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-7 items-center">
+                <div class="md:col-span-2">
+                    <div class="inline-flex items-center gap-2 bg-clayBg text-clay px-3 py-1 rounded-full text-[11px] font-bold tracking-wide mb-4">
+                        <i class="fa-solid fa-comments text-[10px]"></i> CONSULTING
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-ink tracking-tight mb-3">ยังไม่อยากจ้างทำทั้งระบบ แค่อยากปรึกษาก่อน</h3>
+                    <p class="text-subtle text-sm leading-relaxed">
+                        บางงานยังไม่ถึงขั้นต้องจ้างเหมาโปรเจกต์ — แค่อยากรู้ว่าที่ทำอยู่ถูกทางไหม บิลคลาวด์แพงเกินจริงหรือเปล่า
+                        หรืออยากให้มีคนช่วยอ่านใบเสนอราคาก่อนเซ็น ตรงนี้คิดเป็นเวลา ไม่ใช่เหมาชิ้นงาน
+                    </p>
+                </div>
+                <div class="md:border-l md:border-line md:pl-7">
+                    <ul class="space-y-3 text-sm mb-5">
+                        <li class="flex items-baseline justify-between gap-3">
+                            <span class="text-subtle">รายชั่วโมง</span>
+                            <span class="font-bold text-ink whitespace-nowrap">฿1,500–2,500</span>
+                        </li>
+                        <li class="flex items-baseline justify-between gap-3">
+                            <span class="text-subtle">ตรวจระบบครึ่งวัน</span>
+                            <span class="font-bold text-ink whitespace-nowrap">฿6,000–9,000</span>
+                        </li>
+                        <li class="flex items-baseline justify-between gap-3">
+                            <span class="text-subtle">ดูแลรายเดือน</span>
+                            <span class="font-bold text-ink whitespace-nowrap">฿15,000–30,000</span>
+                        </li>
+                    </ul>
+                    <a href="/consult/" class="w-full inline-flex items-center justify-center gap-2 bg-clay hover:bg-ink text-cream font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                        <span>ดูเรตและขอบเขตงาน</span><i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach / Philosophy -->
+        <section id="approach" class="py-16 scroll-mt-20 fade-up">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-semibold tracking-widest text-clay uppercase">Approach</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-ink mt-2 tracking-tight">แนวคิดเบื้องหลังทุกโปรเจกต์</h2>
+                <p class="text-subtle text-sm mt-3 leading-relaxed">เลือกเครื่องมือที่เบา ประสิทธิภาพสูง เพื่อมอบประสบการณ์ใช้งานที่ดีที่สุด</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-7 bg-paper border border-line rounded-2xl">
+                    <div class="w-11 h-11 rounded-2xl bg-sageBg text-sage flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-microchip text-lg"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-ink mb-2">AI-First Infrastructure</h4>
+                    <p class="text-subtle text-sm leading-relaxed">
+                        ผสาน LLM และ AI Agents เข้ากับ Automation ช่วยประมวลผลข้อมูล คัดแยกสลิป และสรุปข้อเสนอแนะ โดยไม่ใช้ทรัพยากรเกินจำเป็น
+                    </p>
+                </div>
+                <div class="p-7 bg-paper border border-line rounded-2xl">
+                    <div class="w-11 h-11 rounded-2xl bg-clayBg text-clay flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-feather text-lg"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-ink mb-2">Zero-Dependency Core</h4>
+                    <p class="text-subtle text-sm leading-relaxed">
+                        ลดการพึ่งพา Libraries ภายนอกที่ไม่จำเป็น เพื่อความเร็วในการโหลด ความปลอดภัยสูงสุด และการดูแลรักษาระยะยาวที่ง่ายดาย
+                    </p>
+                </div>
+                <div class="p-7 bg-paper border border-line rounded-2xl">
+                    <div class="w-11 h-11 rounded-2xl bg-goldBg text-gold flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-cloud-bolt text-lg"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-ink mb-2">DevOps Mindset</h4>
+                    <p class="text-subtle text-sm leading-relaxed">
+                        วางโครงสร้างพื้นฐานด้วยความรู้ Cloud Native การันตีความเสถียร รองรับการขยายตัวในอนาคต (Scalability) ด้วยสถาปัตยกรรมที่ไร้รอยต่อ
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal -->
+        <section id="sandbox" class="py-16 scroll-mt-20 fade-up">
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8 text-center">
+                    <span class="text-xs font-semibold tracking-widest text-clay uppercase">Interactive sandbox</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-ink mt-1">ลองสั่งการระบบ Korvuz</h2>
+                    <p class="text-subtle text-sm mt-1">จำลอง Command-Line Shell พิมพ์คำสั่งเพื่อทำความรู้จักเรามากขึ้น</p>
+                </div>
+
+                <div class="bg-[#24231E] rounded-2xl overflow-hidden shadow-[0_30px_60px_-30px_rgba(51,50,45,0.5)] border border-[#33322B]">
+                    <div class="bg-[#2E2C26] px-4 py-3 flex items-center justify-between border-b border-[#3A382F]">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-[#CE8C7F]"></span>
+                            <span class="w-3 h-3 rounded-full bg-[#D6A85A]"></span>
+                            <span class="w-3 h-3 rounded-full bg-[#9DBE8A]"></span>
+                        </div>
+                        <span class="text-[11px] font-mono text-[#928D7F] tracking-wider">korvuz — v3.0.0</span>
+                        <div class="w-8"></div>
+                    </div>
+                    <div class="p-6 font-mono text-xs md:text-sm h-[320px] overflow-y-auto space-y-1 scrollbar-none" id="terminalOutput">
+                        <p class="text-[#928D7F]">Korvuz Interactive Shell [v3.0.0]</p>
+                        <p class="text-[#928D7F]">(c) Korvuz. Made in Thailand 🇹🇭</p>
+                        <br>
+                        <p class="text-[#D8D3C6]">พิมพ์ <span class="text-[#E0A96D] font-bold">help</span> เพื่อดูคำสั่งทั้งหมด</p>
+                        <br>
+                        <div class="flex items-center gap-2">
+                            <span id="terminalPrompt" class="text-[#9DBE8A] whitespace-nowrap">guest@korvuz:~$</span>
+                            <input type="text" id="terminalInput" class="bg-transparent border-none outline-none text-[#EDEAE0] flex-grow focus:ring-0 p-0 font-mono text-xs md:text-sm" autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer id="contact" class="py-16 border-t border-line text-center">
+            <div class="mb-8">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-sage"></span>
+                    <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+                </div>
+                <p class="text-subtle text-sm">DevOps &amp; Cloud Engineer · สร้างเครื่องมือที่ใช้งานได้จริงสำหรับ Thai tech ecosystem</p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-8 text-sm">
+                <a href="/work/" class="text-subtle hover:text-clay transition-colors">ผลงาน</a>
+                <a href="/consult/" class="text-subtle hover:text-clay transition-colors">ที่ปรึกษา DevOps</a>
+                <a href="/resume/" class="text-subtle hover:text-clay transition-colors">Resume</a>
+                <a href="/blog/" class="text-subtle hover:text-clay transition-colors">บทความ</a>
+                <a href="/blog/static-vs-wordpress/" class="text-subtle hover:text-clay transition-colors">เว็บ Static vs WordPress เลือกยังไง</a>
+                <a href="/blog/migrate-to-aws/" class="text-subtle hover:text-clay transition-colors">ย้ายระบบขึ้น AWS ต้องรู้อะไร</a>
+            </div>
+
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <a href="https://github.com/korvuz-ai" target="_blank" rel="noopener" title="GitHub" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:korvuznox@gmail.com" title="Email" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-solid fa-envelope"></i></a>
+                <a href="/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf" target="_blank" rel="noopener" title="Resume" class="w-10 h-10 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-sage/40 transition-all flex items-center justify-center"><i class="fa-solid fa-file-arrow-down"></i></a>
+            </div>
+
+            <p class="text-xs text-faint">© 2026 Korvuz. Created with passion for the Thai tech ecosystem.</p>
+        </footer>
+
+    </main>
+
+    <!-- Intro portfolio popup -->
+    <div id="introModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div id="introBackdrop" class="absolute inset-0 bg-ink/40 backdrop-blur-sm"></div>
+        <div class="relative w-full max-w-2xl bg-cream border border-line rounded-3xl shadow-[0_40px_80px_-30px_rgba(51,50,45,0.5)] overflow-hidden max-h-[90vh] flex flex-col">
+            <!-- header -->
+            <div class="flex items-start justify-between gap-4 p-6 md:p-7 pb-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-paper border border-line px-3 py-1 rounded-full text-[11px] font-semibold text-subtle tracking-wide mb-3">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+                        <span>WELCOME · ผลงานล่าสุด</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-ink tracking-tight">เครื่องมือที่รันจริงบน production</h3>
+                    <p class="text-subtle text-sm mt-1">DevOps · Cloud · รับทำเว็บ &amp; วางระบบให้ธุรกิจไทย</p>
+                </div>
+                <button id="introClose" aria-label="ปิด" class="shrink-0 w-9 h-9 rounded-full bg-paper border border-line text-subtle hover:text-ink hover:border-clay/40 transition-all flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- projects grid -->
+            <div class="px-6 md:px-7 overflow-y-auto scrollbar-none">
+                <div class="grid grid-cols-2 gap-3">
+                    <a href="https://doc.korvuz.site" target="_blank" rel="noopener" class="group bg-paper border border-line rounded-xl overflow-hidden hover:border-sage/40 transition-all">
+                        <div class="h-24 overflow-hidden"><img src="devops.jpg" alt="DevOps KB" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-3"><div class="text-sm font-bold text-ink">DevOps KB</div><div class="text-[11px] text-subtle">Knowledge base สำหรับ DevOps</div></div>
+                    </a>
+                    <a href="https://line.korvuz.site" target="_blank" rel="noopener" class="group bg-paper border border-line rounded-xl overflow-hidden hover:border-clay/40 transition-all">
+                        <div class="h-24 overflow-hidden"><img src="fiatline.jpg" alt="FiatLine" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-3"><div class="text-sm font-bold text-ink">FiatLine</div><div class="text-[11px] text-subtle">บัญชีรายรับ-จ่ายบน LINE</div></div>
+                    </a>
+                    <a href="https://invoice.korvuz.site" target="_blank" rel="noopener" class="group bg-paper border border-line rounded-xl overflow-hidden hover:border-gold/40 transition-all">
+                        <div class="h-24 overflow-hidden"><img src="invoice.jpg" alt="InvoiceAI.th" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-3"><div class="text-sm font-bold text-ink">InvoiceAI.th</div><div class="text-[11px] text-subtle">ออกใบแจ้งหนี้ด้วย AI</div></div>
+                    </a>
+                    <a href="https://crm.korvuz.site" target="_blank" rel="noopener" class="group bg-paper border border-line rounded-xl overflow-hidden hover:border-terra/40 transition-all">
+                        <div class="h-24 overflow-hidden"><img src="linecrm.jpg" alt="LineCRM" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-3"><div class="text-sm font-bold text-ink">LineCRM</div><div class="text-[11px] text-subtle">CRM เชื่อม LINE สำหรับ SME</div></div>
+                    </a>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="p-6 md:p-7 pt-5 flex flex-col sm:flex-row gap-3">
+                <button id="introEnter" class="flex-grow inline-flex items-center justify-center gap-2 bg-ink hover:bg-sage text-cream font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                    <span>เข้าสู่เว็บไซต์</span><i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+                <a href="#services" id="introPricing" class="inline-flex items-center justify-center gap-2 border border-line hover:border-clay/40 hover:bg-clayBg/40 text-ink font-medium px-5 py-3 rounded-xl transition-all text-sm">
+                    <i class="fa-solid fa-calculator text-xs text-clay"></i><span>ดูราคา / จ้างทำเว็บ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // --- REVEAL ON SCROLL ---
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+        // --- TERMINAL (korvuz) ---
+        const terminalInput = document.getElementById('terminalInput');
+        const terminalOutput = document.getElementById('terminalOutput');
+        const PROMPT = 'guest@korvuz:~$';
+        const RESUME = '/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf';
+
+        const PROJECTS = {
+            devops:   'https://doc.korvuz.site',
+            fiatline: 'https://line.korvuz.site',
+            invoice:  'https://invoice.korvuz.site',
+            linecrm:  'https://crm.korvuz.site',
+            crm:      'https://crm.korvuz.site',
+        };
+
+        const RESPONSES = {
+            help: `<span class="text-[#D8D3C6]">คำสั่งที่ใช้ได้ใน korvuz</span>
+<br>
+  <span class="text-[#E0A96D]">whoami</span>              แนะนำตัว
+  <span class="text-[#E0A96D]">ls</span>                  ดูโปรเจกต์ทั้งหมด
+  <span class="text-[#E0A96D]">open &lt;name&gt;</span>        เปิดโปรเจกต์  <span class="text-[#8B8778]">[devops|fiatline|invoice|linecrm]</span>
+  <span class="text-[#E0A96D]">status</span>              ดูรายชื่อ service ที่เปิดใช้งานอยู่
+  <span class="text-[#E0A96D]">skills</span>              tech stack
+  <span class="text-[#E0A96D]">contact</span>             ติดต่อ
+  <span class="text-[#E0A96D]">resume</span>              เปิด/ดาวน์โหลด resume (PDF)
+  <span class="text-[#E0A96D]">neofetch</span>            system info
+  <span class="text-[#E0A96D]">git log</span>             commit history
+  <span class="text-[#E0A96D]">matrix</span>              ???
+  <span class="text-[#E0A96D]">sudo hire korvuz</span>    ...
+  <span class="text-[#E0A96D]">clear</span>               ล้างหน้าจอ`,
+
+            whoami: `<span class="text-[#9DBE8A] font-bold">korvuz</span> — DevOps & Cloud Engineer / builder
+<span class="text-[#57534A]">─────────────────────────────────</span>
+Senior DevOps Specialist · สร้าง SaaS ในเวลาว่าง
+เชี่ยวชาญ AWS/EKS · Jenkins · Terraform · Ansible · Kafka
+<br>
+<span class="text-[#928D7F]">currently:</span>  <span class="text-[#E0A96D]">cloud infra at scale + 5 live products</span>
+<span class="text-[#928D7F]">based in:</span>   <span class="text-[#E0A96D]">Thailand 🇹🇭</span>`,
+
+            ls: `<span class="text-[#928D7F]"> Directory of ~/korvuz/projects</span>
+<br>
+  <span class="text-[#9DBE8A]">devops</span>    <span class="text-[#57534A]">→</span> <span class="text-[#D8D3C6]">doc.korvuz.site</span>
+  <span class="text-[#9DBE8A]">fiatline</span>  <span class="text-[#57534A]">→</span> <span class="text-[#D8D3C6]">line.korvuz.site</span>
+  <span class="text-[#D6A85A]">invoice</span>   <span class="text-[#57534A]">→</span> <span class="text-[#D8D3C6]">invoice.korvuz.site</span>
+  <span class="text-[#E0A96D]">linecrm</span>   <span class="text-[#57534A]">→</span> <span class="text-[#D8D3C6]">crm.korvuz.site</span>
+<br>
+<span class="text-[#928D7F]">พิมพ์ <span class="text-white">open &lt;name&gt;</span> เพื่อเปิด</span>`,
+
+            status: `<span class="text-[#D8D3C6]">Live services</span>
+<br>
+<span class="text-[#D8D3C6]">doc.korvuz.site</span>        <span class="text-[#928D7F]">DevOps Knowledge Base</span>
+<span class="text-[#D8D3C6]">line.korvuz.site</span>       <span class="text-[#928D7F]">Fi — ผู้ช่วยจัดการเงินบน LINE</span>
+<span class="text-[#D8D3C6]">invoice.korvuz.site</span>    <span class="text-[#928D7F]">InvoiceAI — ใบแจ้งหนี้ภาษาไทยด้วย AI</span>
+<span class="text-[#D8D3C6]">crm.korvuz.site</span>        <span class="text-[#928D7F]">LineCRM — CRM สำหรับ SME ไทย</span>
+<br>
+<span class="text-[#928D7F]">พิมพ์ <span class="text-white">open &lt;name&gt;</span> เพื่อเปิดดูของจริง</span>`,
+
+            skills: `<span class="text-[#E0A96D] font-bold">// Tech Stack</span>
+<br>
+<span class="text-[#928D7F]">Cloud    </span>  AWS (EC2·VPC·ECS·IAM·Transit GW) · Azure
+<span class="text-[#928D7F]">IaC      </span>  Terraform · Ansible (AAP) · Jenkins
+<span class="text-[#928D7F]">Container</span>  Docker · Amazon ECS
+<span class="text-[#928D7F]">Observe  </span>  Grafana · Prometheus · Loki
+<span class="text-[#928D7F]">Network  </span>  HAProxy · Cisco · Sophos · Fortigate · pfSense
+<span class="text-[#928D7F]">Systems  </span>  Linux · VMware ESXi · vCenter · Windows Server
+<span class="text-[#928D7F]">Build    </span>  Node.js · Python · LINE OA · Vanilla JS`,
+
+            contact: `<span class="text-[#E0A96D] font-bold">// ติดต่อ korvuz</span>
+<br>
+<span class="text-[#928D7F]">Email </span>  <a href="mailto:korvuznox@gmail.com" class="text-[#E0A96D] hover:underline">korvuznox@gmail.com</a>
+<span class="text-[#928D7F]">Web   </span>  <a href="https://korvuz.site" class="text-[#E0A96D] hover:underline">korvuz.site</a>
+<span class="text-[#928D7F]">GitHub</span>  <a href="https://github.com/korvuz-ai" class="text-[#E0A96D] hover:underline">github.com/korvuz</a>
+<br>
+<span class="text-[#8B8778] text-xs">เปิดรับงาน DevOps/Cloud และช่วยธุรกิจไทยทำ Digital Automation ครับ</span>`,
+
+            neofetch: `<span class="text-[#9DBE8A]">██╗  ██╗ ██████╗ ██████╗ ██╗   ██╗██╗   ██╗███████╗</span>
+<span class="text-[#9DBE8A]">██║ ██╔╝██╔═══██╗██╔══██╗██║   ██║██║   ██║╚══███╔╝</span>
+<span class="text-[#D6A85A]">█████╔╝ ██║   ██║██████╔╝██║   ██║██║   ██║  ███╔╝ </span>
+<span class="text-[#D6A85A]">██╔═██╗ ██║   ██║██╔══██╗╚██╗ ██╔╝██║   ██║ ███╔╝  </span>
+<span class="text-[#C0794E]">██║  ██╗╚██████╔╝██║  ██║ ╚████╔╝ ╚██████╔╝███████╗</span>
+<span class="text-[#C0794E]">╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚══════╝</span>
+<br>
+<span class="text-white">korvuz</span><span class="text-[#928D7F]">@</span><span class="text-white">portfolio</span>
+<span class="text-[#57534A]">───────────────────────────────</span>
+<span class="text-[#9DBE8A]">OS         </span> Thailand 🇹🇭  <span class="text-[#8B8778]">(Linux 6.8 underneath)</span>
+<span class="text-[#9DBE8A]">Host       </span> korvuz.site
+<span class="text-[#9DBE8A]">Uptime     </span> building since '22
+<span class="text-[#9DBE8A]">Shell      </span> hustle + caffeine
+<span class="text-[#9DBE8A]">Resolution </span> 1440p dreams
+<span class="text-[#9DBE8A]">DE         </span> soft mode ✧
+<span class="text-[#9DBE8A]">WM         </span> nginx + cloudflare
+<span class="text-[#9DBE8A]">CPU        </span> Claude AI (assisted)
+<span class="text-[#9DBE8A]">Memory     </span> 4 projects / ∞ ideas`,
+
+            'git log': `<span class="text-[#D6A85A]">commit</span> <span class="text-[#D8D3C6]">a3f9d2b</span> <span class="text-[#E0A96D]">(HEAD → main, origin/main)</span>
+<span class="text-[#928D7F]">Author: korvuz &lt;build@korvuz.site&gt;</span>
+<span class="text-[#928D7F]">Date:   Fri Jun 20 03:47:12 2026 +0700</span>
+    <span class="text-[#D8D3C6]">fix: ทำงานจน 3am แต่ deploy สำเร็จ ✅</span>
+
+<span class="text-[#D6A85A]">commit</span> <span class="text-[#D8D3C6]">7c18e4a</span>
+<span class="text-[#928D7F]">Date:   Thu Jun 19 2026</span>
+    <span class="text-[#D8D3C6]">feat: ให้ AI ช่วยเขียน แต่ยังต้อง review เอง</span>
+
+<span class="text-[#D6A85A]">commit</span> <span class="text-[#D8D3C6]">2b91f3d</span>
+<span class="text-[#928D7F]">Date:   Mon Jun 10 2026</span>
+    <span class="text-[#D8D3C6]">feat: launch invoiceai.th 🚀</span>
+
+<span class="text-[#D6A85A]">commit</span> <span class="text-[#D8D3C6]">ff00001</span>
+<span class="text-[#928D7F]">Date:   2022-01-01</span>
+    <span class="text-[#D8D3C6]">init: เริ่มต้นจากความฝัน และกาแฟ 1 แก้ว ☕</span>`,
+
+            exit: `คุณออกไม่ได้ครับ 😈
+<span class="text-[#928D7F]">hint: try "sudo exit"</span>`,
+
+            'sudo exit': `<span class="text-[#D8D3C6]">[sudo] password for guest: <span class="text-[#57534A]">••••••••</span></span>
+<span class="text-[#CE8C7F]">sudo: exit: command not found</span>
+<span class="text-[#928D7F]">(ออกไม่ได้จริงๆ ครับ 🙏)</span>`,
+
+            'sudo hire korvuz': `<span class="text-[#D8D3C6]">[sudo] password for guest: <span class="text-[#57534A]">••••••••</span></span>
+<span class="text-[#D8D3C6]">Authenticating... </span><span class="text-[#9DBE8A]">✓</span>
+<span class="text-[#9DBE8A] font-bold">Permission granted.</span>
+<span class="text-[#D8D3C6]">Redirecting to contact channel...</span>
+<a href="mailto:korvuznox@gmail.com" class="text-[#E0A96D] underline">→ korvuznox@gmail.com</a>`,
+        };
+
+        function matrixLine() {
+            const chars = 'アカサタナハマヤラガザダバパイキシチニヒミリギジヂビピクスツヌフムユルグズブプエケセテネヘメレゲゼデベペオコソトノホモヨロゴゾドボポ01';
+            let out = '';
+            for (let i = 0; i < 6; i++) {
+                let row = '';
+                for (let j = 0; j < 48; j++) {
+                    const c = chars[Math.floor(Math.random() * chars.length)];
+                    const o = (Math.random() * 0.8 + 0.2).toFixed(2);
+                    row += `<span style="color:rgba(157,190,138,${o})">${c}</span>`;
+                }
+                out += row + '\n';
+            }
+            return out + '<span class="text-[#9DBE8A]">// wake up, korvuz... 🐰</span>';
+        }
+
+        function appendPrompt() {
+            const promptRow = document.createElement('div');
+            promptRow.className = 'flex items-center gap-2';
+            promptRow.innerHTML = `<span class="text-[#9DBE8A] whitespace-nowrap">${PROMPT}</span>`;
+            promptRow.appendChild(terminalInput);
+            terminalOutput.appendChild(promptRow);
+            terminalInput.focus();
+        }
+
+        terminalInput.addEventListener('keydown', function(e) {
+            if (e.key !== 'Enter') return;
+            const raw = terminalInput.value.trim();
+            const query = raw.toLowerCase();
+            if (!raw) return;
+
+            const promptRow = terminalInput.parentElement;
+            promptRow.innerHTML = `<span class="text-[#9DBE8A] whitespace-nowrap">${PROMPT}</span> <span class="text-[#EDEAE0]">${raw}</span>`;
+            terminalInput.value = '';
+
+            const out = document.createElement('div');
+            out.className = 'text-[#D8D3C6] leading-relaxed pl-2 whitespace-pre-wrap';
+
+            if (query === 'clear') {
+                terminalOutput.innerHTML = '';
+                appendPrompt();
+                return;
+            } else if (query.startsWith('open ')) {
+                const name = query.slice(5).trim();
+                const url = PROJECTS[name];
+                if (url) {
+                    out.innerHTML = `<span class="text-[#9DBE8A]">Opening</span> <span class="text-[#E0A96D]">${name}</span>...\n<span class="text-[#928D7F]">→ ${url}</span>`;
+                    window.open(url, '_blank', 'noopener');
+                } else {
+                    out.innerHTML = `<span class="text-[#CE8C7F]">ไม่พบโปรเจกต์ "${name}"</span>\nชื่อที่ใช้ได้: devops · fiatline · invoice · linecrm`;
+                }
+            } else if (query === 'resume' || query === 'cv') {
+                out.innerHTML = `<span class="text-[#9DBE8A]">Opening resume</span> <span class="text-[#928D7F]">→ ${RESUME}</span>\n<a href="${RESUME}" target="_blank" rel="noopener" class="text-[#E0A96D] underline">คลิกที่นี่ถ้าไม่เปิดอัตโนมัติ</a>`;
+                window.open(RESUME, '_blank', 'noopener');
+            } else if (query === 'matrix') {
+                out.className += ' font-mono text-[10px]';
+                out.innerHTML = matrixLine();
+            } else if (RESPONSES[query]) {
+                out.innerHTML = RESPONSES[query];
+            } else {
+                out.innerHTML = `<span class="text-[#CE8C7F]">'${raw}' is not recognized as an internal command.</span>\nพิมพ์ <span class="text-white">help</span> เพื่อดูคำสั่งทั้งหมด`;
+            }
+
+            terminalOutput.appendChild(out);
+            appendPrompt();
+            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        });
+
+        // --- CLICKABLE PROJECT CARDS ---
+        function goToProject(e, url) {
+            if (e.target.closest('a')) return;
+            window.open(url, '_blank', 'noopener');
+        }
+
+        // --- PRICE CALCULATOR ---
+        (function () {
+            const calc = document.getElementById('calc');
+            if (!calc) return;
+            const totalEl = document.getElementById('calcTotal');
+            const monthlyEl = document.getElementById('calcMonthly');
+            const groups = calc.querySelectorAll('.calc-group');
+            const baht = n => '฿' + n.toLocaleString('en-US');
+
+            // Show the add-on group matching the selected base type; reset the others.
+            function syncGroups() {
+                const active = calc.querySelector('input[name="base"]:checked').dataset.group;
+                groups.forEach(g => {
+                    const on = g.dataset.group === active;
+                    g.classList.toggle('hidden', !on);
+                    if (!on) g.querySelectorAll('input:checked').forEach(i => { i.checked = false; });
+                });
+            }
+
+            function recalc() {
+                let once = Number(calc.querySelector('input[name="base"]:checked').value);
+                let month = 0;
+                calc.querySelectorAll('.calc-group:not(.hidden) .calc-add input:checked').forEach(i => {
+                    const v = Number(i.value);
+                    if (i.dataset.kind === 'month') month += v; else once += v;
+                });
+                totalEl.textContent = baht(once);
+                if (month > 0) {
+                    monthlyEl.textContent = '+ ' + baht(month) + ' / เดือน (ดูแลต่อเนื่อง)';
+                    monthlyEl.classList.remove('hidden');
+                } else {
+                    monthlyEl.classList.add('hidden');
+                }
+            }
+
+            calc.addEventListener('change', e => {
+                if (e.target.name === 'base') syncGroups();
+                recalc();
+            });
+            syncGroups();
+            recalc();
+        })();
+
+        // --- INTRO PORTFOLIO POPUP (once per visitor) ---
+        (function () {
+            const modal = document.getElementById('introModal');
+            if (!modal) return;
+            const KEY = 'korvuz_intro_seen';
+
+            function open() {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+            function close() {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+                try { localStorage.setItem(KEY, '1'); } catch (e) {}
+            }
+
+            document.getElementById('introClose').addEventListener('click', close);
+            document.getElementById('introEnter').addEventListener('click', close);
+            document.getElementById('introBackdrop').addEventListener('click', close);
+            document.getElementById('introPricing').addEventListener('click', close);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) close();
+            });
+
+            let seen = false;
+            try { seen = localStorage.getItem(KEY) === '1'; } catch (e) {}
+            if (!seen) setTimeout(open, 450);
+        })();
+
+        // Slide-in menu
+        (function () {
+            const drawer  = document.getElementById('navDrawer');
+            const overlay = document.getElementById('navOverlay');
+            const toggle  = document.getElementById('navToggle');
+            if (!drawer || !overlay || !toggle) return;
+
+            const isOpen = () => !drawer.classList.contains('translate-x-full');
+
+            function open() {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                drawer.focus();
+            }
+            function close() {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'false');
+                // intro modal locks scroll too — don't unlock while it is still open
+                const intro = document.getElementById('introModal');
+                if (!intro || intro.classList.contains('hidden')) document.body.style.overflow = '';
+                toggle.focus();
+            }
+
+            toggle.addEventListener('click', () => isOpen() ? close() : open());
+            document.getElementById('navClose').addEventListener('click', close);
+            overlay.addEventListener('click', close);
+            drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && isOpen()) close();
+            });
+        })();
+    </script>
+</body>
+</html>

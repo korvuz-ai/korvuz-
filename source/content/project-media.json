@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "projects": {
+    "invoiceai": {
+      "cover": {
+        "src": "/assets/projects/invoiceai/cover-source.jpg",
+        "alt": "InvoiceAI — หน้าเว็บสร้างใบแจ้งหนี้ภาษาไทยด้วย AI",
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "screenshots": []
+    },
+    "linecrm": {
+      "cover": {
+        "src": "/assets/projects/linecrm/cover-source.jpg",
+        "alt": "LineCRM — ระบบ CRM เชื่อมต่อ LINE Official Account",
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "screenshots": []
+    },
+    "fiatline": {
+      "cover": {
+        "src": "/assets/projects/fiatline/cover-source.jpg",
+        "alt": "FiatLine — ผู้ช่วยการเงินส่วนตัวใน LINE",
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "screenshots": []
+    },
+    "english-reader": {
+      "cover": null,
+      "screenshots": []
+    },
+    "devops-kb": {
+      "cover": {
+        "src": "/assets/projects/devops-kb/cover-source.jpg",
+        "alt": "DevOps KB — คลังความรู้และแผนการเรียนรู้ AWS",
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "screenshots": []
+    }
+  }
+}

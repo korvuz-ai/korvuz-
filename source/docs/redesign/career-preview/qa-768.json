@@ -1,0 +1,199 @@
+{
+  "width": 768,
+  "routes": [
+    {
+      "route": "/about/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/aws-cost-sme-thailand/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/hire-devops-consultant-hourly/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/hire-freelance-devops-vs-agency/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/migrate-to-aws/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/static-vs-wordpress/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/blog/website-price-thailand-2026/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/experience/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/lab/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/local/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/pricing/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/resume/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/skills/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/devops-kb/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/english-reader/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/fiatline/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/invoiceai/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    },
+    {
+      "route": "/work/linecrm/",
+      "status": 200,
+      "overflow": false,
+      "wcagViolations": 0
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/?ref=qa#calc",
+      "target": "/pricing/?ref=qa#calculator"
+    },
+    {
+      "source": "/index.html?ref=qa#stack",
+      "target": "/about/?ref=qa#stack"
+    },
+    {
+      "source": "/?ref=qa#work",
+      "target": "/work/?ref=qa"
+    },
+    {
+      "source": "/?ref=qa#experience",
+      "target": "/experience/?ref=qa"
+    },
+    {
+      "source": "/?ref=qa#building",
+      "target": "/lab/?ref=qa"
+    },
+    {
+      "source": "/consult?ref=qa#audit",
+      "target": "/services/?ref=qa#audit"
+    },
+    {
+      "source": "/consult/index.html?ref=qa#retainer",
+      "target": "/services/?ref=qa#retainer"
+    }
+  ],
+  "downloads": [
+    {
+      "name": "resume.pdf",
+      "status": 200,
+      "originalBytes": true
+    },
+    {
+      "name": "DevOps_Engineer.pdf",
+      "status": 200,
+      "originalBytes": true
+    },
+    {
+      "name": "Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+      "status": 200,
+      "originalBytes": true
+    }
+  ],
+  "checks": [
+    "career-first Home, small Local teaser, keyboard navigation and focus",
+    "canonical contact links and encoded email draft; no message sent",
+    "SVG favicon, sitemap, consulting 301s, query/hash redirects and true custom 404/HEAD",
+    "static reduced-motion career pages",
+    "native keyboard menu and direct contacts without JavaScript"
+  ],
+  "errors": [],
+  "passed": true
+}

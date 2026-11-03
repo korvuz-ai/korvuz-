@@ -1,0 +1,58 @@
+
+> korvuz-portfolio@1.0.0 test:browser
+> playwright test --project=desktop
+
+
+Running 41 tests using 2 workers
+
+(node:3326955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3326956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3326956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3326955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/browser/content.spec.mjs:2:1 › contact draft links, original articles and printable resume (5.9s)
+  ✓   3 [desktop] › tests/browser/hub.spec.mjs:2:1 › career Home prioritizes the resume and keeps Local a small external gateway (2.5s)
+  ✓   2 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /about/ (10.6s)
+  ✓   4 [desktop] › tests/browser/legacy.spec.mjs:2:1 › moved sections retain legacy entrypoints and queries (6.7s)
+  ✓   6 [desktop] › tests/browser/legacy.spec.mjs:3:1 › terminal input is inert, commands and downloads work (3.9s)
+  ✓   5 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/aws-cost-sme-thailand/ (17.4s)
+  ✓   8 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/hire-devops-consultant-hourly/ (13.4s)
+  ✓   7 [desktop] › tests/browser/media-editor.spec.mjs:2:1 › central cover/gallery replacement, save, reload, reorder, remove and discard (25.7s)
+  ✓  10 [desktop] › tests/browser/media-editor.spec.mjs:3:1 › editing is frozen while files are being read or a save is in flight (5.8s)
+  ✓   9 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/hire-freelance-devops-vs-agency/ (10.2s)
+  ✓  11 [desktop] › tests/browser/motion.spec.mjs:2:1 › career pages stay static and respect reduced motion (6.4s)
+  ✓  13 [desktop] › tests/browser/motion.spec.mjs:12:1 › retained project-media parallax stays bounded and preserves image dimensions (5.4s)
+  ✓  12 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/ (9.1s)
+  ✓  15 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/migrate-to-aws/ (11.9s)
+  ✓  14 [desktop] › tests/browser/portfolio.spec.mjs:4:1 › every page loads with no errors or horizontal overflow (23.2s)
+  ✓  16 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/static-vs-wordpress/ (13.3s)
+  ✓  17 [desktop] › tests/browser/portfolio.spec.mjs:8:1 › legacy projects retain shared covers, independent links and graceful image fallback (7.2s)
+  ✓  19 [desktop] › tests/browser/pricing.spec.mjs:2:1 › calculator retains exact totals and correctly resets groups (10.2s)
+  ✓  18 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /blog/website-price-thailand-2026/ (15.0s)
+  ✓  21 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /contact/ (9.6s)
+  ✓  22 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /experience/ (8.9s)
+  ✓  23 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: / (9.8s)
+  ✓  24 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /lab/ (10.9s)
+  ✓  20 [desktop] › tests/browser/production-qa.spec.mjs:6:1 › production pages have complete metadata and no failed assets or console errors (42.0s)
+  ✓  26 [desktop] › tests/browser/production-qa.spec.mjs:31:1 › professional contact prepares an encoded email draft (3.0s)
+  ✓  25 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /local/ (9.3s)
+  ✓  27 [desktop] › tests/browser/production-qa.spec.mjs:38:1 › contain project covers keep their full image frame during hover (5.2s)
+  ✓  29 [desktop] › tests/browser/shell.spec.mjs:2:1 › responsive navigation, keyboard escape, reduced motion (3.6s)
+  ✓  30 [desktop] › tests/browser/shell.spec.mjs:3:1 › meaningful pages and links remain usable without javascript (4.3s)
+  ✓  31 [desktop] › tests/browser/shell.spec.mjs:4:1 › delayed navigation javascript must not move the hero after first paint (640ms)
+  ✓  28 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /pricing/ (12.1s)
+  ✓  32 [desktop] › tests/browser/typography.spec.mjs:2:1 › meaningful body copy remains readable at narrow widths (4.6s)
+  ✓  33 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /resume/ (5.3s)
+  ✓  34 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /services/ (3.7s)
+  ✓  35 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /skills/ (2.4s)
+  ✓  36 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/devops-kb/ (3.0s)
+  ✓  37 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/english-reader/ (3.1s)
+  ✓  38 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/fiatline/ (2.9s)
+  ✓  39 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/ (3.5s)
+  ✓  40 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/invoiceai/ (3.1s)
+  ✓  41 [desktop] › tests/browser/accessibility.spec.mjs:9:3 › WCAG A/AA landmarks and interaction: /work/linecrm/ (3.1s)
+
+  41 passed (3.4m)

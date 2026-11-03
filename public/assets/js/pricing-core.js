@@ -1,0 +1,4 @@
+/** @param {string} baseId @param {string[]} selectedIds @param {typeof import('./pricing-data.js').default} pricing */
+export function calculateEstimate(baseId,selectedIds,pricing){const base=pricing.bases.find(b=>b.id===baseId);if(!base)throw Error('Unknown base');let once=base.price,monthly=0;const selected=new Set(selectedIds);for(const option of pricing.options)if(option.group===base.group&&selected.has(option.id)){if(option.kind==='month')monthly+=option.price;else once+=option.price}return{once,monthly}}
+/** @param {string} nextBaseId @param {string[]} selectedIds @param {typeof import('./pricing-data.js').default} pricing */
+export function switchBase(nextBaseId,selectedIds,pricing){const base=pricing.bases.find(b=>b.id===nextBaseId);if(!base)throw Error('Unknown base');return[...new Set(selectedIds)].filter(id=>pricing.options.some(o=>o.id===id&&o.group===base.group))}

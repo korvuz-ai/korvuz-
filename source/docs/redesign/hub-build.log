@@ -1,0 +1,5 @@
+
+> korvuz-portfolio@1.0.0 build
+> python3 tools/build.py --output dist
+
+Built 20 canonical pages + legacy consulting redirect; 82 files, 2,164,747 bytes → dist

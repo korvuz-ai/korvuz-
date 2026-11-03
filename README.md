@@ -1,41 +1,42 @@
-# Hi there! 👋 I'm Korvuz
+# KORVUZ — Nuntawat Fangritlong
 
-## 🤖 DevOps Engineer + AI Enthusiast
+Personal website and technical writing by **Nuntawat Fangritlong**, Senior DevOps Specialist. My work spans cloud infrastructure, Kubernetes, infrastructure as code, CI/CD, and Linux systems.
 
-I leverage AI tools like **Claude** to supercharge my DevOps workflows - from writing infrastructure code to automating complex deployments.
+[Website](https://korvuz.site/) · [Resume](https://korvuz.site/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf) · [LinkedIn](https://linkedin.com/in/nuntawat-zeo) · [Email](mailto:nuntawat.works@gmail.com)
 
-### 🚀 What I Do
-- **Infrastructure as Code** with Terraform, Pulumi, CloudFormation
-- **CI/CD Pipelines** on GitHub Actions, GitLab CI, Jenkins
-- **Container Orchestration** with Kubernetes, Docker
-- **Cloud Platforms** - AWS, GCP, Azure
-- **AI-Assisted Development** - Using Claude for code generation, debugging, and optimization
+## About this repository
 
-### 💡 My Approach
+This repository brings the website's published files and development source together while preserving the existing Git history.
+
+| Path | Purpose |
+| --- | --- |
+| `public/` | Exact snapshot of the production website captured on 3 November 2026; the directory configured for Vercel deployment. |
+| `source/` | Existing Python/Jinja development source, templates, content, assets, and validation tools. |
+| `vercel.json` | Static hosting settings, legacy redirects, and security headers. |
+| `docs/` | Migration instructions and SHA-256 checksums for the production snapshot. |
+
+The production snapshot includes the personal homepage, downloadable resumes, and technical articles in Thai. It requires no application server or database.
+
+## Preview the website
+
+```bash
+python3 -m http.server 8765 --directory public
 ```
-Human Vision + AI Execution = Better DevOps
-```
 
-I believe in combining human expertise with AI capabilities to:
-- ✅ Write better, more maintainable code faster
-- ✅ Reduce bugs through AI-assisted code review
-- ✅ Automate repetitive tasks intelligently
-- ✅ Learn and adapt quickly to new technologies
+Open <http://localhost:8765/>. This previews the static files; Vercel-specific redirects and headers are applied by Vercel.
 
-### 🛠️ Tech Stack
-![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat&logo=terraform&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat&logo=go&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+## Deploy with Vercel
 
-### 🌟 Featured Projects
-Coming soon... Building with AI assistance!
+Import `korvuz-ai/korvuz-` into Vercel and keep the project root at the repository root. The checked-in configuration uses the **Other** framework preset, skips installation and building, and publishes `public/`.
 
-### 📫 Let's Connect
-- 💼 Open to collaborations on DevOps automation projects
-- 🤝 Interested in AI-enhanced development workflows
+Test the generated `vercel.app` deployment before connecting `korvuz.site`. Follow [the migration guide](docs/VERCEL-MIGRATION.md) for domain setup, verification, and retiring the previous hosting.
 
----
-⚡ *"Automating the future, one commit at a time"*
+## Development source
+
+The development source produces a different version of the website from the captured production snapshot. Rebuilding `source/` does **not** update `public/` automatically. Review a rebuilt version before promoting its files into the deployment directory.
+
+See [source/README.md](source/README.md) for the existing toolchain and build instructions. Its earlier hosting and deployment notes are historical context; the root `vercel.json` controls the planned Vercel deployment.
+
+## Contact
+
+For DevOps, cloud infrastructure, and technical collaboration: **[nuntawat.works@gmail.com](mailto:nuntawat.works@gmail.com)**.

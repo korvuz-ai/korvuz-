@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuntawat Fangritlong — Senior DevOps Engineer</title>
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --navy: #1a365d;
+            --navy-light: #2c5282;
+            --teal: #0d9488;
+            --teal-light: #14b8a6;
+            --teal-bg: #f0fdfa;
+            --slate: #475569;
+            --slate-light: #64748b;
+            --gray-100: #f8fafc;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --white: #ffffff;
+            --font-stack: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        html { font-size: 14px; }
+
+        body {
+            font-family: var(--font-stack);
+            color: var(--slate);
+            background: var(--gray-200);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== PAGE CONTAINER ===== */
+        .page {
+            max-width: 800px;
+            margin: 24px auto;
+            background: var(--white);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* ===== HEADER / HERO ===== */
+        .header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            padding: 36px 48px 28px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .header .title {
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: #90cdf4;
+            margin-bottom: 16px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            font-size: 0.875rem;
+            color: #cbd5e1;
+        }
+
+        .contact-row a {
+            color: #90cdf4;
+            text-decoration: none;
+        }
+
+        .contact-row a:hover { text-decoration: underline; }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-icon {
+            display: inline-flex;
+            width: 16px;
+            height: 16px;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .content {
+            padding: 32px 48px 40px;
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--navy);
+            border-bottom: 2px solid var(--teal);
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+            margin-top: 28px;
+        }
+
+        .section-title:first-child { margin-top: 0; }
+
+        /* ===== SUMMARY ===== */
+        .summary {
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: var(--slate);
+        }
+
+        .summary strong {
+            color: var(--navy);
+            font-weight: 600;
+        }
+
+        /* ===== KEY HIGHLIGHTS ===== */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .highlight-card {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+            border-top: 3px solid var(--teal);
+            border-radius: 6px;
+            padding: 16px 14px;
+            text-align: center;
+        }
+
+        .highlight-number {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+
+        .highlight-label {
+            font-size: 0.75rem;
+            color: var(--slate-light);
+            margin-top: 4px;
+            line-height: 1.3;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 24px;
+            margin-top: 4px;
+        }
+
+        .skill-row {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            padding: 4px 0;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--navy);
+            white-space: nowrap;
+            min-width: 100px;
+            font-size: 0.85rem;
+            padding-top: 1px;
+        }
+
+        .skill-items {
+            font-size: 0.85rem;
+            color: var(--slate);
+            line-height: 1.5;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--teal-bg);
+            color: var(--teal);
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin: 1px 2px;
+        }
+
+        /* ===== EXPERIENCE ===== */
+        .job {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .job:last-child { margin-bottom: 0; }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+
+        .job-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .job-company {
+            font-weight: 400;
+            color: var(--slate-light);
+        }
+
+        .job-date {
+            font-size: 0.8rem;
+            color: var(--teal);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .job ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .job li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-size: 0.8rem;
+            top: 1px;
+        }
+
+        .job li strong {
+            color: var(--navy);
+            font-weight: 600;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .product-card {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            padding: 12px 14px;
+        }
+
+        .product-name {
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 0.88rem;
+        }
+
+        .product-desc {
+            font-size: 0.8rem;
+            color: var(--slate-light);
+            margin-top: 2px;
+            line-height: 1.45;
+        }
+
+        .product-note {
+            font-size: 0.8rem;
+            color: var(--slate-light);
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* ===== EDUCATION ===== */
+        .edu-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .edu-title {
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 0.92rem;
+        }
+
+        .edu-subtitle {
+            font-weight: 400;
+            color: var(--slate-light);
+        }
+
+        .edu-date {
+            font-size: 0.8rem;
+            color: var(--teal);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html { font-size: 12.5px; }
+
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .page {
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header {
+                padding: 28px 40px 22px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .content {
+                padding: 24px 40px 32px;
+            }
+
+            .section-title { margin-top: 20px; }
+
+            .job { page-break-inside: avoid; }
+
+            a { color: inherit !important; }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .header { padding: 24px 20px 20px; }
+            .content { padding: 20px; }
+            .highlights { grid-template-columns: repeat(2, 1fr); }
+            .skills-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: 1fr; }
+            .contact-row { flex-direction: column; gap: 4px; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <h1>Nuntawat Fangritlong</h1>
+        <div class="title">Senior DevOps Engineer &nbsp;·&nbsp; AWS EKS &nbsp;·&nbsp; Kubernetes &nbsp;·&nbsp; Terraform &nbsp;·&nbsp; CI/CD</div>
+        <div class="contact-row">
+            <span class="contact-item">
+                <span class="contact-icon">✉</span>
+                <a href="mailto:nuntawat.works@gmail.com">nuntawat.works@gmail.com</a>
+            </span>
+            <span class="contact-item">
+                <span class="contact-icon">☎</span>
+                <span>+66 80-974-6514</span>
+            </span>
+            <span class="contact-item">
+                <span class="contact-icon">◉</span>
+                <span>Bangkok, Thailand</span>
+            </span>
+            <span class="contact-item">
+                <span class="contact-icon">⬡</span>
+                <a href="https://linkedin.com/in/nuntawat-zeo" target="_blank">LinkedIn</a>
+            </span>
+            <span class="contact-item">
+                <span class="contact-icon">⬡</span>
+                <a href="https://github.com/korvuz-ai" target="_blank">GitHub</a>
+            </span>
+            <span class="contact-item">
+                <span class="contact-icon">⬡</span>
+                <a href="https://korvuz.site" target="_blank">korvuz.site</a>
+            </span>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+        <!-- SUMMARY -->
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            DevOps engineer with <strong>5+ years</strong> spanning network infrastructure, cloud architecture, and platform engineering.
+            Currently a <strong>Senior DevOps Specialist</strong> coordinating releases across application, infrastructure, and security teams
+            — deploying services on <strong>AWS EKS</strong>, maintaining <strong>Jenkins</strong> CI/CD pipelines, and migrating workloads between
+            cloud and on-premises environments. Prior experience includes <strong>Terraform</strong> and <strong>Ansible AAP</strong> in a regulated
+            banking environment, AWS presales and network architecture, and years of Cisco networking and Linux systems.
+            Coming up from the network layer means debugging doesn't stop at the edge of the layer I own.
+            Outside work, I independently build and operate <strong>5 production SaaS products</strong> on my own infrastructure.
+        </p>
+
+        <!-- KEY HIGHLIGHTS -->
+        <h2 class="section-title">Key Highlights</h2>
+        <div class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-number">5+</div>
+                <div class="highlight-label">Years in DevOps<br>&amp; Cloud Infrastructure</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">5</div>
+                <div class="highlight-label">Production Products<br>Built &amp; Operated Solo</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">20+</div>
+                <div class="highlight-label">Manual Tasks<br>Automated via Scripts</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-number">~100%</div>
+                <div class="highlight-label">CIS Compliance<br>from Low 80s Baseline</div>
+            </div>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-row">
+                <span class="skill-category">Cloud</span>
+                <span class="skill-items">
+                    <span class="skill-tag">AWS (EKS, EC2, VPC, TGW, IAM, SSO, ECS, S3)</span>
+                    <span class="skill-tag">IBM Cloud</span>
+                    <span class="skill-tag">Azure</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Containers & CI/CD</span>
+                <span class="skill-items">
+                    <span class="skill-tag">Kubernetes / EKS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">GitLab CI</span>
+                    <span class="skill-tag">Helm</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">IaC & Automation</span>
+                <span class="skill-items">
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Ansible & AAP</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Python</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Observability</span>
+                <span class="skill-items">
+                    <span class="skill-tag">Splunk</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">Loki</span>
+                    <span class="skill-tag">Kafka</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Security</span>
+                <span class="skill-items">
+                    <span class="skill-tag">CIS Benchmarks</span>
+                    <span class="skill-tag">OpenSCAP</span>
+                    <span class="skill-tag">SELinux</span>
+                    <span class="skill-tag">PAM / authselect</span>
+                    <span class="skill-tag">auditd</span>
+                    <span class="skill-tag">VA</span>
+                    <span class="skill-tag">2FA</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Networking</span>
+                <span class="skill-items">
+                    <span class="skill-tag">HAProxy</span>
+                    <span class="skill-tag">Squid</span>
+                    <span class="skill-tag">Nginx</span>
+                    <span class="skill-tag">Cisco (DNA/ISE/WLC)</span>
+                    <span class="skill-tag">Sophos</span>
+                    <span class="skill-tag">Fortigate</span>
+                    <span class="skill-tag">pfSense</span>
+                </span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Systems</span>
+                <span class="skill-items">
+                    <span class="skill-tag">RHEL / Ubuntu</span>
+                    <span class="skill-tag">Windows Server</span>
+                    <span class="skill-tag">VMware ESXi / vCenter</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <h2 class="section-title">Professional Experience</h2>
+
+        <!-- Job 1 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Senior DevOps Specialist <span class="job-company">— Orbix Custodian</span></div>
+                <div class="job-date">Mar 2026 – Present</div>
+            </div>
+            <ul>
+                <li>Coordinate releases across <strong>application, infrastructure, and security teams</strong> — collect requirements, agree change windows, run deployments, and follow up on issues.</li>
+                <li>Deploy services onto <strong>Amazon EKS</strong> and maintain <strong>Jenkins</strong> pipelines that build, test, and ship into the cluster.</li>
+                <li>Migrated workloads from <strong>IBM Cloud back to on-premises</strong> — planned the move with application owners and executed the cutover with zero unplanned downtime.</li>
+                <li>Support the event-streaming and logging layer: <strong>Kafka</strong> between services and <strong>Splunk</strong> for tracing production incidents.</li>
+                <li>Harden <strong>RHEL 9</strong> servers with <strong>Ansible</strong> and <strong>OpenSCAP</strong> — scan against CIS benchmarks and produce audit reports, raising fleet compliance from the <strong>low 80s to near-full</strong>.</li>
+            </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">DevOps Engineer <span class="job-company">— Krungsri (Bank of Ayudhya)</span></div>
+                <div class="job-date">Mar 2025 – Dec 2025</div>
+            </div>
+            <ul>
+                <li>Designed and maintained modular <strong>Terraform</strong> infrastructure ensuring development and production environments stayed <strong>provably identical</strong> instead of drifting between releases.</li>
+                <li>Developed <strong>Ansible Automation Platform (AAP)</strong> playbooks for server provisioning and configuration, replacing manual build steps in a <strong>regulated banking environment</strong>.</li>
+                <li>Standardized containerized deployments with <strong>Docker</strong> and partnered with development teams to run releases across multiple environments.</li>
+            </ul>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Cloud Engineer <span class="job-company">— Mobileconnect</span></div>
+                <div class="job-date">Jul 2024 – Feb 2025</div>
+            </div>
+            <ul>
+                <li>Designed and implemented secure <strong>AWS network architectures</strong> using <strong>VPC</strong> and <strong>Transit Gateway</strong>, with access enforced through IAM and SSO.</li>
+                <li>Led <strong>AWS presales engagements</strong> — architecture recommendations, HLD diagrams, and cost-optimization proposals presented directly to clients.</li>
+                <li>Ran <strong>cloud migrations end to end</strong> and deployed containerized workloads on <strong>Amazon ECS</strong>.</li>
+                <li>Automated infrastructure provisioning and day-2 operations with <strong>Terraform</strong> and <strong>Ansible AAP</strong>.</li>
+            </ul>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Cloud Engineer <span class="job-company">— Fujitsu (Thailand) Co., Ltd.</span></div>
+                <div class="job-date">Dec 2023 – Jul 2024</div>
+            </div>
+            <ul>
+                <li>Operated hybrid environments spanning <strong>AWS, Microsoft Azure, and on-premises</strong> infrastructure for enterprise clients.</li>
+                <li>Implemented <strong>HAProxy</strong> and <strong>Squid Proxy</strong> to control traffic flow and tighten egress security.</li>
+                <li>Delivered infrastructure projects including new network zone design and cloud migration workstreams — owned CAB requests and incident reports end to end.</li>
+            </ul>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">System & Network Engineer <span class="job-company">— Tri Petch IT Solutions Co., Ltd.</span></div>
+                <div class="job-date">Oct 2022 – Oct 2023</div>
+            </div>
+            <ul>
+                <li>Automated <strong>20+ recurring manual tasks</strong> with scripting, including monthly system reporting — removing standing work from the team's queue.</li>
+                <li>Configured and managed enterprise networks on <strong>Cisco DNA Center, ISE, WLC</strong> and access points.</li>
+                <li>Ran vulnerability assessment scans, rolled out <strong>2FA (Rublon)</strong>, and administered VMware ESXi, vCenter, and Windows/Linux servers.</li>
+            </ul>
+        </div>
+
+        <!-- Job 6 -->
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">System & Network Engineer <span class="job-company">— Pro Inside Co., Ltd.</span></div>
+                <div class="job-date">Dec 2020 – Sep 2022</div>
+            </div>
+            <ul>
+                <li>Configured <strong>Cisco and Huawei switching</strong> (VLAN, trunking) and managed <strong>Sophos and Fortigate</strong> firewalls for client sites.</li>
+                <li>Deployed and maintained open-source firewalls (<strong>OPNsense, pfSense, IPFire</strong>) and managed virtualization on VMware ESXi/vCenter.</li>
+            </ul>
+        </div>
+
+        <!-- INDEPENDENT PRODUCTS -->
+        <h2 class="section-title">Independent Products & Open Work</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-name">InvoiceAI.th</div>
+                <div class="product-desc">Thai invoicing SaaS with AI-assisted data entry. Live with Stripe billing.</div>
+            </div>
+            <div class="product-card">
+                <div class="product-name">LineCRM</div>
+                <div class="product-desc">CRM inside LINE Official Account for Thai retailers. Built with Next.js & PostgreSQL.</div>
+            </div>
+            <div class="product-card">
+                <div class="product-name">FiatLine</div>
+                <div class="product-desc">Personal finance assistant as a LINE mini-app.</div>
+            </div>
+            <div class="product-card">
+                <div class="product-name">DevOps KB</div>
+                <div class="product-desc">DevOps knowledge base with a 90-day CI/CD & SRE learning roadmap.</div>
+            </div>
+        </div>
+        <p class="product-note">All products built, deployed, and operated solo on personal VPS — Nginx, Docker, PM2, systemd, Cloudflare. See <a href="https://korvuz.site" target="_blank" style="color:var(--teal);">korvuz.site</a></p>
+
+        <!-- EDUCATION -->
+        <h2 class="section-title">Education</h2>
+        <div class="edu-row">
+            <div>
+                <span class="edu-title">Bachelor of Computer Science</span>
+                <span class="edu-subtitle"> — Mahasarakham University</span>
+            </div>
+            <div class="edu-date">2016 – 2019</div>
+        </div>
+        <div class="edu-row">
+            <div>
+                <span class="edu-title">Developer Internship</span>
+                <span class="edu-subtitle"> — CETA Testsysteme GmbH, Germany · Laravel + Angular</span>
+            </div>
+            <div class="edu-date">Dec 2020 – Mar 2021</div>
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>

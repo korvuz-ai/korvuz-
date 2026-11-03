@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz</title>
+    <meta name="description" content="บทความจากประสบการณ์ทำงานจริง — ค่าทำเว็บบริษัทราคาเท่าไหร่ ค่า AWS เดือนละเท่าไหร่ เทียบ Static กับ WordPress และควรจ้างฟรีแลนซ์หรือบริษัท เขียนตรงไปตรงมา ไม่ขายของเกินจริง">
+    <link rel="canonical" href="https://korvuz.site/blog/">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Korvuz">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:url" content="https://korvuz.site/blog/">
+    <meta property="og:title" content="บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz">
+    <meta property="og:description" content="บทความจากประสบการณ์ทำงานจริง — เทียบเว็บ Static กับ WordPress และคู่มือย้ายระบบขึ้น AWS สำหรับธุรกิจไทย">
+    <meta property="og:image" content="https://korvuz.site/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="บทความ — รับทำเว็บ ราคา และวางระบบ Cloud AWS | Korvuz">
+    <meta name="twitter:description" content="บทความจากประสบการณ์ทำงานจริง — เทียบเว็บ Static กับ WordPress และคู่มือย้ายระบบขึ้น AWS">
+    <meta name="twitter:image" content="https://korvuz.site/og-image.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://korvuz.site/blog/#blog",
+      "name": "บทความ Korvuz",
+      "description": "บทความเรื่องการทำเว็บ ราคา และการวางระบบ Cloud/DevOps สำหรับธุรกิจไทย",
+      "url": "https://korvuz.site/blog/",
+      "inLanguage": "th",
+      "author": { "@type": "Person", "name": "Korvuz", "url": "https://korvuz.site/" },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม — เทียบต้นทุนจริง",
+          "url": "https://korvuz.site/blog/hire-devops-consultant-hourly/",
+          "datePublished": "2026-08-23",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าเงินที่จ่ายไปอยู่ตรงไหน",
+          "url": "https://korvuz.site/blog/website-price-thailand-2026/",
+          "datePublished": "2026-07-26",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล",
+          "url": "https://korvuz.site/blog/aws-cost-sme-thailand/",
+          "datePublished": "2026-07-26",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง — และเคสที่ไม่ควรจ้างฟรีแลนซ์เด็ดขาด",
+          "url": "https://korvuz.site/blog/hire-freelance-devops-vs-agency/",
+          "datePublished": "2026-07-26",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว",
+          "url": "https://korvuz.site/blog/static-vs-wordpress/",
+          "datePublished": "2026-07-12",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง",
+          "url": "https://korvuz.site/blog/migrate-to-aws/",
+          "datePublished": "2026-07-12",
+          "author": { "@type": "Person", "name": "Korvuz" }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream:   '#F7F5F0',
+                        paper:   '#FFFFFF',
+                        ink:     '#33322D',
+                        subtle:  '#6B6A5F',
+                        faint:   '#9A978A',
+                        line:    '#E8E4DA',
+                        sage:    '#6F8560',
+                        sageBg:  '#E9EEE1',
+                        clay:    '#BC7B4E',
+                        clayBg:  '#F5E7DA',
+                        gold:    '#A8863B',
+                        goldBg:  '#F1E9D2',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans Thai', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style> body { background-color: #F7F5F0; } </style>
+</head>
+<body class="text-ink font-sans antialiased min-h-screen">
+
+    <header class="sticky top-0 z-50 w-full border-b border-line/70 bg-cream/70 backdrop-blur-xl">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 group">
+                <span class="w-2.5 h-2.5 rounded-full bg-sage group-hover:bg-clay transition-colors"></span>
+                <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-subtle">
+                    <a href="/blog/" class="text-ink">Blog</a>
+                    <a href="/work/" class="hover:text-ink transition-colors">Work</a>
+                    <a href="/#services" class="hover:text-ink transition-colors">Pricing</a>
+                </nav>
+
+                <a href="/#calc" class="text-xs font-medium bg-ink text-cream px-4 py-2 rounded-full hover:bg-clay transition-colors">Calculator</a>
+
+                <button id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer"
+                        class="w-10 h-10 rounded-full bg-paper border border-line text-ink hover:border-sage/50 hover:text-clay transition-colors flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide-in menu -->
+    <div id="navOverlay" class="fixed inset-0 z-[60] bg-ink/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <aside id="navDrawer" role="dialog" aria-modal="true" aria-label="Main menu" tabindex="-1"
+           class="fixed top-0 right-0 z-[70] h-full w-[85%] max-w-xs bg-cream border-l border-line shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col">
+
+        <div class="flex items-center justify-between px-6 h-16 border-b border-line shrink-0">
+            <span class="text-sm font-semibold text-faint tracking-widest uppercase">Menu</span>
+            <button id="navClose" type="button" aria-label="Close menu"
+                    class="w-9 h-9 rounded-full bg-paper border border-line text-subtle hover:text-clay hover:border-clay/40 transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto px-4 py-5 flex flex-col gap-0.5 text-[15px] font-medium">
+            <a href="/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-house w-4 text-center text-xs text-faint"></i> Home
+            </a>
+            <a href="/blog/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-paper text-ink transition-colors">
+                <i class="fa-solid fa-pen-nib w-4 text-center text-xs text-faint"></i> Blog
+            </a>
+            <a href="/work/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-folder-open w-4 text-center text-xs text-faint"></i> Work
+            </a>
+            <a href="/consult/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-comments w-4 text-center text-xs text-faint"></i> Consulting
+            </a>
+            <a href="/#services" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-tag w-4 text-center text-xs text-faint"></i> Pricing
+            </a>
+            <a href="/#calc" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-calculator w-4 text-center text-xs text-faint"></i> Price calculator
+            </a>
+            <a href="/#contact" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-envelope w-4 text-center text-xs text-faint"></i> Contact
+            </a>
+
+            <div class="border-t border-line my-3"></div>
+
+            <a href="/resume/" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-subtle hover:bg-paper hover:text-ink transition-colors">
+                <i class="fa-solid fa-id-card w-4 text-center text-xs text-faint"></i> Resume
+            </a>
+            <a href="/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf" target="_blank" rel="noopener"
+               class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-clay hover:bg-clayBg/60 transition-colors">
+                <i class="fa-solid fa-file-arrow-down w-4 text-center text-xs"></i> Download Resume
+            </a>
+        </nav>
+
+        <div class="px-6 py-5 border-t border-line shrink-0">
+            <div class="inline-flex items-center gap-2 text-xs text-subtle bg-paper border border-line px-3.5 py-1.5 rounded-full">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-sage"></span>
+                </span>
+                <span class="font-medium">open to work · TH</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="max-w-3xl mx-auto px-6 py-16">
+        <p class="text-xs text-faint mb-3 tracking-widest uppercase">Blog</p>
+        <h1 class="text-4xl font-extrabold tracking-tight mb-4">บทความ</h1>
+        <p class="text-subtle leading-relaxed mb-12 pb-8 border-b border-line max-w-2xl">
+            เขียนจากงานที่ทำจริง ไม่ใช่ทฤษฎี — เรื่องการเลือกเทคโนโลยีให้เหมาะกับธุรกิจ ต้นทุนที่คนมักคิดไม่ถึง
+            และสิ่งที่ควรรู้ก่อนตัดสินใจจ้างใครทำ
+        </p>
+
+        <div class="space-y-6">
+            <!-- Post 6 -->
+            <a href="/blog/hire-devops-consultant-hourly/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-clay/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-clayBg text-clay px-3 py-1 rounded-full font-medium">ราคา &amp; การจ้างงาน</span>
+                    <time datetime="2026-08-23" class="text-faint">23 สิงหาคม 2026</time>
+                    <span class="text-faint">· 7 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    จ้างที่ปรึกษา DevOps รายชั่วโมง คุ้มกว่าจ้างประจำไหม — เทียบต้นทุนจริง
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    เทียบต้นทุน 3 ทางเลือก จ้างประจำ · ที่ปรึกษารายชั่วโมง · managed service
+                    พร้อมสัญญาณว่าเมื่อไหร่ควรขยับไปจ้างประจำจริง ๆ และ 4 คำถามที่ต้องถามก่อนจ้าง
+                </p>
+                <span class="text-sm font-semibold text-clay group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+
+            <!-- Post 5 -->
+            <a href="/blog/website-price-thailand-2026/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-sage/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-sageBg text-sage px-3 py-1 rounded-full font-medium">ราคา &amp; การจ้างงาน</span>
+                    <time datetime="2026-07-26" class="text-faint">26 กรกฎาคม 2026</time>
+                    <span class="text-faint">· 7 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    ค่าทำเว็บบริษัท ราคาเท่าไหร่ (2026) — แจกแจงทีละก้อน ว่าเงินที่จ่ายไปอยู่ตรงไหน
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    ราคาเริ่มต้นจริงต่อประเภทเว็บ อะไรทำให้ราคาขยับ ค่าอะไรที่ต้องจ่ายทุกปีแต่ไม่อยู่ในใบเสนอราคา
+                    และ 6 ข้อที่ต้องเช็กก่อนเทียบใบเสนอราคาสองเจ้า
+                </p>
+                <span class="text-sm font-semibold text-sage group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+
+            <!-- Post 4 -->
+            <a href="/blog/aws-cost-sme-thailand/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-clay/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-clayBg text-clay px-3 py-1 rounded-full font-medium">Cloud &amp; DevOps</span>
+                    <time datetime="2026-07-26" class="text-faint">26 กรกฎาคม 2026</time>
+                    <span class="text-faint">· 8 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    ค่า AWS เดือนละเท่าไหร่ สำหรับเว็บ SME — แจกแจงบิลจริง + วิธีลดบิล
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    บิล AWS ประกอบด้วย 5 ก้อน ตัวที่ดันราคาที่คนมองข้ามคือ NAT Gateway
+                    พร้อม 3 ระดับงบที่เจอจริงกับ SME ไทย และ 7 วิธีลดบิลที่ทำได้ในสัปดาห์เดียว
+                </p>
+                <span class="text-sm font-semibold text-clay group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+
+            <!-- Post 3 -->
+            <a href="/blog/hire-freelance-devops-vs-agency/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-gold/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-goldBg text-gold px-3 py-1 rounded-full font-medium">ราคา &amp; การจ้างงาน</span>
+                    <time datetime="2026-07-26" class="text-faint">26 กรกฎาคม 2026</time>
+                    <span class="text-faint">· 7 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    จ้างฟรีแลนซ์ DevOps ต่างกับจ้างบริษัทยังไง — และเคสที่ไม่ควรจ้างฟรีแลนซ์เด็ดขาด
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    เทียบกันทีละหัวข้อ ทั้งราคา ความเร็ว และสิ่งที่เกิดขึ้นถ้าคนทำหายไป
+                    พร้อม 5 ข้อที่ต้องเขียนไว้ไม่ว่าจะจ้างใคร และ 3 คำถามที่แยกคนทำจริงออกจากคนขายเก่ง
+                </p>
+                <span class="text-sm font-semibold text-gold group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+
+            <!-- Post 1 -->
+            <a href="/blog/static-vs-wordpress/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-sage/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-sageBg text-sage px-3 py-1 rounded-full font-medium">เลือกเทคโนโลยี</span>
+                    <time datetime="2026-07-12" class="text-faint">12 กรกฎาคม 2026</time>
+                    <span class="text-faint">· 6 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    เว็บ Static vs WordPress เลือกยังไง? เทียบราคา ความเร็ว และงานดูแลระยะยาว
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    ลูกค้าเกือบทุกคนถามผิดข้อ — คำถามที่ตัดสินได้จริงไม่ใช่ “อันไหนดีกว่า” แต่คือ “ปีหนึ่งคุณจะแก้เนื้อหากี่ครั้ง”
+                    พร้อมตารางเทียบต้นทุนรวม 3 ปี ที่ต่างกันเกือบ 6 เท่า
+                </p>
+                <span class="text-sm font-semibold text-sage group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+
+            <!-- Post 2 -->
+            <a href="/blog/migrate-to-aws/" class="group block bg-paper border border-line rounded-3xl p-7 hover:border-clay/50 transition-colors">
+                <div class="flex items-center gap-3 text-xs mb-3">
+                    <span class="bg-clayBg text-clay px-3 py-1 rounded-full font-medium">Cloud &amp; DevOps</span>
+                    <time datetime="2026-07-12" class="text-faint">12 กรกฎาคม 2026</time>
+                    <span class="text-faint">· 8 นาที</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-clay transition-colors">
+                    ย้ายระบบขึ้น AWS ต้องรู้อะไรบ้าง? เช็กลิสต์ก่อนย้าย และค่าใช้จ่ายจริงที่คนมักคิดไม่ถึง
+                </h2>
+                <p class="text-sm text-subtle leading-relaxed mb-4">
+                    การย้ายคลาวด์ที่ล้มเหลว ส่วนใหญ่ไม่ได้ล้มเพราะเทคนิคยาก — 5 คำถามที่ต้องตอบก่อนย้าย
+                    ค่าใช้จ่ายแอบแฝงที่ดันบิลบานปลาย และเช็กลิสต์วันย้ายจริง
+                </p>
+                <span class="text-sm font-semibold text-clay group-hover:gap-2 inline-flex items-center gap-1.5 transition-all">
+                    อ่านบทความ <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
+            </a>
+        </div>
+
+        <div class="mt-14 bg-paper border border-line rounded-3xl p-8 text-center">
+            <h2 class="text-xl font-bold mb-2">อยากรู้ราคางานของคุณ?</h2>
+            <p class="text-subtle text-sm mb-6">เลือกประเภทงานและออปชัน แล้วระบบสรุปราคาให้ทันที</p>
+            <a href="/#calc" class="inline-block bg-ink text-cream px-6 py-3 rounded-full text-sm font-semibold hover:bg-clay transition-colors">
+                <i class="fa-solid fa-calculator mr-1.5"></i> คำนวณราคา
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-14 border-t border-line text-center mt-10">
+        <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-sage"></span>
+            <span class="text-lg font-extrabold tracking-tight text-ink">korvuz</span>
+        </div>
+        <p class="text-subtle text-sm mb-6">DevOps &amp; Cloud Engineer · รับทำเว็บและวางระบบ Cloud สำหรับธุรกิจไทย</p>
+        <p class="text-xs text-faint">© 2026 Korvuz. Created with passion for the Thai tech ecosystem.</p>
+    </footer>
+
+    <script>
+        // Slide-in menu
+        (function () {
+            const drawer  = document.getElementById('navDrawer');
+            const overlay = document.getElementById('navOverlay');
+            const toggle  = document.getElementById('navToggle');
+            if (!drawer || !overlay || !toggle) return;
+
+            const isOpen = () => !drawer.classList.contains('translate-x-full');
+
+            function open() {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                drawer.focus();
+            }
+            function close() {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                toggle.focus();
+            }
+
+            toggle.addEventListener('click', () => isOpen() ? close() : open());
+            document.getElementById('navClose').addEventListener('click', close);
+            overlay.addEventListener('click', close);
+            drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && isOpen()) close();
+            });
+        })();
+    </script>
+</body>
+
+</html>
