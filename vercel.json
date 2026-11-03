@@ -7,6 +7,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/projects",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/projects/:path*",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/consult",
       "destination": "/#contact",
       "statusCode": 301

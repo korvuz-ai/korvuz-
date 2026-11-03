@@ -8,7 +8,7 @@ A personal portfolio for **Nuntawat Fangritlong**, Senior DevOps Specialist in B
 
 - Career experience across enterprise infrastructure and financial services.
 - Engineering summaries covering Amazon EKS delivery, infrastructure as code, and RHEL hardening.
-- Engineering experience and delivery notes; standalone project pages remain available but are no longer featured on the homepage.
+- Engineering experience and delivery notes.
 - Practical notes on release readiness, repeatable environments, and security operations.
 - The one-page English resume and direct contact information.
 
@@ -18,7 +18,7 @@ The portfolio is entirely in English. Its design follows the supplied portfolio 
 
 | Path | Purpose |
 | --- | --- |
-| `site/content.json` | Current English career, project, case study, and note content. |
+| `site/content.json` | Current English career, skills, case study, and note content. |
 | `site/index.template.html` | Homepage template. |
 | `site/icons.svg` | Shared SVG symbols from the supplied reference. |
 | `tools/build-site.py` | Dependency-free static site generator. |
@@ -43,10 +43,10 @@ Edit the current JSON content and template, rebuild, and commit the updated `pub
 
 Vercel serves `public/` directly with the **Other** framework preset and installation/build commands disabled. A push to the production branch triggers the connected Vercel deployment. The generated artifact is committed so deployments do not depend on a build runtime.
 
-Case studies, products, and notes have standalone pages. JavaScript adds accessible detail dialogs and an interactive delivery explanation; the content and destination links remain usable without it. Motion respects the user's reduced-motion preference.
+Case studies and notes have standalone pages; `/projects/*` redirects to the homepage. JavaScript adds accessible detail dialogs and an interactive delivery explanation; the content and destination links remain usable without it. Motion respects the user's reduced-motion preference.
 
 ## Assets and history
 
-The original resume PDFs keep their established URLs. Product interface illustrations derive from the supplied reference; they represent the products rather than employer systems. Plus Jakarta Sans is self-hosted under its included SIL Open Font License.
+The original resume PDFs keep their established URLs. Plus Jakarta Sans is self-hosted under its included SIL Open Font License.
 
 The `source/` directory preserves an older development version and its historical deployment records. It is not the generator for the current portfolio. See [the migration guide](docs/VERCEL-MIGRATION.md) for hosting transition details.
