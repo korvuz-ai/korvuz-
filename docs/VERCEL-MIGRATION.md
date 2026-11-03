@@ -37,3 +37,5 @@ Do not remove CloudFront while `www` still resolves to it, while HTTPS on Vercel
 Once the new deployment is verified and the cutover has settled, remove only the obsolete website's S3/CloudFront resources and its old Nginx vhost/public files. Check shared resource references before removing policies, functions, certificates, or VPS services. Korvuz Atlas and the backup archive have a separate lifecycle.
 
 If cutover verification fails, restore the saved apex/`www` DNS records while the previous hosting remains available.
+
+Canonical hostname redirects are managed exclusively in Vercel Settings → Domains. Avoid adding an opposite host redirect in `vercel.json`, which would conflict with a dashboard redirect.

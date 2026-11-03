@@ -7,17 +7,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.korvuz.site"
-        }
-      ],
-      "destination": "https://korvuz.site/:path*",
-      "statusCode": 308
-    },
-    {
       "source": "/consult",
       "destination": "/#contact",
       "statusCode": 301
