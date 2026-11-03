@@ -31,3 +31,40 @@ dialog{border:0;background:#fff;border-radius:18px;padding:40px;width:min(680px,
 }
 @media(max-width:820px){.section h2,.exp-wrap h2,.resume-block h2,.contact-copy h2{font-size:36px}}
 @media(max-width:600px){.section h2,.exp-wrap h2,.resume-block h2,.contact-copy h2{font-size:32px}.hero-role,.section-intro,.faq-side p,.contact-copy p{font-size:16px}.brand-icon{font-size:24px}.fact-number{font-size:36px}}
+
+/* ===== Bright violet-black theme (Nov 2026) ===== */
+:root{--ink:#17102b;--muted:#585070;--primary:#6d3df0;--purple:#c9b8ff;--line:#e3dcf7;--bg:#faf8ff;--night:#1c1038;--night2:#2d1a63}
+body{background:var(--bg);color:var(--ink)}
+.top-stage,.detail-header{background:radial-gradient(900px 520px at 78% 18%,rgba(168,130,255,.55),transparent 65%),radial-gradient(700px 480px at 8% 92%,rgba(109,61,240,.45),transparent 70%),linear-gradient(135deg,#1c1038 0%,#3a1c8c 55%,#5b2fd6 100%)}
+.hero-role{color:#d9ccff;font-weight:700;letter-spacing:.02em}
+.hero h1,.hero-content h1{color:#fff}
+.hero-sub{color:#e6dcff}.hero-sub strong{color:#fff}
+.hero-meta{color:#d9ccff}
+.brand-icon{background:#fff;color:#4a22b8}
+.brand-dot{color:#ffd36b}
+.nav-links a{color:#efe8ff}.nav-links a:hover{color:#fff}
+.nav-resume{background:#fff;color:#3a1c8c!important;border-color:#fff;font-weight:700}
+.btn-primary{background:#ffd36b;color:#1c1038;font-weight:700;box-shadow:0 10px 30px rgba(255,211,107,.28)}
+.btn-primary:hover{background:#ffdf8f}
+.top-stage .resume-link{color:#fff}
+.infra-window{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(14px);box-shadow:0 30px 80px rgba(20,8,60,.35)}
+.node{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28);color:#fff}
+.node[aria-pressed=true]{background:rgba(255,255,255,.28);border-color:#fff}
+.metric{background:rgba(255,255,255,.14)}
+.fact-strip{background:#fff;border-bottom:1px solid var(--line)}
+.fact-number{color:var(--primary)}
+.skill-band span{background:#f1ebff;color:#4a22b8;border-color:#d9ccff}
+.section-head h2,.section h2,.about h2{color:var(--ink)}
+.textlink{color:var(--primary)}
+.exp-card,.case-card,.article-card{background:#fff;border:1px solid var(--line);box-shadow:0 12px 40px rgba(109,61,240,.07)}
+.exp-year{color:var(--primary);font-weight:700}
+.exp-wrap{background:linear-gradient(180deg,#f3edff,#faf8ff)}
+.resume-section{background:linear-gradient(135deg,#1c1038,#4a22b8)}
+.contact{background:linear-gradient(135deg,#2d1a63,#6d3df0)}
+.contact .btn-primary{background:#ffd36b;color:#1c1038}
+.case-art.k8s{background:linear-gradient(135deg,#3a1c8c,#6d3df0)}
+.case-art.iac{background:linear-gradient(135deg,#4a22b8,#9b6dff)}
+.case-art.sec{background:linear-gradient(135deg,#2d1a63,#7a4df0)}
+.case-art-title{color:#fff;font-weight:600}
+.contact-box{background:rgba(28,16,56,.55);border:1px solid rgba(255,255,255,.25)}
+.resume-section .reveal p,.resume-help{color:#e6dcff}
