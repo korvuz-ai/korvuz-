@@ -2,7 +2,7 @@
 
 A personal portfolio for **Nuntawat Fangritlong**, Senior DevOps Specialist in Bangkok. It brings together experience in cloud infrastructure, Kubernetes, infrastructure automation, CI/CD, and systems security.
 
-[Website](https://korvuz.site/) · [Resume](https://korvuz.site/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf) · [LinkedIn](https://linkedin.com/in/nuntawat-zeo) · [Email](mailto:nuntawat.works@gmail.com)
+[Website](https://korvuz.site/) · [Resume](https://korvuz.site/Nuntawat_Fangritlong_Resume.pdf) · [LinkedIn](https://linkedin.com/in/nuntawat-zeo) · [Email](mailto:contact@vesora.me)
 
 ## Explore the work
 

@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
-PDF = "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf"
+PDF = "/Nuntawat_Fangritlong_Resume.pdf"
 
 
 def icon(name):
@@ -33,7 +33,7 @@ def document(title, description, route, body):
 <meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="article"><meta property="og:url" content="https://korvuz.site{route}"><meta property="og:image" content="https://korvuz.site/og-image.png">
 <link rel="icon" href="/assets/icons/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/reference.css"><link rel="stylesheet" href="/assets/css/portfolio.css"></head>
-<body class="detail-document"><a class="skip-link" href="#content">Skip to content</a><header class="detail-header"><nav class="wrap" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-icon">N</span>Nuntawat.</a><a href="/#work">Back to portfolio</a></nav></header><main class="detail-page wrap" id="content">{body}</main><footer class="detail-footer wrap"><p>Nuntawat Fangritlong. Senior DevOps Specialist.</p><a href="mailto:nuntawat.works@gmail.com">Get in touch</a></footer></body></html>'''
+<body class="detail-document"><a class="skip-link" href="#content">Skip to content</a><header class="detail-header"><nav class="wrap" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-icon">N</span>Nuntawat.</a><a href="/#work">Back to portfolio</a></nav></header><main class="detail-page wrap" id="content">{body}</main><footer class="detail-footer wrap"><p>Nuntawat Fangritlong. Senior DevOps Specialist.</p><a href="mailto:contact@vesora.me">Get in touch</a></footer></body></html>'''
 
 
 def build():

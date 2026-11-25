@@ -78,12 +78,12 @@
     },
     {
       "source": "/resume",
-      "destination": "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+      "destination": "/Nuntawat_Fangritlong_Resume.pdf",
       "statusCode": 301
     },
     {
       "source": "/resume/",
-      "destination": "/Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf",
+      "destination": "/Nuntawat_Fangritlong_Resume.pdf",
       "statusCode": 301
     },
     {
