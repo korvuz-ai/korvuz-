@@ -92,7 +92,7 @@ if (typeof dialog.showModal === 'function') {
 }
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
+if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
@@ -100,14 +100,14 @@ if ('IntersectionObserver' in window && !reducedMotion.matches) {
       observer.unobserve(entry.target);
     });
   }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  document.querySelectorAll(reducedMotion.matches ? '.pipeline' : '.reveal').forEach((element) => observer.observe(element));
 }
 document.getElementById('year').textContent = new Date().getFullYear();
 
 /* Terminal typing effect. The full text is in the HTML; this only animates it. */
 (() => {
   const term = document.getElementById('term');
-  if (!term || reducedMotion.matches) return;
+  if (!term) return;
   const lines = Array.from(term.querySelectorAll('.tl'));
   const caret = term.querySelector('.caret');
   const store = lines.map((line) => ({ line, html: line.innerHTML, text: line.textContent, cmd: line.classList.contains('cmd') }));
