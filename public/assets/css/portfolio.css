@@ -159,3 +159,7 @@ body{background:var(--bg);color:var(--ink)}
 .pipeline.entered>:nth-child(7){animation-delay:2.55s,2.55s!important}
 }
 .hero-meta>span{color:#ece6ff;font-weight:500}
+
+/* Web interface guidelines: contain modal scroll, remove double-tap delay */
+dialog{overscroll-behavior:contain}
+a,button,summary{touch-action:manipulation}
