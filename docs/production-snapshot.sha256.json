@@ -1,5 +1,5 @@
 {
-  "404.html": "265dadac6ed3c2f008227f4efada14e63cdf53c22aa92ea3443cbadacb41ee6a",
+  "404.html": "53acdc7231b9feb7f4d840e6f3f51aa6b143ef0a1849b1ebfddfc2e6d599b729",
   "DevOps_Engineer.pdf": "5e8489e489551661ffc45baa05e5ec975dfe18593a20876317cb253964db8f37",
   "Nuntawat_Fangritlong_Resume.pdf": "5e8489e489551661ffc45baa05e5ec975dfe18593a20876317cb253964db8f37",
   "Nuntawat_Fangritlong_Senior_DevOps_Specialist.pdf": "5e8489e489551661ffc45baa05e5ec975dfe18593a20876317cb253964db8f37",
@@ -10,16 +10,16 @@
   "assets/icons/mark.svg": "041cb4432e730a65331101db4775658dc4f8c8e4aa4736e63a8e1e59e6cd9c4a",
   "assets/js/portfolio.js": "6b5975792a79a96031f4d8cbaf70169118eeb074ef03b0e633f9e96c48327797",
   "assets/portfolio/resume-preview.webp": "892411e80ba82d0f36158bdc29d4626eb9b4369adda4ccbeb6f4a1161feea4a2",
-  "index.html": "6e861cb31d36c59e84994ce6d58cf683f74ebbcd2f994d1c9f868386e337dc7b",
-  "notes/hardening-as-a-process/index.html": "39ef0113e5359cc31449c9c1b9846ba570649cd8ec84df4ccd26df08a1848138",
-  "notes/index.html": "588329097c53fbaee3680c9dad897687efdb40af2f4aa4507cd7d9069cc60ec4",
-  "notes/release-readiness/index.html": "c4c7c6d39dd813cb8b9ead277639efc4abbb55053a949b3c23a01d536ca8f125",
-  "notes/repeatable-environments/index.html": "b5a89020caf4c9d1eb5dddf410fd48691382f410f342c91009ae685d672891a0",
+  "index.html": "bf597c50024c835c9379e9406a7fd48349af64e9bdd947a74dbe5a447d2a5f87",
+  "notes/hardening-as-a-process/index.html": "3a5a5b0ac60fa2c7516955fb3c3d5845c34c21afc6cb80119e9956ddb20bf346",
+  "notes/index.html": "14d8fe93f41d2df9ff57e0e152263969cbdfbad03f07fc46d4ac5d5686e09737",
+  "notes/release-readiness/index.html": "aae27dbb162d17ff87731530d30a603dc448a20ffaf1a4d86591bbd6eb36217b",
+  "notes/repeatable-environments/index.html": "b9e51800a87c8064901e5f43dd0556add559bf76d0807d391e54357611de46e8",
   "og-image.png": "9a4b4c12fce4aca6515571af816ca48a6ae637340d497f6ecfcd6ff6208e8422",
   "resume.pdf": "5e8489e489551661ffc45baa05e5ec975dfe18593a20876317cb253964db8f37",
   "robots.txt": "41d30f6be60f9d9e241abd98adf0c09515066c5e0021fb30b6830aeb9d969c35",
   "sitemap.xml": "237f45bc37428e9c9bbec27178f27ec51b8be6cff4dc4681b41139ae0e4abbf9",
-  "work/eks-release/index.html": "6e4da1972d207729c86ce8a6005cea0e43411efbf4f90b0e98b149a0d3c66071",
-  "work/infrastructure-automation/index.html": "88932946c043c4c965bfdd448faaec12638c3fbc91a9d45deccb8139feef9b5b",
-  "work/rhel-hardening/index.html": "2d9482fd508226bf3fdb2bb8387a7ba920770c1e7882a3a6ac2986e38064a64c"
+  "work/eks-release/index.html": "55a77171d0b55e6d1b8e452fabe33cfdace409873994432d8891007be5d4fe44",
+  "work/infrastructure-automation/index.html": "8ebc76747891ff5d724f0cde59b4c4bf7910f84dd32f033c08f56928c630ce75",
+  "work/rhel-hardening/index.html": "8bc59dfa7241445016b1402857796d405cc85cafa1a5f018b32450251492dc72"
 }

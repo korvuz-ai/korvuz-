@@ -29,7 +29,7 @@ def document(title, description, route, body):
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} | Nuntawat Fangritlong</title><meta name="description" content="{escape(description, quote=True)}">
-<meta name="theme-color" content="#161622"><link rel="canonical" href="https://korvuz.site{route}">
+<meta name="theme-color" content="#1c1038"><link rel="canonical" href="https://korvuz.site{route}">
 <meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="article"><meta property="og:url" content="https://korvuz.site{route}"><meta property="og:image" content="https://korvuz.site/og-image.png">
 <link rel="icon" href="/assets/icons/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/reference.css"><link rel="stylesheet" href="/assets/css/portfolio.css"></head>
